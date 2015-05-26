@@ -10,7 +10,8 @@
  
 ## (10 min) DPUB IG next steps
  
-   * ensure that a11y present DTBook, EPUB is present on web
+   * ensure that the accessibility concepts developed in DAISY and EPUB are not lost in our work
+   * Diagrammar investigation http://diagramcenter.org/standards-and-practices/content-model.html
 
 ## (15 min) Collaboration with BISG
 
