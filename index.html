@@ -137,24 +137,141 @@
 </section>
     
 
-    <h2>Discussion of Digital Publishing Issues</h2>
-<section>
-   </section>
-    <h3>Digital Publishing issues primarily related to Principle 1: Perceivable</h3>
-  <section>
-   </section>
+    <h2>Discussion of Digital Publishing Issues not currently addressed by W3C standards</h2>
+        <section>
 
-<h3>Digital Publishing considerations primarily related to Principle 2: Operable</h3>
-  <section>
-  </section>
+        <h3>Page Numbers</h3>
+        <p>Suggestion: </p>
+        <p>Comments: </p>
+        <p>References:</p>
 
-<h3>Digital Publishing considerations related primarily to Principle 3: Understandable</h3>
 
-   <section>
-   </section>
-<h3>Digital Publishing considerations related primarily to Principle 4: Robust</h3>
-  <section>
-</section>
+        <h3>Drop Cap</h3>
+        <p>Suggestion: UAAG suggestion</p>
+        <p>Comments: in new CSS standards but not widely supported. Only an accessibility issue if people are doing bad markup (dropped cap gets read separately.) Outreach to user agent creators and content creators needed.</p>
+        <p>References:</p>
+        <ul>
+             <li>http://www.w3.org/wiki/CSS3/Selectors/pseudo-elements/:first-letter</li>
+        </ul>
+
+
+        <h3>Notes (Footnotes, Asides, Author Notes, etc.)</h3>
+        <p>Suggestion: No action item</p>
+        <p>Comments: Hopefully coming soon, ARIA roles: role=”footnote” and role=”footnotes”. That should take care of labelling. Everything else, once the semantic roles exist, will follow from skippability or styling.</p>
+        <p>References:</p>
+
+        <h3>Positional location of text to indicate different speakers</h3>
+        <p>Suggestion: Unclear. Possibly all use cases can be addressed with CSS.</p>
+        <p>Use cases:</p>
+         <ul>
+             <li>Use Case: comic strips have different speakers on different sides of the page. </li>
+             <li>Use Case: poetry </li>
+             <li>Use Case: different voices for different speakers. </li>
+        </ul>
+
+        <p>References:</p>
+        <ul>
+             <li>http://www.w3.org/TR/css3-speech/</li>
+        </ul>
+
+
+        <h3>phonetic spellings of proper nouns</h3>
+        <p>Suggestion: UAAG and WCAG suggestion</p>
+        <p>Comments: Pronunciation Lexicon (PLS) exists but it is exceptionally  difficult to use.</p>
+        <ol>
+            <li>link to a URI to a pronunciation dictionary in your document..  eg. if you are writing a chemistry book to link to a chemistry pronunciation dictionary, local or shared.  </li>
+            <li>support the linked pronunciation dictionary in reading systems.</li>
+        </ol>
+        <p>References:</p> 
+        <ul>
+             <li>http://www.w3.org/2015/05/15-dpub-minutes.html#item01</li>
+             <li>http://www.w3.org/TR/css3-speech/</li>
+             <li>http://www.w3.org/TR/pronunciation-lexicon/</li>
+        </ul>
+
+
+        <h3>layout's influence on comprehension</h3>
+        <p>Suggestion: No action item</p>
+        <p>Comments: we can bring this as an issue in our Note but we don't have a solution</p>
+        <p>References:</p>
+        <ul>
+             <li>http://www.w3.org/2015/05/15-dpub-minutes.html#item02</li>
+        </ul>
+
+
+        <h3>Deeply Nested Heading Levels Best Practices</h3>
+        <p>Suggestion: Techniques / Tutorials suggestion</p>
+        <p>Comments: Best practice needs to be easier to find.</p>
+        <p>References:</p>
+        <ul>
+             <li>http://www.w3.org/2015/05/15-dpub-minutes.html#item03</li>
+             <li>http://www.w3.org/WAI/GL/wiki/Using_role%3Dheading</li>
+             <li>https://lists.w3.org/Archives/Public/w3c-wai-ig/2015AprJun/0039.html</li>
+        </ul>
+
+
+        <h3>Semantically needed List-Head</h3>
+        <p>Suggestion: WCAG suggestion</p>
+        <p>Comments: They need to exist</p>
+        <p>References:</p>
+        <ul>
+             <li>http://www.w3.org/2015/05/15-dpub-minutes.html#item04</li>
+        </ul>
+
+
+        <h3>Skippability</h3>
+        <p>Suggestion: UAAG suggestion</p>
+        <p>Comments: This is a user preference / personalization issue. User must be able to customize what is visible, what is read, etc.</p>
+        <ol>
+            <li>This should be an option for visual as well as aural presentation.</li>
+            <li>Skipped elements need to be discoverable later.</li>
+        </ol>
+        <p>Use cases:</p>
+        <ul>
+             <li>Use Case: User does not want to hear page numbers or headers, but does want to hear footnotes.</li>
+        </ul>
+        <p>References:</p>
+        <ul>
+             <li>http://www.daisy.org/z3986/specifications/d202skiprec/d202_skippability_rec.html</li>
+        </ul>
+
+
+        <h3>Assessments</h3>
+        <p>Suggestion: UAAG suggestion</p>
+        <p>Comments: Mark Hakkinen is driving gap analysis and merging IMS QTI/APIP accessibility model to HTML/ARIA and WCAG. The bulk of these recommendations will come from their group; we will coordinate with them as they request. We've done initial outreach.  </p>
+        <p>Use cases:</p>
+        <ul>
+             <li>Use Case: Use Case: admins need to be able to control who gets extra time on timed controls, and how much.</li>
+        </ul>
+        <p>References:</p>
+        <ul>
+             <li>https://www.w3.org/community/accesslearn/</li>
+        </ul>
+
+
+        <h3>Escapability</h3>
+        <p>Suggestion: UAAG suggestion</p>
+        <p>Comments: Need to be able to immediately move to the next non-contained block element.</p>
+        <p>Use cases:</p>
+        <ul>
+             <li>Use Case: Skip from the middle of a long, complex table to the next paragraph or header.</li>
+        </ul>
+
+
+        <h3>Diagrammar</h3>
+        <p>Suggestion: AI for DPub: research</p>
+        <p>Comments: DPUG IG a11y needs to research Diagrammar and decide what if any recommendations we will give either to WCAG, UAAG, or the Diagrammar team.</p>
+        <p>References:</p>
+        <ul>
+             <li>http://diagramcenter.org/</li>
+        </ul>
+
+
+        <h3>Annotations</h3>
+        <p>Suggestion: No action item</p>
+        <p>Comments: User created annotations and Highlights adding your own notes to a document must be accessible for creation and use. George has raised this with annotations WG.</p>
+
+        </section>
 
 <section class='appendix'>
   <h2>WCAG Techniques that apply to digital publishing</h2>
