@@ -157,7 +157,7 @@
 
         <h3>Notes (Footnotes, Asides, Author Notes, etc.)</h3>
         <p>Suggestion: No action item</p>
-        <p>Comments: Hopefully coming soon, ARIA roles: role=”footnote” and role=”footnotes”. That should take care of labelling. Everything else, once the semantic roles exist, will follow from skippability or styling.</p>
+        <p>Comments: DPUB-ARIA 1.0 includes <a href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnote">dpub-footnote</a> and <a href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnotes">dpub-footnotes</a>. These roles convey that information is ancillary without conveying information about positioning. This allows authors and user agents to achieve positioning using CSS or scripting while maintaining the flow and navigability of the content.</p>
         <p>References:</p>
 
         <h3>Positional location of text to indicate different speakers</h3>
@@ -201,21 +201,31 @@
 
         <h3>Deeply Nested Heading Levels Best Practices</h3>
         <p>Suggestion: Techniques / Tutorials suggestion</p>
-        <p>Comments: Best practice needs to be easier to find.</p>
+        <p>Comments: It is not easy to determine what best practice is for deeply nested  headings, headings that go beyond &lt;h6&gt;. Best Practices should be clearly established and easy to find.  Use cases in books are more frequent than other circumstances. This is likeliest to occur if an &lt;aside&gt; begins with &lt;h5&gt; or &lt;h6&gt;. It may  also occur in encyclopedias and similarly larger and detailed works.</p>
         <p>References:</p>
         <ul>
-             <li>http://www.w3.org/2015/05/15-dpub-minutes.html#item03</li>
-             <li>http://www.w3.org/WAI/GL/wiki/Using_role%3Dheading</li>
-             <li>https://lists.w3.org/Archives/Public/w3c-wai-ig/2015AprJun/0039.html</li>
+             <li><a href="http://www.w3.org/2015/05/15-dpub-minutes.html#item03"></a></li>
+             <li><a href="http://www.w3.org/WAI/GL/wiki/Using_role%3Dheading"></a></li>
+             <li><a href="https://lists.w3.org/Archives/Public/w3c-wai-ig/2015AprJun/0039.html"></a></li>
         </ul>
 
 
         <h3>Semantically needed List-Head</h3>
         <p>Suggestion: WCAG suggestion</p>
-        <p>Comments: They need to exist</p>
+        <p>Comments: There is no clear method of associating a title of a list with the list items. This can be accomplished using artificial wrappers, such as &lt;div&gt;, but it seems that the list elements (&lt;ul&gt; and &lt;ol&gt;) should include titles. It is tempting to use the h1 – h6 elements, but these have the native semantics of aria role=”heading”, offering unwanted default navigation. It would be useful if there were a role of element called "listtitle" or something similar.</p>
+        <p>The following is a simple example:
+<pre>&lt;ul&gt;
+&lt;listtitle&gt;Noble Gases&lt;/listtitle&gt;
+&lt;li&gt;Helium&lt;/li&gt;
+&lt;li&gt;Neon&lt;/li&gt;
+&lt;li&gt;Argon&lt;/li&gt;
+&lt;li&gt;Krypton&lt;/li&gt;
+&lt;li&gt;Xenon&lt;/li&gt;
+&lt;li&gt;Radon&lt;/li&gt;&lt;/ul&gt;</pre>
+</p>
         <p>References:</p>
         <ul>
-             <li>http://www.w3.org/2015/05/15-dpub-minutes.html#item04</li>
+             <li><a href="http://www.w3.org/2015/05/15-dpub-minutes.html#item04"/></li>
         </ul>
 
 
