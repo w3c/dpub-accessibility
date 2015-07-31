@@ -147,11 +147,11 @@
 
 
         <h3>Drop Cap</h3>
-        <p>Suggestion: UAAG suggestion</p>
-        <p>Comments: in new CSS standards but not widely supported. Only an accessibility issue if people are doing bad markup (dropped cap gets read separately.) Outreach to user agent creators and content creators needed.</p>
+        <p>Suggestion: UAAG suggestion, WAI outreach suggestion</p>
+        <p>Comments: <a href="http://www.w3.org/TR/css3-selectors/#first-letter">The CSS 3 selector first-letter</a> allows the creation of accessible drop caps. However, it is not widely supported. When drop caps are created without using this CSS3 selector, this causes accessibility issues when the two components of the word are read as separate words. Outreach to user agent creators and content creators is needed.</p>
         <p>References:</p>
         <ul>
-             <li>http://www.w3.org/wiki/CSS3/Selectors/pseudo-elements/:first-letter</li>
+             <li> <a href="http://www.w3.org/TR/css3-selectors/#first-letter">The CSS 3 selector first-letter</a></li>
         </ul>
 
 
@@ -175,18 +175,20 @@
         </ul>
 
 
-        <h3>phonetic spellings of proper nouns</h3>
+        <h3>Phonetic spellings of proper nouns and jargon terms</h3>
         <p>Suggestion: UAAG and WCAG suggestion</p>
-        <p>Comments: Pronunciation Lexicon (PLS) exists but it is exceptionally  difficult to use.</p>
+        <p>Comments: Publishers need to be able to put in suggested pronunciation for proper nouns, acronyms, and field-specific jargon terms. The Pronunciation Lexicon (PLS) exists but it is exceptionally  difficult to use, and doesn't scale well to a large publisher's use cases.</p>
+        <p>Use cases:</p>
         <ol>
-            <li>link to a URI to a pronunciation dictionary in your document..  eg. if you are writing a chemistry book to link to a chemistry pronunciation dictionary, local or shared.  </li>
-            <li>support the linked pronunciation dictionary in reading systems.</li>
+            <li>Use Case (WCAG): A chemistry book needs to use the accepted pronunciations of chemistry terms to maximize clarity. It references a pre-existing pronunciation dictionary made available by the American Chemical Society that uses community-agreed-upon standards.
+            <li>Use Case (WCAG): The trade novel THE LIVES OF CHRISTOPHER CHANT by Diana Wynne Jones, in which there is a plot point that a character's name is spelled "Ralph" but pronounced "Rafe," can be correctly encoded using a local pronunciation dictionary.
+            <li>UseCase (UAAG): Reading systems support the pronunciation dictionary reference and expose the data to Accessibility APIs.
         </ol>
         <p>References:</p>
         <ul>
-             <li>http://www.w3.org/2015/05/15-dpub-minutes.html#item01</li>
-             <li>http://www.w3.org/TR/css3-speech/</li>
-             <li>http://www.w3.org/TR/pronunciation-lexicon/</li>
+             <li><a href="http://www.w3.org/2015/05/15-dpub-minutes.html#item01"></a>Initial conversation in DPUB A11Y TF Meeting</li>
+             <li><a href="http://www.w3.org/TR/css3-speech/">CSS 3 Speech</a></li>
+             <li><a href="http://www.w3.org/TR/pronunciation-lexicon/">Pronunciation Lexicon</a></li>
         </ul>
 
 
@@ -293,19 +295,15 @@
 <section>
   <h2>Acknowledgments</h2>
   <dl>
-      <dt>Members of the Mobile Accessibility Task Force: </dt>
+      <dt>Members of the Digital Publishing Interest Group Accessibility Task Force: </dt>
       <dd>Deborah Kaplan</dd>
       <dd>George Kerscher</dd>
       <dd>Brijesh Kumar</dd>
       <dd>Charles LaPierre</dd>
       <dd>Mia Lipner</dd>
-      <dd>Thierry Michel</dd>
-      <dd>Livio Mondini</dd>
       <dd>Liam Quin</dd>
       <dd>Tzviya Siegman</dd>
       <dd>Jeanne Spellman</dd>
-      <dd>Suzanne Taylor</dd>
-      <dd>who am I missing?</dd>
 </dl>
   </section>
   </body>
