@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Extended Description Analysis</title>
+		<style type="text/css">
+th {
+	text-align: left;
+}
+th[scope="rowgroup"] {
+	text-align: center;
+	padding: 1em;
+}
+th[scope="colgroup"] {
+	text-align: center;
+}
+table, td, th {
+	border: thin solid black;
+	border-collapse: collapse;
+	padding: 1ex;
+}
+tr {
+	vertical-align: top;
+}
+#use-cases td {
+	padding: 0;
+	vertical-align: middle;
+	overflow: clip;
+}
+.yes, .no, .maybe {
+	text-align: center;
+}
+.yes {
+	background-color: green;
+	color: white;
+}
+.no {
+	background-color: red;
+	color: white;
+}
+.maybe {
+	background-color: lime;
+	color: black;
+}
+		</style>
+	</head>
+	<body>
+		<h1>Extended Description Analysis</h1>
+		<p> The tables below relate information about requirements and 
+implementations of etended descriptions. This is intended to help the 
+community settle on a path. Known relevant resources from which this 
+draws:</p>
+		<ul>
+			<li><a mlb_binding_key="0" href="https://www.w3.org/dpub/IG/wiki/Publisher_requirements_for_extended_descriptions">Publisher requirements for extended descriptions<span mlb_binding_key="0" idspanfor="LINK" mlb_idspanflag="true" style="font-family: arial,sans-serif; font-size: xx-small ! important; line-height: 130% ! important; border-width: 1px ! important; border-style: solid ! important; padding: 0px 2px ! important; margin-left: 2px; max-width: 20px; max-height: 10px ! important; overflow: visible ! important; float: none ! important; display: none;">1</span></a></li>
+			<li><a mlb_binding_key="1" href="https://www.w3.org/WAI/PF/wiki/Use_Cases_for_Extended_Descriptions">Use Cases for Extended Descriptions<span mlb_binding_key="1" idspanfor="LINK" mlb_idspanflag="true" style="font-family: arial,sans-serif; font-size: xx-small ! important; line-height: 130% ! important; border-width: 1px ! important; border-style: solid ! important; padding: 0px 2px ! important; margin-left: 2px; max-width: 20px; max-height: 10px ! important; overflow: visible ! important; float: none ! important; display: none;">2</span></a></li>
+			<li><a mlb_binding_key="2" href="https://lists.w3.org/Archives/Public/public-html-admin/2014Oct/0099.html">Formal Objection to advancing the HTML Image Description document along the REC track<span mlb_binding_key="2" idspanfor="LINK" mlb_idspanflag="true" style="font-family: arial,sans-serif; font-size: xx-small ! important; line-height: 130% ! important; border-width: 1px ! important; border-style: solid ! important; padding: 0px 2px ! important; margin-left: 2px; max-width: 20px; max-height: 10px ! important; overflow: visible ! important; float: none ! important; display: none;">3</span></a></li>
+			<li><a mlb_binding_key="3" href="http://cookiecrook.com/longdesc/">Longdesc alternatives in HTML5<span mlb_binding_key="3" idspanfor="LINK" mlb_idspanflag="true" style="font-family: arial,sans-serif; font-size: xx-small ! important; line-height: 130% ! important; border-width: 1px ! important; border-style: solid ! important; padding: 0px 2px ! important; margin-left: 2px; max-width: 20px; max-height: 10px ! important; overflow: visible ! important; float: none ! important; display: none;">4</span></a></li>
+		</ul>
+		<section id="approaches">
+			<h2>Technological Approaches</h2>
+			<p>The following table outlines proposed approaches to provide 
+extended descriptions. Along with a brief description, the table 
+presents pros, cons, and possible ways of mitigating the cons. Whether 
+an approach meets use cases comprehensively enough is a pro / con but 
+that is addressed in the following table, <a mlb_binding_key="4" href="#use-cases">use cases and technological approaches<span mlb_binding_key="4" idspanfor="LINK" mlb_idspanflag="true" style="font-family: arial,sans-serif; font-size: xx-small ! important; line-height: 130% ! important; border-width: 1px ! important; border-style: solid ! important; padding: 0px 2px ! important; margin-left: 2px; max-width: 20px; max-height: 10px ! important; overflow: visible ! important; float: none ! important; display: none;">5</span></a>. Approaches also only work if they are <a mlb_binding_key="5" href="#implementation">implemented<span mlb_binding_key="5" idspanfor="LINK" mlb_idspanflag="true" style="font-family: arial,sans-serif; font-size: xx-small ! important; line-height: 130% ! important; border-width: 1px ! important; border-style: solid ! important; padding: 0px 2px ! important; margin-left: 2px; max-width: 20px; max-height: 10px ! important; overflow: visible ! important; float: none ! important; display: none;">6</span></a>, detailed in the third table.</p>
+			<table>
+				<thead>
+					<tr>
+						<td></td>
+						<th scope="col">Description</th>
+						<th scope="col">Pro</th>
+						<th scope="col">Con</th>
+						<th scope="col">Mitigation</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">description links</th>
+						<td>Author provides a link to a desciption near the object. Link text is by convention but not requirement "[D]".</td>
+						<td>
+							<ul>
+								<li>Requires no special implementation</li>
+								<li>Long-established technique</li>
+								<li>Simple for authors</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Creates undesired visible links</li>
+								<li>Desciption not programatically associated with object</li>
+								<li>User must follow link and potentially lose place</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>CSS can hide links from default display, but erases universality benefit</li>
+								<li>Description could be associated via an attribute, though the obvious aria-describedby has been ruled out</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">longdesc</th>
+						<td>URI to a description is provided in the "longdesc" attribute of the &lt;img&gt; element.</td>
+						<td>
+							<ul>
+								<li>Long-established technique</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Only works for &lt;img&gt;</li>
+								<li>Not liked by implementers</li>
+								<li>Usually (though not inherently) still requires user to follow link</li>
+								<li>Indeterminate processing model for URIs to a description on the same page, yet many advocate this pattern</li>
+							</ul>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">aria-describedby</th>
+						<td>Pointer to a description on the same page provided on any 
+object via the "aria-describedby" attribute. This is automatically 
+exposed to the accessibility API.</td>
+						<td>
+							<ul>
+								<li>Description in same page</li>
+								<li>Description available to all users</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Description lacks rich exposure to user</li>
+								<li>Description bloats page if it's not considered primary content</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Specify that UA can follow arc to rich description (but massively changes how this has been implemented)</li>
+								<li>Allow a URI in the value (but creates big processing confusion potential)</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">aria-describedat</th>
+						<td>URI to a description is provided in the "aria-describedat" attribute of any object.</td>
+						<td>
+							<ul>
+								<li>Description not loaded if not needed</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Not liked by some implementers</li>
+							</ul>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">figure with details</th>
+						<td>&lt;figure&gt; contains a &lt;figcaption&gt; which contains a &lt;details&gt; providing the description.</td>
+						<td>
+							<ul>
+								<li>Leverages existing proposed HTML feature</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Feature still in proposal stage</li>
+								<li>Overloads the details element</li>
+								<li>Doesn't support external descriptions</li>
+								<li>Comparatively complex to author</li>
+								<li>May be complex to implement or depend on script support long-term for optimal user experience</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Add role attribute to clarify overloading</li>
+								<li>Add src attribute to allow external descriptions</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">figure with details and embedded iFrame</th>
+						<td>&lt;figure&gt; contains a &lt;figcaption&gt; which contains a 
+&lt;details&gt; which contains an &lt;iframe&gt; that loads the 
+description.</td>
+						<td>
+							<ul>
+								<li>Leverages existing HTML features</li>
+								<li>Supports external description</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>External description always loads</li>
+								<li>May require special support to get desired user experience</li>
+							</ul>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">figure with details with src and role attributes</th>
+						<td>&lt;figure&gt; contains a &lt;figcaption&gt; which contains a 
+&lt;details&gt; which loads an external description from the "src" 
+attribute and clarifies it's a description with the "role" attribute</td>
+						<td>
+							<ul>
+								<li>Leverages existing HTML features with some modification</li>
+								<li>Supports external description</li>
+								<li>Less overloading of &lt;details&gt;</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Requires additional engineering of an already only proposed element (&lt;details&gt;)</li>
+								<li>Comparatively complex to author</li>
+							</ul>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">accessible SVG</th>
+						<td>Native SVG features provide description.</td>
+						<td>
+							<ul>
+								<li>Most closely associates description with image</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Not all describable objects are in SVG</li>
+							</ul>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">SVG wrapping bitmap</th>
+						<td>SVG with description loads a raster image for the presentation.</td>
+						<td>
+							<ul>
+								<li>Keeps description with image</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Requires SVG and bitmap processing</li>
+							</ul>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">link in figure caption</th>
+						<td>Description link provided in &lt;figcaption&gt;.</td>
+						<td>
+							<ul>
+								<li>Simple for authors</li>
+								<li>Description available to all</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Not all describable objects have captions</li>
+							</ul>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">hidden iframe</th>
+						<td></td>
+						<td>
+							<ul>
+								<li>Uses existing technology</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Kludges the iframe</li>
+							</ul>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">image map</th>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">web annotations</th>
+						<td>Description treated as an annotation, externally stored and related to the object.</td>
+						<td>
+							<ul>
+								<li>Description completely separate from object, yet clearly associated with it</li>
+								<li>Multiple descriptions (languages, level of detail) easily supported</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Nascent technology</li>
+								<li>Requires an annotation server?</li>
+							</ul>
+						</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section id="use-cases">
+			<h2>Use cases and technological approaches</h2>
+			<p>The grid below is intended to map known extended description 
+requirements to technological ways to meet them. Approaches that meet 
+more use cases will generally be preferred, though the other pros and 
+cons also need to be considered.</p>
+
+<p><strong>Note from Dpub</strong>: We are looking at these elements as they are currently defined in existing specifications.  We are not analyzing the ability of these elements with potential, unwritten changes to address the use cases.</p>
+
+<p><strong>Note from Dpub</strong>: We are also not looking at the current functionality of existing AT and UA. We are looking at what the specification would allow existing AT and UA to implement reasonably.
+
+<p><strong>Note from DPub</strong>: We assert that the rows "Discoverable by AT", "Available on demand to AT users," and "Skippable by AT" should be collapsed into a single wrote "Exposed to accessibility APIs meaningfully". We then assert that the row "Not required to be visible in standard content view" is unnecessary. Our reasoning follows:</p>
+
+<p>The requirement from the digital publishing perspective is that there be an element that <ol><li>Is reported to the accessibility APIs and the user agent as an extended description</li><li>The element can be hidden from the visible view, or exposed, depending on user agent or AT settings or functionality</li><li>The element can be  meaningfully skipped.</li></ol></p>
+
+Given our reasoning, this is the reason we would like to replace these four rows with "Exposed to the accessibility APIs meaningfully": <ul><li>We must distinguish between "current AT and user agents implement the required functionality" and "the requirements needed in the specification." </li><li>We must distinguish between accessibility API and AT. For example, if a low-vision keyboard user needs access  to expose the extended description, that is interaction with the UA, not with any AT.</li><li> All elements are technically "discoverable by AT"/"available on demand to AT users"/"skippable by AT", and all elements can technically be hidden from content view (e.g. via CSS). DPub's requirement is only met if that discovery/availability/skipability/hide-and-reveal functionality is meaningful. E.g., can a screen reader user identify that they are currently in an extended description, and if they skip to the end of it, that is what they are skipping? Can AT/UA respond to a request for "reveal extended descriptions" or "show me a list of extended descriptions"?</li></ul>
+
+In our table below, we are replacing these four rows with "Exposed to the accessibility APIs and UAs meaningfully". To maintain some of the information which was in them, we are adding the following table beneath, with rows for the current state of the world with there rows: <ul><li>Discoverable meaningfully by any current AT.</li><li>Skippable meaningfully by any current AT.</li><li>Hidden from the visual meaningfully by any current AT.</li><li>Able to be accessed without using a screen reader in any current UA.</li></ul>
+
+<p><strong>Note from Dpub</strong>: If we changed an item in existing cell, we indicated that in the cell. However, if we weren't sure of the answer to something, and the table was pre-populated with an answer, we left the pre-populated answer untouched; there is no visual /semantic indication in this table differing between the cells we agree with and the cells we don't have enough information about. Particularly, we don't have enough information about the two SVG proposals to truly understand what is being proposed.</p>
+
+<p><strong>Note from Dpub</strong>: We are withdrawing the requirement "able to pass structured content to an additional specialized user agent." We don't think this is the appropriate place to solve that problem.</p>
+
+			<table>
+                <caption><p>According to specifications, as currently existing, with the caveats that some of these specifications are still in draft (eg. annotations).</p></caption>
+				<thead>
+					<tr>
+						<td></td>
+						<th scope="col">description links <br /><u><strong>Note from Dpub</strong></u>: Could you confirm that by "description link" you mean &lt;link&gt; or &lt;a&gt; elements?</th>
+						<th scope="col">longdesc</th>
+						<th scope="col">aria-describedby</th>
+						<th scope="col">aria-describedat</th>
+						<th scope="col">figure with details</th>
+						<th scope="col">figure with details and embedded iFrame</th>
+						<th scope="col">figure with details with src and role attributes</th>
+						<th scope="col">accessible SVG</th>
+						<th scope="col">SVG wrapping bitmap</th>
+						<th scope="col">link in figure caption</th>
+						<th scope="col">hidden iframe</th>
+						<th scope="col">image map<br /><strong>Note from Dpub:</strong> The map element contains no element that would hold a description outside of any other legal flow content, so we weren't sure how this example was intended to be used.</th>
+						<th scope="col">web annotations</th>
+						<th scope="col">web components <br /><u><strong>Note from Dpub</strong></u>: Mark Hakkinen's investigating this</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Not restricted to images <br /><u><strong>Note from Dpub</strong></u>: For clarity, we suggest rephrasing to "Works for non-image content"</th>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="no">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">Can hold rich content</th>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="maybe">to an extent</span></td>
+						<td><span class="maybe">to an extent</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td>?</td>
+						<td><span class="yes">yes</span></td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">Same technique for different objects</th>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">Reusable in multiple content <strong>Note from Dpub</strong>: "contexts"? </th>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">Description clearly associated with object</th>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="maybe">yes?</span></td>
+						<td><span class="yes">yes</span></td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">Clear which associated object is the description</th>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="maybe">yes?</span></td>
+						<td><span class="yes">yes</span></td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">Not bloat primary content page</th>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">Exposed meaningfully to the accessibility APIs and UA</th>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="maybe">yes?</span></td>
+						<td>?</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+                <caption><p>For reference, to clarify the <em>current</em> state of the world, for current spec, and <em>some</em> current AT and UA.</p></caption>
+				<thead>
+					<tr>
+						<td></td>
+						<th scope="col">description links <br /><u><strong>Note from Dpub</strong></u>: Could you confirm that by "description link" you mean &lt;link&gt; or &lt;a&gt; elements?</th>
+						<th scope="col">longdesc</th>
+						<th scope="col">aria-describedby</th>
+						<th scope="col">aria-describedat</th>
+						<th scope="col">figure with details</th>
+						<th scope="col">figure with details and embedded iFrame</th>
+						<th scope="col">figure with details with src and role attributes</th>
+						<th scope="col">accessible SVG</th>
+						<th scope="col">SVG wrapping bitmap</th>
+						<th scope="col">link in figure caption</th>
+						<th scope="col">hidden iframe</th>
+						<th scope="col">image map</th>
+						<th scope="col">web annotations</th>
+						<th scope="col">web components <br /><u><strong>Note from Dpub</strong></u>: Mark Hakkinen's investigating this</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					<tr>
+						<th scope="row">Discoverable meaningfully by any <em>current</em> AT.</th>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+					</tr>
+					<tr>
+						<th scope="row">Skippable meaningfully by any <em>current</em> AT</th>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+					</tr>
+					<tr>
+						<th scope="row">Hideable from the visual meaningfully by any <em>current</em> AT</th>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+					</tr>
+					<tr>
+						<th scope="row">Able to be accessed without using a screen reader in any <em>current</em> UA</th>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="yes">yes</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+						<td><span class="no">no</span></td>
+					</tr>
+
+				</tbody>
+			</table>
+		</section>
+		<section id="implementation">
+			<h2>Technological Approaches Implementation</h2>
+			<p>Information about the known implementation of particular 
+approaches is provided here. An approach that has, or is expected soon 
+to have, more implementation will tend to be preferred. Note: 
+implementation information below refers to implementation needed to make
+ the description available to assistive technology, not simply 
+implementation of the base feature in mainstream user agents.</p>
+			<ul>
+				<li>Current: already implemented</li>
+				<li>Underway: in process of being implemented (may include expected timeline)</li>
+				<li>Planned: tool has plans to implement (may include expected timeline)</li>
+				<li>No: tool intends not to implement</li>
+				<li>N/A: special implementation not required</li>
+			</ul>
+			<table>
+				<thead>
+					<tr>
+						<td></td>
+						<th scope="col">Webkit</th>
+						<th scope="col">Blink</th>
+						<th scope="col">Gecko</th>
+						<th scope="col">IE</th>
+						<th scope="col">Edge</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">description links</th>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<th scope="row">longdesc</th>
+						<td>No</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">aria-describedby</th>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">aria-describedat</th>
+						<td>No</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">figure with details</th>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">figure with details and embedded iFrame</th>
+						<td>Yes?</td>
+						<td>Yes?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">figure with details with src and role attributes</th>
+						<td>No</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">accessible SVG</th>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">SVG wrapping bitmap</th>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">link in figure caption</th>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">hidden iframe</th>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">image map</th>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">web annotations</th>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+						<td>?</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section id="complexity">
+			<h2>Implementation Complexity</h2>
+			<p>Information about how difficult it is likely to be to implement, 
+both for authors (who must implement a lot) and user agents (who must 
+implement once, but with attention to impacts).</p>
+			<table>
+				<thead>
+					<tr>
+						<td></td>
+						<th scope="col">Authors</th>
+						<th scope="col">UA</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">description links</th>
+						<td>low</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<th scope="row">longdesc</th>
+						<td>med</td>
+						<td>low</td>
+					</tr>
+					<tr>
+						<th scope="row">aria-describedby</th>
+						<td>med</td>
+						<td>med</td>
+					</tr>
+					<tr>
+						<th scope="row">aria-describedat</th>
+						<td>med</td>
+						<td>low</td>
+					</tr>
+					<tr>
+						<th scope="row">figure with details</th>
+						<td>med</td>
+						<td>low</td>
+					</tr>
+					<tr>
+						<th scope="row">figure with details and embedded iFrame</th>
+						<td>high</td>
+						<td>med</td>
+					</tr>
+					<tr>
+						<th scope="row">figure with details with src and role attributes</th>
+						<td>high</td>
+						<td>med</td>
+					</tr>
+					<tr>
+						<th scope="row">accessible SVG</th>
+						<td>high</td>
+						<td>high</td>
+					</tr>
+					<tr>
+						<th scope="row">SVG wrapping bitmap</th>
+						<td>med</td>
+						<td>high</td>
+					</tr>
+					<tr>
+						<th scope="row">link in figure caption</th>
+						<td>low</td>
+						<td>low</td>
+					</tr>
+					<tr>
+						<th scope="row">hidden iframe</th>
+						<td>med</td>
+						<td>low</td>
+					</tr>
+					<tr>
+						<th scope="row">image map</th>
+						<td>med</td>
+						<td>low</td>
+					</tr>
+					<tr>
+						<th scope="row">web annotations</th>
+						<td>high</td>
+						<td>high</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<h2>Implementation Approach</h2>
+			<p>Information about how difficult it is likely to be to implement, 
+both for authors (who must implement a lot) and user agents (who must 
+implement once, but with attention to impacts).</p>
+			<table>
+				<thead>
+					<tr>
+						<td></td>
+						<th scope="col">Uses AAPI</th>
+						<th scope="col">Requires Script</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">description links</th>
+						<td>no</td>
+						<td>no</td>
+					</tr>
+					<tr>
+						<th scope="row">longdesc</th>
+						<td>yes</td>
+						<td>no</td>
+					</tr>
+					<tr>
+						<th scope="row">aria-describedby</th>
+						<td>yes</td>
+						<td>no</td>
+					</tr>
+					<tr>
+						<th scope="row">aria-describedat</th>
+						<td>yes</td>
+						<td>no</td>
+					</tr>
+					<tr>
+						<th scope="row">figure with details</th>
+						<td>no</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">figure with details and embedded iFrame</th>
+						<td>no</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">figure with details with src and role attributes</th>
+						<td>no</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">accessible SVG</th>
+						<td>yes</td>
+						<td>no</td>
+					</tr>
+					<tr>
+						<th scope="row">SVG wrapping bitmap</th>
+						<td>yes</td>
+						<td>no</td>
+					</tr>
+					<tr>
+						<th scope="row">link in figure caption</th>
+						<td>no</td>
+						<td>no</td>
+					</tr>
+					<tr>
+						<th scope="row">hidden iframe</th>
+						<td>no</td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<th scope="row">image map</th>
+						<td>no</td>
+						<td>no</td>
+					</tr>
+					<tr>
+						<th scope="row">web annotations</th>
+						<td>no</td>
+						<td>yes?</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	
+</body></html>
