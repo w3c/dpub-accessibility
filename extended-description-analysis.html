@@ -41,6 +41,15 @@ tr {
 	background-color: lime;
 	color: black;
 }
+
+.remove {
+	text-decoration: line-through;
+	color: blue;
+}
+.add {
+	color: red;
+}
+
 		</style>
 	</head>
 	<body>
@@ -111,6 +120,7 @@ that is addressed in the following table, <a mlb_binding_key="4" href="#use-case
 								<li>Not liked by implementers</li>
 								<li>Usually (though not inherently) still requires user to follow link</li>
 								<li>Indeterminate processing model for URIs to a description on the same page, yet many advocate this pattern</li>
+								<li class="add">Few authors use it</li>
 							</ul>
 						</td>
 						<td></td>
@@ -149,7 +159,8 @@ exposed to the accessibility API.</td>
 						</td>
 						<td>
 							<ul>
-								<li>Not liked by some implementers</li>
+								<li>Not liked by <span class="remove">some</span> implementers</li>
+								<li class="add">Being a generalization of longdesc, it is questionable if many authors would use it (just as they do not use longdesc)</li>
 							</ul>
 						</td>
 						<td></td>
@@ -167,7 +178,7 @@ exposed to the accessibility API.</td>
 								<li>Feature still in proposal stage</li>
 								<li>Overloads the details element</li>
 								<li>Doesn't support external descriptions</li>
-								<li>Comparatively complex to author</li>
+								<li class="remove">Comparatively complex to author</li>
 								<li>May be complex to implement or depend on script support long-term for optimal user experience</li>
 							</ul>
 						</td>
@@ -185,7 +196,7 @@ exposed to the accessibility API.</td>
 description.</td>
 						<td>
 							<ul>
-								<li>Leverages existing HTML features</li>
+								<li>Leverages existing <span class="add">proposed</span> HTML feature<span class="remove">s</span></li>
 								<li>Supports external description</li>
 							</ul>
 						</td>
@@ -204,7 +215,7 @@ description.</td>
 attribute and clarifies it's a description with the "role" attribute</td>
 						<td>
 							<ul>
-								<li>Leverages existing HTML features with some modification</li>
+								<li>Leverages existing <span class="add">proposed</span> HTML feature<span class="remove">s</span> with some modification</li>
 								<li>Supports external description</li>
 								<li>Less overloading of &lt;details&gt;</li>
 							</ul>
@@ -212,7 +223,7 @@ attribute and clarifies it's a description with the "role" attribute</td>
 						<td>
 							<ul>
 								<li>Requires additional engineering of an already only proposed element (&lt;details&gt;)</li>
-								<li>Comparatively complex to author</li>
+								<li class="remove">Comparatively complex to author</li>
 							</ul>
 						</td>
 						<td></td>
@@ -759,12 +770,12 @@ implement once, but with attention to impacts).</p>
 					</tr>
 					<tr>
 						<th scope="row">figure with details and embedded iFrame</th>
-						<td>high</td>
+						<td><span class="remove">high</span><span class="add">med</span></td>
 						<td>med</td>
 					</tr>
 					<tr>
 						<th scope="row">figure with details with src and role attributes</th>
-						<td>high</td>
+						<td><span class="remove">high</span><span class="add">med</span></td>
 						<td>med</td>
 					</tr>
 					<tr>
