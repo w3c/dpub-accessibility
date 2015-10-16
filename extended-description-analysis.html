@@ -120,7 +120,7 @@ that is addressed in the following table, <a mlb_binding_key="4" href="#use-case
 								<li>Not liked by implementers</li>
 								<li>Usually (though not inherently) still requires user to follow link</li>
 								<li>Indeterminate processing model for URIs to a description on the same page, yet many advocate this pattern</li>
-								<li class="add">Few authors use it</li>
+								<li class="add">Few authors use it because of issues regarding support and education</li>
 							</ul>
 						</td>
 						<td></td>
@@ -160,7 +160,9 @@ exposed to the accessibility API.</td>
 						<td>
 							<ul>
 								<li>Not liked by <span class="remove">some</span> implementers</li>
-								<li class="add">Being a generalization of longdesc, it is questionable if many authors would use it (just as they do not use longdesc)</li>
+								<li class="remove">Being a generalization of longdesc, it is questionable if many authors would use it (just as they do not use longdesc)</li>
+								<li class="add">Being a generalization of longdesc, authors will face the same roadblocks to using it: UA/AT support, lack of exposure to non-screen reader users, and education.</li>
+								<li class="add">Note that these potential roadblocks apply to every potential solution.</li>
 							</ul>
 						</td>
 						<td></td>
@@ -330,9 +332,9 @@ requirements to technological ways to meet them. Approaches that meet
 more use cases will generally be preferred, though the other pros and 
 cons also need to be considered.</p>
 
-<p><strong>Note from Dpub</strong>: We are looking at these elements as they are currently defined in existing specifications.  We are not analyzing the ability of these elements with potential, unwritten changes to address the use cases.</p>
+<p><span class="add">DPub note</span>: We are looking at these elements as they are currently defined in existing specifications.  We are not analyzing the ability of these elements with potential, unwritten changes to address the use cases.</p>
 
-<p><strong>Note from Dpub</strong>: We are also not looking at the current functionality of existing AT and UA. We are looking at what the specification would allow existing AT and UA to implement reasonably.
+<p><span class="add">DPub note</span>: We are also not looking at the current functionality of existing AT and UA. We are looking at what the specification would allow existing AT and UA to implement reasonably.
 
 <p><strong>Note from DPub</strong>: We assert that the rows "Discoverable by AT", "Available on demand to AT users," and "Skippable by AT" should be collapsed into a single wrote "Exposed to accessibility APIs meaningfully". We then assert that the row "Not required to be visible in standard content view" is unnecessary. Our reasoning follows:</p>
 
@@ -342,16 +344,16 @@ Given our reasoning, this is the reason we would like to replace these four rows
 
 In our table below, we are replacing these four rows with "Exposed to the accessibility APIs and UAs meaningfully". To maintain some of the information which was in them, we are adding the following table beneath, with rows for the current state of the world with there rows: <ul><li>Discoverable meaningfully by any current AT.</li><li>Skippable meaningfully by any current AT.</li><li>Hidden from the visual meaningfully by any current AT.</li><li>Able to be accessed without using a screen reader in any current UA.</li></ul>
 
-<p><strong>Note from Dpub</strong>: If we changed an item in existing cell, we indicated that in the cell. However, if we weren't sure of the answer to something, and the table was pre-populated with an answer, we left the pre-populated answer untouched; there is no visual /semantic indication in this table differing between the cells we agree with and the cells we don't have enough information about. Particularly, we don't have enough information about the two SVG proposals to truly understand what is being proposed.</p>
+<p><span class="add">DPub note</span>: If we changed an item in existing cell, we indicated that in the cell. However, if we weren't sure of the answer to something, and the table was pre-populated with an answer, we left the pre-populated answer untouched; there is no visual /semantic indication in this table differing between the cells we agree with and the cells we don't have enough information about. Particularly, we don't have enough information about the two SVG proposals to truly understand what is being proposed.</p>
 
-<p><strong>Note from Dpub</strong>: We are withdrawing the requirement "able to pass structured content to an additional specialized user agent." We don't think this is the appropriate place to solve that problem.</p>
+<p><span class="add">DPub note</span>: We are withdrawing the requirement "able to pass structured content to an additional specialized user agent." We don't think this is the appropriate place to solve that problem.</p>
 
 			<table>
                 <caption><p>According to specifications, as currently existing, with the caveats that some of these specifications are still in draft (eg. annotations).</p></caption>
 				<thead>
 					<tr>
 						<td></td>
-						<th scope="col">description links <br /><u><strong>Note from Dpub</strong></u>: Could you confirm that by "description link" you mean &lt;link&gt; or &lt;a&gt; elements?</th>
+						<th scope="col">description links <br /><u><span class="add">DPub note</span></u>: Could you confirm that by "description link" you mean &lt;link&gt; or &lt;a&gt; elements?</th>
 						<th scope="col">longdesc</th>
 						<th scope="col">aria-describedby</th>
 						<th scope="col">aria-describedat</th>
@@ -364,22 +366,22 @@ In our table below, we are replacing these four rows with "Exposed to the access
 						<th scope="col">hidden iframe</th>
 						<th scope="col">image map<br /><strong>Note from Dpub:</strong> The map element contains no element that would hold a description outside of any other legal flow content, so we weren't sure how this example was intended to be used.</th>
 						<th scope="col">web annotations</th>
-						<th scope="col">web components <br /><u><strong>Note from Dpub</strong></u>: Mark Hakkinen's investigating this</th>
+						<th scope="col">web components <br /><u><span class="add">DPub note</span></u>: Mark Hakkinen's investigating this</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<th scope="row">Not restricted to images <br /><u><strong>Note from Dpub</strong></u>: For clarity, we suggest rephrasing to "Works for non-image content"</th>
+						<th scope="row">Not restricted to images <br /><u><span class="add">DPub note</span></u>: For clarity, we suggest rephrasing to "Works for non-image content"</th>
 						<td><span class="yes">yes</span></td>
 						<td><span class="no">no</span></td>
 						<td><span class="yes">yes</span></td>
 						<td><span class="yes">yes</span></td>
-						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
-						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
-						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="yes">yes </span><br /><span class="add">DPub note</span>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="yes">yes </span><br /><span class="add">DPub note</span>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="yes">yes </span><br /><span class="add">DPub note</span>: Figure can be a wrapper around any flow content. </td>
 						<td><span class="no">no</span></td>
 						<td><span class="no">no</span></td>
-						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="yes">yes </span><br /><span class="add">DPub note</span>: Figure can be a wrapper around any flow content. </td>
 						<td><span class="no">yes</span></td>
 						<td><span class="no">no</span></td>
 						<td><span class="yes">yes</span></td>
@@ -408,19 +410,19 @@ In our table below, we are replacing these four rows with "Exposed to the access
 						<td><span class="no">no</span></td>
 						<td><span class="yes">yes</span></td>
 						<td><span class="yes">yes</span></td>
-						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
-						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
-						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="yes">yes </span><br /><span class="add">DPub note</span>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="yes">yes </span><br /><span class="add">DPub note</span>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="yes">yes </span><br /><span class="add">DPub note</span>: Figure can be a wrapper around any flow content. </td>
 						<td><span class="no">no</span></td>
 						<td><span class="no">no</span></td>
-						<td><span class="yes">yes </span><br /><strong>Note from Dpub</strong>: Figure can be a wrapper around any flow content. </td>
+						<td><span class="yes">yes </span><br /><span class="add">DPub note</span>: Figure can be a wrapper around any flow content. </td>
 						<td><span class="yes">yes</span></td>
 						<td><span class="no">no</span></td>
 						<td><span class="yes">yes</span></td>
 						<td><span class="yes">yes</span></td>
 					</tr>
 					<tr>
-						<th scope="row">Reusable in multiple content <strong>Note from Dpub</strong>: "contexts"? </th>
+						<th scope="row">Reusable in multiple content <span class="add">DPub note</span>: "contexts"? </th>
 						<td><span class="yes">yes</span></td>
 						<td><span class="yes">yes</span></td>
 						<td><span class="no">no</span></td>
@@ -512,7 +514,7 @@ In our table below, we are replacing these four rows with "Exposed to the access
 				<thead>
 					<tr>
 						<td></td>
-						<th scope="col">description links <br /><u><strong>Note from Dpub</strong></u>: Could you confirm that by "description link" you mean &lt;link&gt; or &lt;a&gt; elements?</th>
+						<th scope="col">description links <br /><u><span class="add">DPub note</span></u>: Could you confirm that by "description link" you mean &lt;link&gt; or &lt;a&gt; elements?</th>
 						<th scope="col">longdesc</th>
 						<th scope="col">aria-describedby</th>
 						<th scope="col">aria-describedat</th>
@@ -525,7 +527,7 @@ In our table below, we are replacing these four rows with "Exposed to the access
 						<th scope="col">hidden iframe</th>
 						<th scope="col">image map</th>
 						<th scope="col">web annotations</th>
-						<th scope="col">web components <br /><u><strong>Note from Dpub</strong></u>: Mark Hakkinen's investigating this</th>
+						<th scope="col">web components <br /><u><span class="add">DPub note</span></u>: Mark Hakkinen's investigating this</th>
 					</tr>
 				</thead>
 				<tbody>
