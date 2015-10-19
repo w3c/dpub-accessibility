@@ -332,15 +332,17 @@ requirements to technological ways to meet them. Approaches that meet
 more use cases will generally be preferred, though the other pros and 
 cons also need to be considered.</p>
 
+<p><strong>Definition</strong> used in DPub comments.</p>
+
+<dl><dt>Meaningful</dt> <dd>Used in a way that the API and UA can understand the referred to element is further description. Examples in existing specs: longdesc and aria-describedby both give enough information to say that this is specifically a description of the referred-to object. Longdesc says "this is further description, beyond the basics. Aria-describedby says "this is a basic description". How the user agents and AT deal with that meaningful information is another issue. However, DPub asserts the meaning of "extended description" is important semantic information that needs to be exposed.</dt></dl>
+
+
+
 <p><span class="add">DPub note</span>: We are looking at these elements as they are currently defined in existing specifications.  We are not analyzing the ability of these elements with potential, unwritten changes to address the use cases.</p>
 
 <p><span class="add">DPub note</span>: We are also not looking at the current functionality of existing AT and UA. We are looking at what the specification would allow existing AT and UA to implement reasonably.
 
 <p><span class="add">DPub note</span>: We assert that the rows "Discoverable by AT", "Available on demand to AT users," and "Skippable by AT" should be collapsed into a single wrote "Exposed to accessibility APIs meaningfully". 
-
-<dl><dt>Meaningful</dt>: <dd>Used in a way that the API and UA can understand the referred to element is further description. Examples in existing specs: longdesc and aria-describedby both give enough information to say that this is specifically a description of the referred-to object. Longdesc says "this is further description, beyond the basics. Aria-describedby says "this is a basic description". How the user agents and AT deal with that meaningful information is another issue. However, DPub asserts the meaning of "extended description" is important semantic information that needs to be exposed.</dt></dl>
-
-
 <p>We then assert that the row "Not required to be visible in standard content view" is unnecessary. Our reasoning follows:</p>
 
 <p>The requirement from the digital publishing perspective is that there be an element that <ol><li>Is reported to the accessibility APIs and the user agent as an extended description</li><li>The element can be hidden from the visible view, or exposed, depending on user agent or AT settings or functionality</li><li>The element can be  meaningfully skipped.</li></ol></p>
