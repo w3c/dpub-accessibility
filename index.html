@@ -112,7 +112,7 @@
   </section>
     <section class="introductory">
       <h2 id="intro">Introduction</h2>
-      <p>This document provides informative guidance (but does not set requirements) with regard to the needs of Digital Publishing with regard to W3 guidelines. Is informed by existing guidelines including WCAG 2.0 [<a href="http://www.w3.org/TR/WCAG20">WCAG2</a>], ATAG 2.0 [<a href="http://www.w3.org/TR/ATAG20/">ATAG2</a>] , UAAG 2.0 [<a href="http://www.w3.org/TR/UAAG20/">UAAG2</a>]  and WAI-ARIA 1.0 [<a href="http://www.w3.org/TR/wai-aria/">WAI-ARIA</a>. Where appropriate, it is also informed by other ongoing W3C projects including Portable Web Publications [<a href="http://w3c.github.io/dpub-pwp/">PWP</a>] and the Web Annotation Working Group</a>.</p>
+      <p>This document provides informative guidance (but does not set requirements) with regard to the needs of Digital Publishing with regard to W3 guidelines. Is informed by existing guidelines including WCAG 2.0 [<a href="http://www.w3.org/TR/WCAG20">WCAG2</a>], ATAG 2.0 [<a href="http://www.w3.org/TR/ATAG20/">ATAG2</a>] , UAAG 2.0 [<a href="http://www.w3.org/TR/UAAG20/">UAAG2</a>]  and WAI-ARIA 1.0 [<a href="http://www.w3.org/TR/wai-aria/">WAI-ARIA</a>]. Where appropriate, it is also informed by other ongoing W3C projects including Portable Web Publications [<a href="http://w3c.github.io/dpub-pwp/">PWP</a>] and the Web Annotation Working Group</a>.</p>
       <p>While the World Wide Web Consortium (W3C)'s W3C Web Accessibility Initiative (WAI) is primarily concerned with web technologies, its guidance is also relevant to technologies which are not exclusively web technologies. The digital publishing industry, which creates mixed web and non-web publications using web-based technological tools, is reliant on the standards set by the W3C.</p>
       <p>The current document is focused on the accessibility of digital publishing to people with disabilities and is not intended to supplant any other W3C work. </p>
 
@@ -143,27 +143,14 @@
 
     <h2>Discussion of Digital Publishing Issues not currently addressed by W3C standards</h2>
         <section>
-
-        <h3>Page Numbers</h3>
-			<p>Suggestion: UAG suggestion and WCAG suggestion, probably also  ATAG
-suggestion </p>
+<h3>Action Needed</h3>
+        <h4>Page Numbers / Pagination</h4>
+        <p><strong>CONTENT IS DRAFT</strong></p>
+			<p>Suggestion: UAG suggestion and WCAG suggestion, probably also ATAG suggestion </p>
        
-       		<p>Comments: For electronic publications -- especially those
-intended to have direct correspondence to printed "hardcopy" publications
-such as textbooks -- a way needs to exist for a user to accurately identify
-the page number, and to navigate accordingly. This method must be
-accessible, and should not disrupt continuous reading by screen reader
-users, and should be accurate and accessible for users using Assistive
-Technologies which may resize or reflow text on the screen. </p>
+       		<p>Comments: For electronic publications -- especially those intended to have direct correspondence to printed "hardcopy" publications such as textbooks -- a way needs to exist for a user to accurately identify the page number, and to navigate accordingly. This method must be accessible, and should not disrupt continuous reading by screen reader users, and should be accurate and accessible for users using Assistive Technologies which may resize or reflow text on the screen. </p> 
 
-			<p>A method for providing page numbers is addressed in <a
-href="http://www.w3.org/TR/css3-page/">CSS Paged Media Module Level 3</a>
-but it applies to the scenario of pagination of text being sent to a printer
-from a web page. However, there may be something that could be adopted or
-extended from this model, where rather than having pagination be determined
-by the dimensions of the paper to be printed a upon, a publisher supplies
-the page dimensions and rules for page numbering in metadata, and the user
-agent allows the end-user to access the information. </p>
+			<p>A method for providing page numbers is addressed in <a href="http://www.w3.org/TR/css3-page/">CSS Paged Media Module Level 3</a> but it applies to the scenario of pagination of text being sent to a printer from a web page. However, there may be something that could be adopted or extended from this model, where rather than having pagination be determined by the dimensions of the paper to be printed a upon, a publisher supplies the page dimensions and rules for page numbering in metadata, and the user agent allows the end-user to access the information. </p>
 
 			<p>More investigation is necessary.</p>
 
@@ -173,7 +160,7 @@ agent allows the end-user to access the information. </p>
 						3</a> Page-Margin Boxes</li>
 				</ul>        
 
-        <h3>Drop Cap</h3>
+        <h4>Drop Cap</h4>
         <p>Suggestion 1, for the UA WG: possible addition to UAAG techniques.</p>
         <p>Suggestion 2, for WAI Outreach: Outreach to content creators that CSS 3 solves the drop cap problem accessibly.</p>
         <p>Comments: <a href="http://www.w3.org/TR/css3-selectors/#first-letter">The CSS 3 selector first-letter</a> allows the creation of accessible drop caps, and it is widely supported in user agents. However, it is not widely supported in authoring tools, nor is it widely known to content creators. When drop caps are created without using this CSS3 selector, this causes accessibility issues when the two components of the word are read as separate words. Outreach to user agent creators and content creators is needed.</p>
@@ -183,60 +170,25 @@ agent allows the end-user to access the information. </p>
         </ul>
 
 
-        <h3>Notes (Footnotes, Asides, Author Notes, etc.)</h3>
-        <p>Suggestion: No action item</p>
-        <p>Comments: DPUB-ARIA 1.0 includes <a href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnote">dpub-footnote</a> and <a href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnotes">dpub-footnotes</a>. These roles convey that information is ancillary without conveying information about positioning. This allows authors and user agents to achieve positioning using CSS or scripting while maintaining the flow and navigability of the content.</p>
-        <p>References:</p>
-
-        <h3>Positional location of text to indicate different speakers</h3>
-        <p>Suggestion: Unclear. Possibly all use cases can be addressed with CSS.</p>
-        <p>Use cases:</p>
-         <ul>
-             <li>Use Case: comic strips have different speakers on different sides of the page. </li>
-             <li>Use Case: poetry </li>
-             <li>Use Case: different voices for different speakers. </li>
-        </ul>
-
-        <p>References:</p>
-        <ul>
-             <li><a href="http://www.w3.org/TR/css3-speech/">CSS Speech Module</a></li>
-        </ul>
-
-
-        <h3>Phonetic spellings of proper nouns and jargon terms</h3>
-        <p>Suggestion: UAAG and WCAG suggestion</p>
+        <h4>Phonetic spellings of proper nouns and jargon terms</h4>
+        <p>Suggestion 1, for the UA WG: possible addition to UAAG techniques.</p>
+        <p>Suggestion 2, possible new or modified specification or guideline.</p>
         <p>Comments: Publishers need to be able to put in suggested pronunciation for proper nouns, acronyms, and field-specific jargon terms. The Pronunciation Lexicon (PLS) exists but it is exceptionally  difficult to use, and doesn't scale well to a large publisher's use cases.</p>
         <p>Use cases:</p>
         <ol>
-            <li>Use Case (WCAG): A chemistry book needs to use the accepted pronunciations of chemistry terms to maximize clarity. It references a pre-existing pronunciation dictionary made available by the American Chemical Society that uses community-agreed-upon standards.
-            <li>Use Case (WCAG): The trade novel THE LIVES OF CHRISTOPHER CHANT by Diana Wynne Jones, in which there is a plot point that a character's name is spelled "Ralph" but pronounced "Rafe," can be correctly encoded using a local pronunciation dictionary.
-            <li>UseCase (UAAG): Reading systems support the pronunciation dictionary reference and expose the data to Accessibility APIs.
+            <li>Use Case: A chemistry book needs to use the accepted pronunciations of chemistry terms to maximize clarity. It references a pre-existing pronunciation dictionary made available by the American Chemical Society that uses community-agreed-upon standards.
+            <li>Use Case: The trade novel THE LIVES OF CHRISTOPHER CHANT by Diana Wynne Jones, in which there is a plot point that a character's name is spelled "Ralph" but pronounced "Rafe," can be correctly encoded using a local pronunciation dictionary.
+            <li>UseCase: Reading systems support the pronunciation dictionary reference and expose the data to Accessibility APIs.
         </ol>
         <p>References:</p>
         <ul>
-             <li><a href="http://www.w3.org/2015/05/15-dpub-minutes.html#item01">Initial conversation in DPUB A11Y TF Meeting</a></li>
              <li><a href="http://www.w3.org/TR/css3-speech/">CSS Speech Module</a></li>
              <li><a href="http://www.w3.org/TR/pronunciation-lexicon/">Pronunciation Lexicon Specification (PLS)</a></li>
         </ul>
 
 
-        <h3>layout's influence on comprehension</h3>
-			<p>Comments: There is currently no way to provide visual information about
-the layout of text on a page that is not semantically determined. Certain
-literary styles such as poetry may use the placement of text to convey extra
-meaning. For instance, a poem about a tree may be arranged to look like a
-tree. There is no good way for someone  accessing the text through Assistive
-Technology which speaks the text or changes its appearance to be made aware
-of this additional information. We have no suggested approaches at this
-time. </p>
-        <p>References:</p>
-        <ul>
-             <li><a href="http://www.w3.org/2015/05/15-dpub-minutes.html#item02">Item #2 5/15/2015 DPUB Minutes</a></li>
-        </ul>
-
-
-        <h3>Deeply Nested Heading Levels Best Practices</h3>
-        <p>Suggestion: Techniques / Tutorials suggestion</p>
+        <h4>Deeply Nested Heading Levels Best Practices</h4>
+        <p>Suggestion: Add to WCAG Techniques and to the WAI Tutorials</p>
         <p>Comments: It is not easy to determine what best practice is for deeply nested  headings, headings that go beyond &lt;h6&gt;. Best Practices should be clearly established and easy to find.  Use cases in books are more frequent than other circumstances. This is likeliest to occur if an &lt;aside&gt; begins with &lt;h5&gt; or &lt;h6&gt;. It may  also occur in encyclopedias and similarly larger and detailed works.</p>
         <p>References:</p>
         <ul>
@@ -246,11 +198,14 @@ time. </p>
         </ul>
 
 
-        <h3>Semantically needed List-Head</h3>
+        <h4>Semantically needed List-Head</h4>
         <p>Suggestion 1: outreach to ARIA WG about proposing aria-labelledby be exposed by user agents without AT.</p>
-        <p>Suggestion 2: outreach to WCAG WG about non-ARIA semantically meaningful list heading.</p>
+        <p>Suggestion 2: outreach to various groups about alternative non-ARIA semantically meaningful list heading.</p>
         <p>Comments: There is no clear method of associating a title of a list with the list items. This can be accomplished using artificial wrappers, such as &lt;div&gt;, but it seems that the list elements (&lt;ul&gt; and &lt;ol&gt;) should include titles. It is tempting to use the h1 – h6 elements, but these have the native semantics of aria role=”heading”, offering unwanted default navigation. It would be useful if there were a role of element called "listtitle" or something similar.</p>
-        <p>This can be accomplished using aria-labeledby. However, while this is exactly what is needed, is only exposed to users of AT. Digital publishing needs this association between a list heading in a list to be available to users who are not using AT. This could be accomplished by a non-aria attribute or element, or by accomplished by making aria-labeledby available to non AT.</p>
+        <ol>
+            <li>This should be an option for visual as well as aural presentation.</li>
+        </ol>
+        <p>This can be accomplished using aria-labeledby. However, while  provide exactly the necessary functionality for screen reader users, it is only exposed to users of AT. Digital publishing needs this association between a list heading in a list to be available to users who are not using AT. This could be accomplished by a non-aria attribute or element, or by accomplished by making aria-labeledby available to non AT.</p>
         <p>The following is a simple example:
 <pre>&lt;ul&gt;
 &lt;listtitle&gt;Noble Gases&lt;/listtitle&gt;
@@ -267,8 +222,8 @@ time. </p>
         </ul>
 
 
-        <h3>Skippability</h3>
-        <p>Suggestion: UAAG suggestion</p>
+        <h4>Skippability</h4>
+        <p>Suggestion for UA WG: User agents need to implement skippability, and it cannot be confined to users of AT.</p>
         <p>Comments: This is a user preference / personalization issue. User must be able to customize what is visible, what is read, etc.</p>
         <ol>
             <li>This should be an option for visual as well as aural presentation.</li>
@@ -284,9 +239,12 @@ time. </p>
         </ul>
 
 
-        <h3>Escapability</h3>
+        <h4>Escapability</h4>
         <p>Suggestion for UA WG: User agents need to implement escape to the next sibling or parent element, and it cannot be confined to users of AT.</p>
         <p>Comments: Users need to be able to immediately move to the next non-contained block element. This is particularly a problem for users who browse the web at high magnification, and for users on mobile. When a user is in the middle of a lengthy element, there needs to be a way for them to move to the next sibling or parent with a simple command. Mobility impaired users are also greatly affected by this need, especially but not exclusively on mobile.</p>
+        <ol>
+            <li>This should be an option for visual as well as aural presentation.</li>
+        </ol>
         <p>Use cases:</p>
         <ul>
              <li>Use Case: A chemistry book has a long table of each of the elements in the periodic table. The book's reader does not need to see all of the elements in the table, but they do need to read the text immediately afterwards. They need a simple way to get from the complex table to the next sibling or parent element without endless scrolling.</li>
@@ -294,11 +252,43 @@ time. </p>
 
 
 
-        <h3>Annotations</h3>
+<h3>No Action Needed</h3>
+
+        <h4>Layout's Influence On Comprehension</h4>
+            <p>Suggestion: although a solution is needed, DPub IG has no good suggestions at this time. More research and investigation is warranted.</p>
+			<p>Comments: There is currently no reasonable, sustainable method to provide visual information about the layout of text on a page. Certain literary styles such as poetry may use the placement of text to convey extra meaning. There is no consistent method for content creators to make this additional information available to a non-visual display such as a screen reader. We have no suggested approaches at this time. More research and investigation is warranted.</p>
+        <p>Use cases:</p>
+        <ul>
+             <li>Use Case: Concrete poetry, such as "<a href="http://bootless.net/mouse.html">The Mouse's Tale</a>" by Lewis Carroll, "<a href="http://www.poetryfoundation.org/poem/177297">Soweto</a>" by Kamau Braithwaite, or "<a href="http://www.poetryfoundation.org/poem/178001">Women</a>" by May Swenson.</li>
+             <li>Use Case: Puzzles, such as <a href="http://web.mit.edu/puzzle/www/2015/puzzle/headshots/">this puzzle which relies on exact location on the page</a> to produce a solution.</li>
+        </ul>
+
+
+        <h4>Annotations</h4>
         <p>Suggestion: No action item</p>
         <p>Comments: User created annotations and Highlights adding your own notes to a document must be accessible for creation and use. George has raised this with annotations WG.</p>
 
         </section>
+
+        <h4>Notes (Footnotes, Asides, Author Notes, etc.)</h4>
+        <p>Suggestion: No action item</p>
+        <p>Comments: DPUB-ARIA 1.0 includes <a href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnote">dpub-footnote</a> and <a href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnotes">dpub-footnotes</a>. These roles convey that information is ancillary without conveying information about positioning. This allows authors and user agents to achieve positioning using CSS or scripting while maintaining the flow and navigability of the content.</p>
+        <p>References:</p>
+
+        <h4>Positional location of text to indicate different speakers</h4>
+        <p>Suggestion: Unclear. Possibly all use cases can be addressed with CSS.</p>
+        <p>Use cases:</p>
+         <ul>
+             <li>Use Case: comic strips have different speakers on different sides of the page. </li>
+             <li>Use Case: poetry </li>
+             <li>Use Case: different voices for different speakers. </li>
+        </ul>
+
+        <p>References:</p>
+        <ul>
+             <li><a href="http://www.w3.org/TR/css3-speech/">CSS Speech Module</a></li>
+        </ul>
+
 
 <h1>Appendix A: <h2>WCAG Techniques that apply to digital publishing</h1>
 	<section class='appendix'>
