@@ -102,7 +102,7 @@
 <body>
   <section id='abstract'>
       <p>
-        This document, “Digital Publishing Accessibility: How WCAG 2.0 and Other W3C/WAI Guidelines Apply to Digital Publishing” describes how the Web Content Accessibility Guidelines (WCAG) 2.0 [[WCAG20]] and its principles, guidelines, and success criteria can be applied to the needs of Digital Publishing. It provides informative guidance, but does not set requirements.</p>
+        This document, “Digital Publishing Accessibility: The Digital Publishing Industry's Needs With Respect To W3C/WAI Guidelines” describes how W3C guidelines (including but not limited to WCAG 2.0 [<a href="http://www.w3.org/TR/WCAG20">WCAG2</a>], ATAG 2.0 [<a href="http://www.w3.org/TR/ATAG20/">ATAG2</a>] , UAAG 2.0 [<a href="http://www.w3.org/TR/UAAG20/">UAAG2</a>]  and WAI-ARIA 1.0 [<a href="http://www.w3.org/TR/wai-aria/">WAI-ARIA</a>]) and their principles, guidelines, and success criteria can be applied to the needs of Digital Publishing. It provides informative guidance, but does not set requirements.</p>
       <p>This document is intended to become a Working Group Note.</p>
     </section>
   <section id='sotd'>
@@ -112,17 +112,21 @@
   </section>
     <section class="introductory">
       <h2 id="intro">Introduction</h2>
-      <p>This document provides informative guidance (but does not set requirements) with regard to interpreting and applying Web Content Accessibility Guidelines (WCAG) 2.0 [WCAG20] to the needs of digital publishing.</p>
-      <p>While the World Wide Web Consortium (W3C)'s W3C Web Accessibility Initiative (WAI) is primarily concerned with web technologies, its guidance is also relevant to non-web technologies, such as digital publishing published using web-based technological tools.</p>
+      <p>This document provides informative guidance (but does not set requirements) with regard to the needs of Digital Publishing with regard to W3 guidelines. Is informed by existing guidelines including WCAG 2.0 [<a href="http://www.w3.org/TR/WCAG20">WCAG2</a>], ATAG 2.0 [<a href="http://www.w3.org/TR/ATAG20/">ATAG2</a>] , UAAG 2.0 [<a href="http://www.w3.org/TR/UAAG20/">UAAG2</a>]  and WAI-ARIA 1.0 [<a href="http://www.w3.org/TR/wai-aria/">WAI-ARIA</a>. Where appropriate, it is also informed by other ongoing W3C projects including Portable Web Publications [<a href="http://w3c.github.io/dpub-pwp/">PWP</a>] and the Web Annotation Working Group</a>.</p>
+      <p>While the World Wide Web Consortium (W3C)'s W3C Web Accessibility Initiative (WAI) is primarily concerned with web technologies, its guidance is also relevant to technologies which are not exclusively web technologies. The digital publishing industry, which creates mixed web and non-web publications using web-based technological tools, is reliant on the standards set by the W3C.</p>
       <p>The current document is focused on the accessibility of digital publishing to people with disabilities and is not intended to supplant any other W3C work. </p>
 
 <section class="introductory">
-      <h3>WCAG 2.0 and Digital Publishing</h3>
+      <h3>The W3C and Digital Publishing</h3>
       <p><em>"Digital Publishing"</em> is a generic term for the broad ecosystem of electronic journals, magazines, news, or book publishing (authors, creators, publishers, news organizations, booksellers, accessibility and internationalization specialists, etc.). The formats used by eBook readers and tablets for electronic books, magazines, journals and educational resources are largely based on W3C Technologies, such as (X)HTML, CSS, SVG, SMIL, MathML, or various Web API-s. Commercial publishers also rely on W3C technologies in their back-end processing all the way from authoring through to delivering the printed or electronic product and beyond. In general one can say that the Publishing Industry is one of the largest communities relying large palette of W3C technologies. </p>
       <p> However, the alignment of the needs of the Publishing Industry and the various W3C recommendations is not satisfactory. Necessary features may be missing in the W3C documents, or may be in draft only; as a result, for example, EPUB3, the standard for electronic books, had to introduce its own extensions to cover the needs of publishing.</p>
 </section>
 <section class="introductory">
-      <h2>Other W3C-WAI Guidelines Related to Digital Publishing</h2>
+      <h2>W3C-WAI Guidelines Related to Digital Publishing</h2>
+<section class="introductory">
+      <h3>WCAG 2.0</h3>
+      <p>The Web Content Accessibility Guidelines (WCAG) 2.0 [<a href="http://www.w3.org/TR/WCAG20/">WCAG2</a>]  is meant for content creators and authoring tool creators. Content that follows WCAG 2.0 will be accessible to users with a wide range of disabilities, presuming that guidelines are also followed by their user agents and assistive technologies.</p>
+</section>
 <section class="introductory">
       <h3>UAAG 2.0</h3>
       <p>The User Agent Accessibility Guidelines (UAAG) 2.0 [<a href="http://www.w3.org/TR/UAAG20/">UAAG2</a>]   is meant for the developers of user agents (e.g. web browsers and e-readers). A user agent that follows UAAG 2.0 will improve accessibility through its own user interface, through options it provides for rendering and interacting with ​content, and through its ability to communicate with other technologies, including assistive technologies.</p>
@@ -170,8 +174,9 @@ agent allows the end-user to access the information. </p>
 				</ul>        
 
         <h3>Drop Cap</h3>
-        <p>Suggestion: UAAG suggestion, WAI outreach suggestion</p>
-        <p>Comments: <a href="http://www.w3.org/TR/css3-selectors/#first-letter">The CSS 3 selector first-letter</a> allows the creation of accessible drop caps. However, it is not widely supported. When drop caps are created without using this CSS3 selector, this causes accessibility issues when the two components of the word are read as separate words. Outreach to user agent creators and content creators is needed.</p>
+        <p>Suggestion 1, for the UA WG: possible addition to UAAG techniques.</p>
+        <p>Suggestion 2, for WAI Outreach: Outreach to content creators that CSS 3 solves the drop cap problem accessibly.</p>
+        <p>Comments: <a href="http://www.w3.org/TR/css3-selectors/#first-letter">The CSS 3 selector first-letter</a> allows the creation of accessible drop caps, and it is widely supported in user agents. However, it is not widely supported in authoring tools, nor is it widely known to content creators. When drop caps are created without using this CSS3 selector, this causes accessibility issues when the two components of the word are read as separate words. Outreach to user agent creators and content creators is needed.</p>
         <p>References:</p>
         <ul>
              <li> <a href="http://www.w3.org/TR/css3-selectors/#first-letter">The CSS 3 selector first-letter</a></li>
@@ -242,8 +247,10 @@ time. </p>
 
 
         <h3>Semantically needed List-Head</h3>
-        <p>Suggestion: WCAG suggestion</p>
+        <p>Suggestion 1: outreach to ARIA WG about proposing aria-labelledby be exposed by user agents without AT.</p>
+        <p>Suggestion 2: outreach to WCAG WG about non-ARIA semantically meaningful list heading.</p>
         <p>Comments: There is no clear method of associating a title of a list with the list items. This can be accomplished using artificial wrappers, such as &lt;div&gt;, but it seems that the list elements (&lt;ul&gt; and &lt;ol&gt;) should include titles. It is tempting to use the h1 – h6 elements, but these have the native semantics of aria role=”heading”, offering unwanted default navigation. It would be useful if there were a role of element called "listtitle" or something similar.</p>
+        <p>This can be accomplished using aria-labeledby. However, while this is exactly what is needed, is only exposed to users of AT. Digital publishing needs this association between a list heading in a list to be available to users who are not using AT. This could be accomplished by a non-aria attribute or element, or by accomplished by making aria-labeledby available to non AT.</p>
         <p>The following is a simple example:
 <pre>&lt;ul&gt;
 &lt;listtitle&gt;Noble Gases&lt;/listtitle&gt;
@@ -291,15 +298,28 @@ time. </p>
 
 
         <h3>Escapability</h3>
-        <p>Suggestion: UAAG suggestion</p>
-        <p>Comments: Need to be able to immediately move to the next non-contained block element.</p>
+        <p>Suggestion for UA WG: User agents need to implement escape to the next sibling or parent element, and it cannot be confined to users of AT.</p>
+        <p>Comments: Users need to be able to immediately move to the next non-contained block element. This is particularly a problem for users who browse the web at high magnification, and for users on mobile. When a user is in the middle of a lengthy element, there needs to be a way for them to move to the next sibling or parent with a simple command. Mobility impaired users are also greatly affected by this need, especially but not exclusively on mobile.</p>
         <p>Use cases:</p>
         <ul>
-             <li>Use Case: Skip from the middle of a long, complex table to the next paragraph or header.</li>
+             <li>Use Case: A chemistry book has a long table of each of the elements in the periodic table. The book's reader does not need to see all of the elements in the table, but they do need to read the text immediately afterwards. They need a simple way to get from the complex table to the next sibling or parent element without endless scrolling.</li>
         </ul>
 
 
-        <h3>Diagrammar</h3>
+
+        <h3>Annotations</h3>
+        <p>Suggestion: No action item</p>
+        <p>Comments: User created annotations and Highlights adding your own notes to a document must be accessible for creation and use. George has raised this with annotations WG.</p>
+
+        </section>
+
+<h1>Appendix A: <h2>WCAG Techniques that apply to digital publishing</h1>
+	<section class='appendix'>
+  		<h2>WCAG Techniques that apply to digital publishing</h2>
+		 <p><a href="http://w3c.github.io/dpub-accessibility/wcag-dpub-techniques.html">WCAG 2.0 Techniques that Apply to Digital Publishing</a></p>
+	</section>
+<h1>Appendix B: Diagrammar</h1> 
+<h2>Diagrammar</h2> 
         <p>Diagrammar is a framework to hold multiple description types, in order to make images, tables, graphics accessible.
 			The Diagrammar, defines a data model for image description metadata. It provides a structured, standard way for image description data to be modeled, including multiple different types of descriptions for each image, various descriptions and pointers to tactile graphic files, etc.
 		</p>
@@ -330,18 +350,6 @@ time. </p>
              <li><a href="http://www.daisy.org/z3998/2012/auth/profiles/descriptions/1.0/schemadoc/">Diagrammar Schema</a></li>
         </ul>
 
-
-        <h3>Annotations</h3>
-        <p>Suggestion: No action item</p>
-        <p>Comments: User created annotations and Highlights adding your own notes to a document must be accessible for creation and use. George has raised this with annotations WG.</p>
-
-        </section>
-
-<h1>Appendix</h1>
-	<section class='appendix'>
-  		<h2>WCAG Techniques that apply to digital publishing</h2>
-		 <p><a href="http://w3c.github.io/dpub-accessibility/wcag-dpub-techniques.html">WCAG 2.0 Techniques that Apply to Digital Publishing</a></p>
-	</section>
 
 <h2>Future work</h2>
 <section>
