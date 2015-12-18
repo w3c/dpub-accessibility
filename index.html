@@ -296,35 +296,50 @@
 		 <p><a href="http://w3c.github.io/dpub-accessibility/wcag-dpub-techniques.html">WCAG 2.0 Techniques that Apply to Digital Publishing</a></p>
 	</section>
 <h1>Appendix B: Diagrammar</h1> 
-<h2>Diagrammar</h2> 
-        <p>Diagrammar is a framework to hold multiple description types, in order to make images, tables, graphics accessible.
-			The Diagrammar, defines a data model for image description metadata. It provides a structured, standard way for image description data to be modeled, including multiple different types of descriptions for each image, various descriptions and pointers to tactile graphic files, etc.
-		</p>
-		<p>For a given image there may be one or more of the following accessibility tags which links to the supplementary information.</p>
-		<ul>
-             <li><a href="http://www.daisy.org/z3998/2012/auth/profiles/descriptions/1.0/schemadoc/subfiles/e-about01.html">about</a></li>
-             <li><a href="http://www.daisy.org/z3998/2012/auth/profiles/descriptions/1.0/schemadoc/subfiles/e-summary01.html">summary</a></li>
-             <li><a href="http://www.daisy.org/z3998/2012/auth/profiles/descriptions/1.0/schemadoc/subfiles/e-longdesc01.html">longdesc</a></li>
-             <li><a href="http://www.daisy.org/z3998/2012/auth/profiles/descriptions/1.0/schemadoc/subfiles/e-simplifiedLanguageDescription01.html">simplifiedLanguageDescription</a></li>
-             <li><a href="http://www.daisy.org/z3998/2012/auth/profiles/descriptions/1.0/schemadoc/subfiles/e-tactile01.html">tactile</a></li>
-             <li><a href="http://www.daisy.org/z3998/2012/auth/profiles/descriptions/1.0/schemadoc/subfiles/e-braille01.html">braille</a></li>
-             <li><a href="http://www.daisy.org/z3998/2012/auth/profiles/descriptions/1.0/schemadoc/subfiles/e-simplifiedImage01.html">simplifiedImage</a></li>
-             <li><a href="http://www.daisy.org/z3998/2012/auth/profiles/descriptions/1.0/schemadoc/subfiles/e-tour01.html">tour</a></li>
-    	</ul>
-    	<p>Metadata is used to help provide context on what this alternative descriptions and files are.
-			Example of the Metadata available would be</p>
-		<ul>
-             <li>Purpose</li>
-             <li>Age / Grade Level</li>
-             <li>Quality rating</li>
-             <li>Content (ie. Links to the descriptions / files etc.)</li>
-   		</ul>
-		This metadata could be ultimately searched on to find these alternate image descriptions.
+<h2>Why is Diagrammar  Important?</h2>
 
-        <p>References:</p>
+	In the early days of the web, there was recognition that images  were an obstacle to persons who are blind and others who could not process the visual information. Alt text and long descriptions were created to address the accessibility of images. Today, we find that there are many more types of information objects that are not perceivable to persons with disabilities. Furthermore, publishers and other content creators recognize that alternative mechanisms for  conveying information can benefit everybody.
+
+<h2>What is Diagrammar?</h2>
+
+	Diagrammar is an XML framework to hold multiple extended description types, to make a wide range of content types accessible: images, tables, charts, animations, 3D animations etc. The Diagrammar, defines a data model for extended descriptions and associated metadata. It provides a structured, standard way for extended descriptions data to be modeled, including different modality types for extended descriptions.  The Diagrammar is defined using the "ANSI/NISO Z39.98"Authoring and Interchange Framework for Adaptive XML Publishing Specification."
+
+<h2>Transforming XML to HTML</h2>
+
+	It is envisioned that information stored in a Diagrammar XML database would be transformed to HTML for presentation.
+ 
+<h2>In the Diagrammar Body</h2>
+
+	For a given information object in a publication, there may be associated one or more of the following accessibility elements :
+	<ul>
+		<li>summary: a very short description of the information object that requires an extended description.</li>
+		<li>about: A human readable identification of the enhancement, e.g. The following is a printable tactile graphic with associated tour of the tactile.</li>
+		<li>longdesc: Long description which can contain HTML markup, e.g. a pie chart may best be described with a table.</li>
+		<li>simplifiedLanguageDescription: Can be repeated for different audiences.</li>
+		<li>tactile:  Designed for printing or for tactile screens of the future (hopefully).</li>
+		<li>Tour: A tour is associated with a tactile that explains how to explore the tactile, 3D model, etc.</li>
+		<li>braille: Text that is encoded as braille, e.g. the referenced HTML table may need specific braille formatting to be understandable.</li>
+		<li>simplifiedImage: A version of an image that reduces the complexity; a gray scale version which may assist in understanding.</li>
+	</ul>
+
+<h2>In the Head of the Diagrammer</h2>
+
+	Metadata is used to help provide context on what this extended descriptions and files are. Example of the Metadata available would be:
+	<ul>
+		<li>Purpose: identification of the concept or concepts in the extended description.</li>
+		<li>Age / Grade Level: Helpful for determining the target audience</li>
+		<li>Quality rating:  Mechanism for crowd sources resources to improve extended descriptions.</li>
+		<li>copyright: copyright information about the extended description, e.g. copyrighted by a company, or Creative Commons license information.</li>
+	</ul>
+
+
+This metadata could be used to discover extended descriptions.
+
+<h2>References:</h2>
         <ul>
              <li><a href="http://diagramcenter.org/">Diagram Center Website</a></li>
-             <li><a href="http://www.daisy.org/z3998/2012/auth/profiles/descriptions/1.0/schemadoc/">Diagrammar Schema</a></li>
+             <li><a href="http://diagramcenter.org/standards-and-practices/content-model.html">Diagrammar home page</a></li>
+             <li><a href="http://www.daisy.org/z3998/2012/z3998-2012.html">ANSI/NISO Z39.98-2012 "Authoring and Interchange Framework for Adaptive XML Publishing Specification"</a></li>
         </ul>
 
 <h1>Appendix C: Assessments</h1> 
