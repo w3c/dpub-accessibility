@@ -303,22 +303,26 @@
 </section>
 
 <section class='appendix'>
-<h1>Appendix: Relevant work being developed outside the W3C</h1>
+<h1>Relevant work being developed outside the W3C</h1>
 
 Some open specifications under development or maintained outside the W3C have great relevance to the accessibility in the digital publishing sector. Members of the W3C involved in accessibility within digital publishing need to be aware of work happening in these spaces. Here we describe some key projects that are relevant to our work.
-<p>
-<strong>[Note: There must be a way to auto generate this TOC in respec, hopefully while still maintaining a certain amount of context at this level.]</strong>
-</p>
 
 <ol>
- <li>EPUB (IDPF). (Although cf. W3 work in Portable Web Publications [<a href="http://w3c.github.io/dpub-pwp/">PWP</a>].)  </li>
- <li>[whatever the assessment is called] ([whatever the name of the group working on assessments is called]</li>
- <li>Diagrammar (the DIAGRAM Center)</li>
+ <li><a href="#epub"></a></li>
+ <li><a href="#diagrammar"></a></li>
 </ol>
 </section>
-<section class='appendix'>
-<h1>Appendix: EPUB</h1>
-<strong>Historical Context</strong>
+<h1>EPUB</h1>
+
+<h2>EPUB's relevance to  the W3C and accessible digital publishing</h2>
+
+lalalala
+
+<h2>Maintainers of the specification</h2>
+
+idpf or summat like that.
+
+<h2>Historical Context</h2>
 
     <p>Beginning with EPUB 3.0, the primary accessible publishing standard, DAISY DTBook and the primary commercial publishing format merged. DAISY’s Digital Talking Book <a href="http://www.daisy.org/daisyniso-standard-dtd-and-css-files">[Z3986-2005]</a> is an XML-based file format and puts an emphasis on structural encoding to enable reading for the visually impaired audience. EPUB 2 allowed DTBook as an alternate syntax. The EPUB 3 specification merged DAISY and EPUB, making accessibility considerations a concern for all publishers, authors, and readers. The EPUB 3.0.1 specification is available at <a href="http://idpf.org/epub/301">http://idpf.org/epub/301</a>. One of the features of this relationship is the <a href="http://www.idpf.org/epub/vocab/structure/">EPUB structural semantics vocabulary</a>, a namespaced vocabulary that enables semantic inflection of HTML elements. In 2015, several of these terms have been transformed into prefixed ARIA roles in <a href="http://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0</a>. 
     </p>
@@ -333,8 +337,40 @@ Some open specifications under development or maintained outside the W3C have gr
             <li><a href="http://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0</a></li>
         </ul>
 </section>
+<section class='appendix' id='diagrammar'>
+<h1>Diagrammar</h1>
+
+<h2>Diagrammar's relevance to the W3C and accessible digital publishing</h2>
+
+<p>The W3C standards bodies have developed multiple ways of creating extended descriptions for certain page elements, available for accessibility purposes. WAI-ARIA 1.1 has <strong>complete when we know the answer</strong>, and HTML5 has <a href="http://www.w3.org/TR/html-longdesc/">longdesc</a>. Neither of these fulfills all of the use cases needed by accessible publishing, however. Diagrammar is being developed to address this set of use cases.</p>
+
+<p>The Diagrammar team intends that the XML encoding of Diagrammar data will be transformed to HTML for presentation. Therefore, it will be useful for ongoing communication to continue.</p>
+    
+<h2>Maintainers of the specification</h2>
+
+Diagrammar is being developed by <a href="http://diagramcenter.org/">The DIAGRAM Center</a>, a Benetech initiative, in partnership with the WGBH National Center for Accessible Media and the US Fund for DAISY.
+
+<h2>Historical Context</h2>
+
+
+<p>In the early days of the web, there was recognition that images  were an obstacle to persons who are blind and others who could not process the visual information. Today, we find that there are many more types of information objects that are not perceivable to persons with disabilities.  Furthermore, publishers and other content creators recognize that alternative mechanisms for conveying information can benefit everybody. These extended descriptions not only pertain to images but any web element that is visually complex and needs to be described in more detail; the DIAGRAM Center hosts <a href="http://diagramcenter.org/standards-and-practices/content-model.html">use cases for extended description information in multiple formats</a>.  Alternative representations may be required, and we need a way to link a specific web element to multiple representations be it an extended description, simplified description, or a tactile or auditory representation of the element.</p>
+
+<p>Diagrammar is an XML framework to hold multiple extended description types, to make a wide range of content types accessible: images, tables, charts, animations, 3D animations etc.  Diagrammar defines a data model for extended descriptions and associated metadata.  It provides a structured, standard way for extended descriptions data to be modeled, including different modality types for extended descriptions.  </p>
+
+    
+  	<p>References:</p>
+    <ul>
+        <li><a href="http://diagramcenter.org/">Diagram Center Website</a></li>
+        <li><a href="http://diagramcenter.org/standards-and-practices/content-model.html">Diagrammar home page</a></li>
+        <li><a href="http://www.daisy.org/z3998/2012/z3998-2012.html">ANSI/NISO Z39.98-2012 "Authoring and Interchange Framework for Adaptive XML Publishing Specification"</a></li>
+    </ul>
+</section>
+</section>
+
 <section class='appendix'>
-<h1>Appendix: Assessments</h1>
+<h1>Future work</h1>
+<section class='appendix'>
+<h1>Assessments</h1>
     <p>Suggestion: The DPUB Accessibility Task Force will coordinate with [[add some wordsmithing here.]]</p>
   	<p>Comments: Mark Hakkinen is driving gap analysis and merging IMS QTI/APIP accessibility model to HTML/ARIA and WCAG. The bulk of these recommendations will come from their group; we will coordinate with them as they request. We've done initial outreach.  </p>
 	<p>Use cases:</p>
@@ -346,84 +382,10 @@ Some open specifications under development or maintained outside the W3C have gr
 	    <li><a href="https://www.w3.org/community/accesslearn/">Accessible Online Learning Community Group</a></li>
    </ul>
 </section>
-<section class='appendix'>
-<h1>Appendix: Diagrammar</h1>
-
-<p><strong>Why is Diagrammar Important?</strong></p>
-
-    In the early days of the web, there was recognition that images  
-    were an obstacle to persons who are blind and others who could not process the 
-    visual information. Alt text and long descriptions were created to address the 
-    accessibility of images. Today, we find that there are many more types of information 
-    objects that are not perceivable to persons with disabilities. 
-    Furthermore, publishers and other content creators recognize that alternative mechanisms 
-    for conveying information can benefit everybody.
-    <p></p>
-    Long descriptions have been a topic discussed for over a decade and still we don't 
-    have a single clean solution to the problem.  These extended descriptions not only pertain
-    to images but any web element that is visually complex and needs to be described in more detail.
-    Only recently have we finally added long descriptions to images but this doesn't solve the 
-    underlying problem which is why we need to be aware of the work done by others in this area.  
-    Also a longer description describing an image, table, chart, etc... is also not always the answer.  
-    Alternative representations may be required, and we need a way to link a specific web element 
-    to multiple representations be it a long description, simplified description, tactile or
-    auditory representation of the element.
-
-<p><strong>What is Diagrammar?</strong></p>
-
-    Diagrammar is an XML framework to hold multiple extended description types, 
-    to make a wide range of content types accessible: 
-    images, tables, charts, animations, 3D animations etc. 
-    The Diagrammar, defines a data model for extended descriptions and associated metadata. 
-    It provides a structured, standard way for extended descriptions data to be modeled, 
-    including different modality types for extended descriptions.  
-    The Diagrammar is defined using the "ANSI/NISO Z39.98"
-    Authoring and Interchange Framework for Adaptive XML Publishing Specification."
-
-<p><strong>Transforming XML to HTML</strong></p>
-
-    It is envisioned that information stored in a Diagrammar XML database would be transformed 
-    to HTML for presentation.
-    
-<p><strong>Use Cases</strong></p>
-<p>In each of the below use cases, ideally the web element be it an 
-image, table, chart, etc... with all the extended descriptions hidden visually from the user
-and only on request or by user preference would the extended items be available to the user.</p>
-
-       <p>Use Case: Complex Image of a Human Heart</p>
-       	 <ul>
-       	 	<li>Long Description explaining the Heart's various chambers (Could be a separate web document)</li>
-       	 	<li>Simplified Description for primary school</li>
-       	 	<li>File containing a Tactile representation of the heart</li>
-       	 	<li>File containing a printable 3D model of the heart </li>
-       	 </ul>
- 
-       <p>Use Case: Complex Financial Table</p>
-       	 <ul>
-       	 	<li>Long Description explaining the table and any groupings of multiple columns</li>
-       	 	<li>File containing an excel spreadsheet of the table</li>
-       	 </ul>
-
-        <p>Use Case: MathML Equation</p>
-       	 <ul>
-       	 	<li>Long Description explaining the equation</li>
-       	 	<li>File containing an audio representation of the equation</li>
-       	 </ul>
-
-  	<p>References:</p>
-    <ul>
-        <li><a href="http://diagramcenter.org/">Diagram Center Website</a></li>
-        <li><a href="http://diagramcenter.org/standards-and-practices/content-model.html">Diagrammar home page</a></li>
-        <li><a href="http://www.daisy.org/z3998/2012/z3998-2012.html">ANSI/NISO Z39.98-2012 "Authoring and Interchange Framework for Adaptive XML Publishing Specification"</a></li>
-    </ul>
-</section>
-
-<section class='futureWork'>
-<h1>Appendix: Future work</h1>
 </section>
 
 <section class='acknowledgments'>
-<h1>Appendix: Acknowledgments</h1>
+<h1>Acknowledgments</h1>
   <dl>
       <dt>Members of the Digital Publishing Interest Group Accessibility Task Force: </dt>
       <dd>Kathy Alley</dd>
