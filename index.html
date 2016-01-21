@@ -159,7 +159,7 @@
             <p>Comments: For electronic publications -- especially those intended to have direct correspondence to printed "hardcopy" publications such as textbooks -- a way needs to exist for a user to accurately identify the page number, and to navigate accordingly. This method must be accessible, and should not disrupt continuous reading by screen reader users, and should be accurate and accessible for users using Assistive Technologies which may resize or reflow text on the screen. </p>
 
             <p>A method for providing page numbers is addressed in <a href="http://www.w3.org/TR/css3-page/">CSS Paged Media Module Level 3</a> but it applies to the scenario of pagination of text being sent to a printer from a web page. However, there may be something that could be adopted or extended from this model, where rather than having pagination be determined by the dimensions of the paper to be printed a upon, a publisher supplies the page dimensions and rules for page numbering in metadata, and the user agent allows the end-user to access the information. </p>
-
+        
             <p>More investigation is necessary.</p>
 
             <p>References</p>
@@ -177,6 +177,14 @@
         <ul>
              <li> <a href="http://www.w3.org/TR/css3-selectors/#first-letter">The CSS 3 selector first-letter</a></li>
         </ul>
+</section>
+
+<section>
+    <h4>Navigating Among Multiple Documents</h4>
+    <p>Suggestion: Add discussion of packaged documents to WCAG or author extension of WCAG for packaged documents. </p>
+    <p>Many digital publications are made up of more than one document. For example, often, every chapter in a book be a separate HTML file. In an EPUB file, these are packaged together using a specified mechanism with a method of navigating to the components of the publication. At this point, there is no prescribed method in W3C specifications for navigating among related or packaged components. All documentation and most tools related to accessibility assume that the user is encountering one document. </p>
+    <p>Use Case: User follows link from index to a paragraph in middle of chapter 23 and realizes that the second entry in index is more helpful. User must return to index (separate HTML document) to access the link to the second index entry.</p>
+    <p>Use case: Publisher wants to test accessibility of packaged publication to assess whether users can access all elements listed in the table of contents of a publication. Each HTML file passes validation and is accessible itself, but non-sighted reader cannot access one component. Developers did not catch this because it is technically WCAG-compliant.</p>
 </section>
 
 <section>
