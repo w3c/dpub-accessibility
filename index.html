@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>@@@Appropriate title:Digital Publishing Accessibility Note@@@</title>
+    <title>su@@@Appropriate title:Digital Publishing Accessibility Note@@@</title>
     <meta charset='utf-8'>
   <script src='http://www.w3.org/Tools/respec/respec-w3c-common' async class='remove'></script>
   <script class='remove'>
@@ -159,23 +159,23 @@ Some of these suggestions request changes to specifications and guidelines. Othe
 
 <section>
 <h4>Navigating Among Multiple Documents</h4>
-    <p>Suggestion: Add discussion of packaged documents to WCAG or author extension of WCAG for packaged documents. </p>
+  <p><strong>Suggestion:</strong> Add discussion of packaged documents to WCAG or author extension of WCAG for packaged documents. </p>
     <p>Many digital publications are made up of more than one document. For example, often, every chapter in a book be a separate HTML file. In an EPUB file, these are packaged together using a specified mechanism with a method of navigating to the components of the publication. At this point, there is no prescribed method in W3C specifications for navigating among related or packaged components. All documentation and most tools related to accessibility assume that the user is encountering one document. </p>
-    <p>Use Case: User follows link from index to a paragraph in middle of chapter 23 and realizes that the second entry in index is more helpful. User must return to index (separate HTML document) to access the link to the second index entry.</p>
-    <p>Use case: Publisher wants to test accessibility of packaged publication to assess whether users can access all elements listed in the table of contents of a publication. Each HTML file passes validation and is accessible itself, but non-sighted reader cannot access one component. Developers did not catch this because it is technically WCAG-compliant.</p>
+    <p><i><i><i>Use Case:</i></i></i> User follows link from index to a paragraph in middle of chapter 23 and realizes that the second entry in index is more helpful. User must return to index (separate HTML document) to access the link to the second index entry.</p>
+    <p><i><i><i>Use Case:</i></i></i> Publisher wants to test accessibility of packaged publication to assess whether users can access all elements listed in the table of contents of a publication. Each HTML file passes validation and is accessible itself, but non-sighted reader cannot access one component. Developers did not catch this because it is technically WCAG-compliant.</p>
 </section>
 
 <section>
 <h4>Skippability</h4>
-  <p>Suggestion for UA WG: User agents need to implement skippability, and it cannot be confined to users of AT.</p>
+  <p><strong>Suggestion for UUAG:</strong> User agents need to implement skippability, and it cannot be confined to users of AT.</p>
   <p>Comments: This is a user preference / personalization issue. User must be able to customize what is visible, what is read, etc.</p>
   <ol>
     <li>This should be an option for visual as well as aural presentation.</li>
     <li>Skipped elements need to be discoverable later.</li>
   </ol>
-  <p>Use cases:</p>
+  <p><i>Use cases:</i></p>
   <ul>
-    <li>Use Case: User does not want to hear page numbers or headers, but does want to hear footnotes.</li>
+    <li><i><i>Use Case:</i></i> User does not want to hear page numbers or headers, but does want to hear footnotes.</li>
   </ul>
   <p>References:</p>
   <ul>
@@ -185,24 +185,23 @@ Some of these suggestions request changes to specifications and guidelines. Othe
 
 <section>
 <h4>Escapability</h4>
-        <p>Suggestion for UA WG: User agents need to implement escape to the next sibling or parent element, and it cannot be confined to users of AT.</p>
+  <p><strong></strong>Suggestion for UUAG:</strong> User agents need to implement escape to the next sibling or parent element, and it cannot be confined to users of AT.</p>
         <p>Comments: Users need to be able to immediately move to the next non-contained block element. This is particularly a problem for users who browse the web at high magnification, and for users on mobile. When a user is in the middle of a lengthy element, there needs to be a way for them to move to the next sibling or parent with a simple command. Mobility impaired users are also greatly affected by this need, especially but not exclusively on mobile.</p>
         <ol>
             <li>This should be an option for visual as well as aural presentation.</li>
         </ol>
-        <p>Use cases:</p>
+        <p><i>Use cases:</i></p>
         <ul>
-             <li>Use Case: A chemistry book has a long table of each of the elements in the periodic table. The book's reader does not need to see all of the elements in the table, but they do need to read the text immediately afterwards. They need a simple way to get from the complex table to the next sibling or parent element without endless scrolling.</li>
+             <li><i><i>Use Case:</i></i> A chemistry book has a long table of each of the elements in the periodic table. The book's reader does not need to see all of the elements in the table, but they do need to read the text immediately afterwards. They need a simple way to get from the complex table to the next sibling or parent element without endless scrolling.</li>
         </ul>
 </section>
 
 
 <section>
 <h4>Page Numbers / Pagination</h4>
-  <p><strong>CONTENT IS DRAFT</strong></p>
-  <p>Suggestion: UAAG suggestion and WCAG suggestion, probably also ATAG suggestion </p>
+    <p><strong>Suggestion:</strong> UAAG suggestion and WCAG suggestion, probably also ATAG suggestion </p>
 
-  <p>Comments: For electronic publications -- especially those intended to have direct correspondence to printed "hardcopy" publications such as textbooks --
+  <p>Comments: For electronic publications, especially those intended to have direct correspondence to printed "hardcopy" publications such as textbooks,
 a way needs to exist for a user to accurately identify the page number, and to navigate accordingly. This method must be accessible, and should not disrupt
 continuous reading by screen reader users, and should be accurate and accessible for users using Assistive Technologies which may resize or reflow text
 on the screen.</p>
@@ -219,14 +218,14 @@ on the screen.</p>
 
 <section>
 <h4>Phonetic spellings of proper nouns and jargon terms</h4>
-  <p>Suggestion 1, for the UA WG: possible addition to UAAG techniques.</p>
-  <p>Suggestion 2, possible new or modified specification or guideline for the content itself.</p>
+  <p><strong>Suggestion 1 for UUAG:</strong> possible addition to UAAG techniques.</p>
+  <p><strong>Suggestion 2</strong> possible new or modified specification or guideline for the content itself.</p>
   <p>Comments: Publishers need to be able to put in suggested pronunciation for proper nouns, acronyms, and field-specific jargon terms. The Pronunciation Lexicon (PLS) exists but it is exceptionally  difficult to use, and doesn't scale well to a large publisher's use cases.</p>
-  <p>Use cases:</p>
+  <p><i>Use cases:</i></p>
   <ol>
-    <li>Use Case: A chemistry book needs to use the accepted pronunciations of chemistry terms to maximize clarity. It references a pre-existing pronunciation dictionary made available by the American Chemical Society that uses community-agreed-upon standards.
-    <li>Use Case: The trade novel THE LIVES OF CHRISTOPHER CHANT by Diana Wynne Jones, in which there is a plot point that a character's name is spelled "Ralph" but pronounced "Rafe," can be correctly encoded using a local pronunciation dictionary.
-    <li>UseCase: Reading systems support the pronunciation dictionary reference and expose the data to Accessibility APIs.
+    <li><i><i>Use Case:</i></i> A chemistry book needs to use the accepted pronunciations of chemistry terms to maximize clarity. It references a pre-existing pronunciation dictionary made available by the American Chemical Society that uses community-agreed-upon standards.
+    <li><i><i>Use Case:</i></i> The trade novel THE LIVES OF CHRISTOPHER CHANT by Diana Wynne Jones, in which there is a plot point that a character's name is spelled "Ralph" but pronounced "Rafe," can be correctly encoded using a local pronunciation dictionary.
+    <li><i>Use Case:</i> Reading systems support the pronunciation dictionary reference and expose the data to Accessibility APIs.
   </ol>
   <p>References:</p>
   <ul>
@@ -238,11 +237,11 @@ on the screen.</p>
 
 <section>
 <h4>Deeply Nested Heading Levels Best Practices</h4>
-  <p>Suggestion: Add to WCAG Techniques and to the WAI Tutorials</p>
+  <p><strong>Suggestion:</strong> Add to WCAG Techniques and to the WAI Tutorials</p>
   <p>Comments: It is not easy to determine what best practice is for deeply nested  headings, headings that go beyond &lt;h6&gt;. Best Practices should be clearly established and easy to find.  Use cases in books are more frequent than other circumstances. This is likeliest to occur if an &lt;aside&gt; begins with &lt;h5&gt; or &lt;h6&gt;. </p>
   
   <ol>
-    <li>Use Case: Encyclopedias and similar detailed reference works often have many levels of headings.</li>
+    <li><i><i>Use Case:</i></i> Encyclopedias and similar detailed reference works often have many levels of headings.</li>
   </ol>
 
   <p>References:</p>
@@ -254,9 +253,9 @@ on the screen.</p>
 </section>
 
 <section>
-<h4>Semantically needed List-Head</h4>
-  <p>Suggestion 1: outreach to ARIA WG about proposing aria-labelledby be exposed by user agents without AT.</p>
-  <p>Suggestion 2: outreach to various groups about alternative non-ARIA semantically meaningful list heading.</p>
+<h4>Semantic List-Head</h4>
+  <p><strong>Suggestion 1:</strong> outreach to ARIA WG about proposing aria-labelledby be exposed by user agents without AT.</p>
+  <p><strong>Suggestion 2:</strong> outreach to various groups about alternative non-ARIA semantically meaningful list heading.</p>
   <p>Comments: There is no clear method of associating a title of a list with the list items. This can be accomplished using artificial wrappers, such as &lt;div&gt;, but it seems that the list elements (&lt;ul&gt; and &lt;ol&gt;) should include titles. It is tempting to use the h1 – h6 elements, but these have the native semantics of aria role=”heading”, offering unwanted default navigation. It would be useful if there were a role of element called "listtitle" or something similar.</p>
   <ol>
     <li>This should be an option for visual as well as aural presentation.</li>
@@ -280,8 +279,8 @@ on the screen.</p>
 
 <section>
 <h4>Drop Cap</h4>
-<p>Suggestion 1, for the UA WG: possible addition to UAAG techniques.</p>
-<p>Suggestion 2, for WAI Outreach: Outreach to content creators that CSS 3 solves the drop cap problem accessibly.</p>
+  <p><strong>Suggestion 1 for UUAG:</strong> possible addition to UAAG techniques.</p>
+  <p><strong>Suggestion 2 for WAI Outreach:</strong> Outreach to content creators that CSS 3 solves the drop cap problem accessibly.</p>
 <p>Comments: <a href="http://www.w3.org/TR/css3-selectors/#first-letter">The CSS 3 selector first-letter</a> allows the creation of accessible drop caps, and it is widely supported in user agents. However, it is not widely supported in authoring tools, nor is it widely known to content creators. When drop caps are created without using this CSS3 selector, this causes accessibility issues when the two components of the word are read as separate words. Outreach to user agent creators and content creators is needed.</p>
 <p>References:</p>
 <ul>
@@ -298,12 +297,12 @@ on the screen.</p>
 
 <section class='appendix'>
         <h4>Layout's Influence On Comprehension</h4>
-            <p>Suggestion: although a solution is needed, DPub IG has no good suggestions at this time. More research and investigation is warranted.</p>
+  <p><strong>Suggestion:</strong> Although a solution is needed, the DPUB IG has no good suggestions at this time. More research and investigation is warranted.</p>
             <p>Comments: There is currently no reasonable, sustainable method to provide visual information about the layout of text on a page. Certain literary styles such as poetry may use the placement of text to convey extra meaning. There is no consistent method for content creators to make this additional information available to a non-visual display such as a screen reader. We have no suggested approaches at this time. More research and investigation is warranted.</p>
-        <p>Use cases:</p>
+        <p><i>Use cases:</i></p>
         <ul>
-             <li>Use Case: Concrete poetry, such as "<a href="http://bootless.net/mouse.html">The Mouse's Tale</a>" by Lewis Carroll, "<a href="http://www.poetryfoundation.org/poem/177297">Soweto</a>" by Kamau Braithwaite, or "<a href="http://www.poetryfoundation.org/poem/178001">Women</a>" by May Swenson.</li>
-             <li>Use Case: Puzzles, such as <a href="http://web.mit.edu/puzzle/www/2015/puzzle/headshots/">this puzzle which relies on exact location on the page</a> to produce a solution.</li>
+             <li><i><i>Use Case:</i></i> Concrete poetry, such as "<a href="http://bootless.net/mouse.html">The Mouse's Tale</a>" by Lewis Carroll, "<a href="http://www.poetryfoundation.org/poem/177297">Soweto</a>" by Kamau Braithwaite, or "<a href="http://www.poetryfoundation.org/poem/178001">Women</a>" by May Swenson.</li>
+             <li><i><i>Use Case:</i></i> Puzzles, such as <a href="http://web.mit.edu/puzzle/www/2015/puzzle/headshots/">this puzzle which relies on exact location on the page</a> to produce a solution.</li>
         </ul>
 
         <p>References:</p>
@@ -314,23 +313,23 @@ on the screen.</p>
 
 <section>
         <h4>Annotations</h4>
-        <p>Suggestion: No action item</p>
+  <p><strong>Suggestion:</strong> No action item</p>
         <p>Comments: User created annotations and Highlights adding your own notes to a document must be accessible for creation and use. George has raised this with annotations WG.</p>
 </section>
 <section>
         <h4>Notes (Footnotes, Asides, Author Notes, etc.)</h4>
-        <p>Suggestion: No action item</p>
+        <p><strong>Suggestion:</strong> No action item</p>
         <p>Comments: DPUB-ARIA 1.0 includes <a href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnote">dpub-footnote</a> and <a href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnotes">dpub-footnotes</a>. These roles convey that information is ancillary without conveying information about positioning. This allows authors and user agents to achieve positioning using CSS or scripting while maintaining the flow and navigability of the content.</p>
         <p>References:</p>
 </section>
 <section>
         <h4>Positional location of text to indicate different speakers</h4>
-        <p>Suggestion: although a solution may be needed, DPub IG has no good suggestions at this time. More research and investigation is warranted. Possibly all use cases can be addressed with CSS.</p>
-        <p>Use cases:</p>
+        <p><strong>Suggestion:</strong> although a solution may be needed, DPub IG has no good suggestions at this time. More research and investigation is warranted. Possibly all use cases can be addressed with CSS.</p>
+        <p><i>Use cases:</i></p>
          <ul>
-             <li>Use Case: comic strips have different speakers on different sides of the page. </li>
-             <li>Use Case: poetry </li>
-             <li>Use Case: different voices for different speakers. </li>
+             <li><i><i>Use Case:</i></i> comic strips have different speakers on different sides of the page. </li>
+             <li><i><i>Use Case:</i></i> poetry </li>
+             <li><i><i>Use Case:</i></i> different voices for different speakers. </li>
         </ul>
 
         <p>References:</p>
@@ -341,11 +340,10 @@ on the screen.</p>
 
 <section>
 <h1>Assessments</h1>
-    <p>Suggestion: The DPUB Accessibility Task Force will coordinate with the IMS Assessment Accessibility Task Force</p>
+    <p><strong>Suggestion:</strong> The DPUB Accessibility Task Force will coordinate with the IMS Assessment Accessibility Task Force</p>
   	<p>Comments: Mark Hakkinen and members of the IMS Accessibility Task Force are leading the effort to harmonize the IMS QTI/APIP accessibility model with HTML5/ARIA and WCAG. This involves gap analysis underway at ETS, and recommendations for enhancements to both guidelines (including techniques and best practices) and standards, such as the addition of new ARIA attributes. The bulk of these recommendations will come from their group; we will coordinate with them as they request. We've done initial outreach.</p>
-	<p>Use cases:</p>
+	<p><i>Use cases:</i></p>
     <ul>
-       <li>Use Case: Match and associate tasks common in assessments and frequently implemented as drag and drop require an accessible user interface that does not impact complexity of the task.</li>
        <li>Images and other visual information need a robust model for descriptions and alternate formats specific to the requirements of assessment.</li>
    </ul>
     <p>References:</p>
@@ -427,7 +425,7 @@ WCAG accessibility standards.
     
 </section>
 <section>
-<h2>Maintainers of the specification</h2>
+<h2>Specification Maintainance</h2>
 
 <p>Diagrammar is being developed by <a href="http://diagramcenter.org/">The DIAGRAM Center</a>, a Benetech initiative, in partnership with the WGBH National Center for Accessible Media and the US Fund for DAISY.</p>
 
