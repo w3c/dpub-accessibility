@@ -23,6 +23,34 @@
                 "status" : "Recommended Specification",
                 "publisher": "IDPF"
             },
+           "EPUB3.1": {
+                "authors": [
+                  "Garth Conboy",
+                  "Matt Garrish",
+                  "Markus Gylling",
+                  "William McCoy",
+                  "Murata Makoto",
+                  "Daniel Weck"
+                ],
+                "title": "EPUB 3.1 Work Plan",
+                "href" : "http://www.idpf.org/workplans/2015/epub/",
+                "rawDate": "2016",
+                "status" : "Working Editor Draft Specification",
+                "publisher": "IDPF"
+            },
+            "IDPF-GITHUB": {
+                "authors": [
+                  "Matt Garrish",
+                  "Nachiket Patel",
+                  "Peter Krautzberger",
+                  "Romain Deltour",
+                  "Ron Severdia",
+                  "Tobias Fischer"
+                ],
+                "title": "IDPF's Github repository",
+                "href" : "https://github.com/IDPF",
+                "publisher": "IDPF"
+            },
             "DAISY": {
                  "authors": [
                  "DAISY Consortium"
@@ -32,6 +60,15 @@
                  "rawDate": "2003-06-06",
                  "publisher": "DAISY Consortium"
              },
+            "DAISY-DTD": {
+                 "authors": [
+                 "DAISY Consortium"
+                 ],
+                 "title": "DAISY Digital Talking Book [Z3986-2005]",
+                 "href": "http://www.daisy.org/daisyniso-standard-dtd-and-css-files",
+                 "rawDate": "2005",
+                 "publisher": "DAISY Consortium"
+             },             
              "DPUB-Minutes":{
                   "authors": [
                     "Digital Publishing Interest Group"
@@ -498,19 +535,20 @@ WCAG accessibility standards.
 <section>
 <h2>Historical Context</h2>
 
-<p>Beginning with EPUB 3.0, the primary accessible publishing standard, DAISY DTBook and the primary commercial publishing format merged. DAISY’s Digital Talking Book <a href="http://www.daisy.org/daisyniso-standard-dtd-and-css-files">[Z3986-2005]</a> is an XML-based file format and puts an emphasis on structural encoding to enable reading for the visually impaired audience. EPUB 2 allowed DTBook as an alternate syntax. The EPUB 3 specification merged DAISY and EPUB, making accessibility considerations a concern for all publishers, authors, and readers. The EPUB 3.0.1 specification is available at [[EPUB3]]. One of the features of this relationship is the <a href="http://www.idpf.org/epub/vocab/structure/">EPUB structural semantics vocabulary</a>, a namespaced vocabulary that enables semantic inflection of HTML elements. In 2015, several of these terms have been transformed into prefixed ARIA roles in <a href="http://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0</a>.  </p>
+<p>Beginning with EPUB 3.0, the primary accessible publishing standard, DAISY DTBook and the primary commercial publishing format merged. DAISY’s Digital Talking Book [[DAISY-DTD]] is an XML-based file format and puts an emphasis on structural encoding to enable reading for the visually impaired audience. EPUB 2 allowed DTBook as an alternate syntax. The EPUB 3 specification merged DAISY and EPUB, making accessibility considerations a concern for all publishers, authors, and readers. The EPUB 3.0.1 specification is available at [[EPUB3]]. One of the features of this relationship is the <a href="http://www.idpf.org/epub/vocab/structure/">EPUB structural semantics vocabulary</a>, a namespaced vocabulary that enables semantic inflection of HTML elements. In 2015, several of these terms have been transformed into prefixed ARIA roles in <a href="http://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0</a>.  
+</p>
 
-    <p>The IDPF and W3C Digital Publishing Interest Group work closely together on many issues, including broadening the definition of Web Accessibility to include long-form content. The Digital Publishing Interest Group’s Charter includes advancing EPUB 3 as one of the goals. Among the success criteria are providing advice to the IDPF EPUB 3.1 Working Group and advancing what is now called Portable Web Publications [[PWP]], a vision for the convergence of future of digital documents and the Web. Integrating the accessibility functionality that is native to the Web with the additions that DAISY and the IDPF have created is part of that vision.</p>
+     <p>The IDPF and W3C Digital Publishing Interest Group work closely together on many issues, including broadening the definition of Web Accessibility to include long-form content. The Digital Publishing Interest Group’s Charter includes advancing EPUB 3 as one of the goals. Among the success criteria are providing advice to the IDPF EPUB 3.1 Working Group and advancing what is now called Portable Web Publications [[PWP]], a vision for the convergence of future of digital documents and the Web. Integrating the accessibility functionality that is native to the Web with the additions that DAISY and the IDPF have created is part of that vision.</p>
 
 </section>
 <section>
 <h2>References:</h2>
         <ul>
-            <li><a href="http://www.daisy.org/daisyniso-standard-dtd-and-css-files">DAISY Digital Talking Book</a></li>
+            <li>[[DAISY-DTD]]</li>
             <li>EPUB 3.0.1 Specification [[EPUB3]]</li>
-            <li><a href="http://www.idpf.org/workplans/2015/epub/">EPUB 3.1 Work Plan</a></li>
+            <li>EPUB 3.1 Work Plan [[EPUB3.1]]</li>
           <li>Digital Publishing WAI-ARIA Module 1.0 [[dpub-aria-1.0]]</li>
-            <li><a href="https://github.com/IDPF">IDPF's Github repository</a></li>
+            <li>IDPF's GitHub Repository [[IDPF-GITHUB]]</li>
         </ul>
 
 </section>
