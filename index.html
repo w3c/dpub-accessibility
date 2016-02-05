@@ -6,8 +6,8 @@
       <script src="https://www.w3.org/Tools/respec/respec-w3c-common" async="" class="remove"></script>
 
   <script class='remove'>
-         var respecConfig = {
-         localBiblio: {
+    var respecConfig = {
+        localBiblio: {
             "EPUB3": {
                 "authors": [
                   "Garth Conboy",
@@ -23,51 +23,43 @@
                 "status" : "Recommended Specification",
                 "publisher": "IDPF"
             },
-            
-                      
             "DAISY": {
-              "authors": [
-              "DAISY Consortium"
-              ],
-              "title": "Daisy 2.02 Skippable Structures Recommendation",
-              "href": "http://www.daisy.org/z3986/specifications/d202skiprec/d202_skippability_rec.html",
-              "rawDate": "2003-06-06",
-              "publisher": "DAISY Consortium"
-            },
-            
-            "DPUB-Minutes":{
-              "authors": [
-                "Digital Publishing Interest Group"
-                ],
-              "title": "Digital Publishing Interest Group discussion about nested headings",
-              "href": "http://www.w3.org/2015/05/15-dpub-minutes.html#item03",
-              "rawDate: "2015-05-15",
-              "publisher": "W3C"
-             }, 
-             
+                 "authors": [
+                 "DAISY Consortium"
+                 ],
+                 "title": "Daisy 2.02 Skippable Structures Recommendation",
+                 "href": "http://www.daisy.org/z3986/specifications/d202skiprec/d202_skippability_rec.html",
+                 "rawDate": "2003-06-06",
+                 "publisher": "DAISY Consortium"
+             },
+             "DPUB-Minutes":{
+                  "authors": [
+                    "Digital Publishing Interest Group"
+                    ],
+                  "title": "Digital Publishing Interest Group discussion about nested headings",
+                  "href": "http://www.w3.org/2015/05/15-dpub-minutes.html#item03",
+                  "rawDate": "2015-05-15",
+                  "publisher": "W3C"
+             },
              "WAI-Wiki": {
-             "authors": [
-             "WAI Members"
-             ]
-             "title": "Using role=&ldqu;heading&rdquo; to identify headings",
-             "href": https://www.w3.org/WAI/GL/wiki/Using_role%3Dheading,
-             "rawDate": "2013-09-12" 
-             }
-             
-             "Soweto": {
-             "authors": [
-                  "Kamau Brathwaite"
-                ],
-                "title": "Soweto",
-                "href" : "http://www.poetryfoundation.org/poem/177297",
-                "rawDate": "1993",
-                "publisher": "Kamau Brathwaite"
-             
-             }
-          },
-    
-    
-    
+                  "authors": [
+                      "WAI Members"
+                  ],
+                  "title": "Using role=&ldqu;heading&rdquo; to identify headings",
+                  "href": "https://www.w3.org/WAI/GL/wiki/Using_role%3Dheading",
+                  "rawDate": "2013-09-12"
+              },
+              "Soweto": {
+                 "authors": [
+                      "Kamau Brathwaite"
+                  ],
+                  "title": "Soweto",
+                  "href" : "http://www.poetryfoundation.org/poem/177297",
+                  "rawDate": "1993",
+                  "publisher": "Kamau Brathwaite"
+              }
+         },
+
           specStatus: "ED",
           shortName:  "dpub-accessibility",
           editors: [
@@ -93,7 +85,6 @@
           wg:                   "Digital Publishing Interest Group",
           wgURI:                "http://www.w3.org/dpub/IG/",
           wgPublicList:         "public-digipub",
-          wgPatentURI:          "",
           noRecTrack:           "true",
           otherLinks: [
             {
@@ -102,16 +93,32 @@
                     value: "Github Repository",
                     href: "https://github.com/w3c/dpub-accessibility"
                 }]
-            }
-          ],
-          alternateFormats: [
+            },
             {
-                uri: "dpub-accessibility.epub",
-                label: "ePub"
-            }
+              key: "Issues tracker",
+              data: [{
+                value: "Github Issue Tracker",
+                href: "https://github.com/w3c/dpub-accessibility/issues"
+              }]
+            },
           ],
+        //   alternateFormats: [
+        //     {
+        //         uri: "dpub-accessibility.epub",
+        //         label: "ePub"
+        //     }
+        //   ],
           charterDisclosureURI : "http://www.w3.org/2004/01/pp-impl/64149/status",
-          copyrightStart : 2014
+          copyrightStart : 2014,
+
+          // URI of the patent status for this WG, for Rec-track documents
+          // !!!! IMPORTANT !!!!
+          // This is important for Rec-track documents, do not copy a patent URI from a random
+          // document unless you know what you're doing. If in doubt ask your friendly neighbourhood
+          // Team Contact.
+          wgPatentURI:  "http://www.w3.org/2004/01/pp-impl/64149/status",
+          // !!!! IMPORTANT !!!! MAKE THE ABOVE BLINK IN YOUR HEAD
+
       };
     </script>
 
@@ -268,7 +275,7 @@ continuous reading by screen reader users, and should be accurate and accessible
 on the screen.</p>
 
   <p>A method for providing page numbers is addressed in CSS Paged Media Module Level 3 [[css3-page]], which applies to the scenario of pagination of text being sent to a printer from a web page. If these or similar methods can be utilized in user-agents to facilitate access to accurate page numbers and pagination, a solution to the above stated issue may already exist.</p>
-        
+
   <p>More investigation and discussion with the pagination CSS work being done is necessary.</p>
 
   <p>References</p>
@@ -300,7 +307,7 @@ on the screen.</p>
 <h4>Deeply Nested Heading Levels Best Practices</h4>
   <p><strong>Suggestion:</strong> Add to WCAG Techniques and to the WAI Tutorials</p>
   <p>Comments: It is not easy to determine what best practice is for deeply nested  headings, headings that go beyond &lt;h6&gt;. Best Practices should be clearly established and easy to find.  Use cases in books are more frequent than other circumstances. This is likeliest to occur if an &lt;aside&gt; begins with &lt;h5&gt; or &lt;h6&gt;. </p>
-  
+
   <ol>
     <li><i>Use Case:</i> Encyclopedias and similar detailed reference works often have many levels of headings.</li>
   </ol>
@@ -424,7 +431,7 @@ The Accessibility Task Force of the Digital Publishing Interest Group performed 
 <a href="https://github.com/w3c/dpub-accessibility/wiki">https://github.com/w3c/dpub-accessibility/wiki</a>
 
 </section> <!-- end gap analysis -->
-  
+
 <section class='appendix'>
 <h1>Relevant work being developed outside the W3C</h1>
 
@@ -441,7 +448,7 @@ Some open specifications under development or maintained outside the W3C have gr
 <h2>EPUB's relevance to  the W3C and accessible digital publishing</h2>
 
 <p>
-EPUB is quickly becoming one of the de facto standards in digital publishing, and is gaining global 
+EPUB is quickly becoming one of the de facto standards in digital publishing, and is gaining global
 traction.  There are a number of mainstream reading systems that can read ePub books.  This standard
 is actively being updated and improved.  EPUB is based on HTML5 and adheres to the
 WCAG accessibility standards.
@@ -460,7 +467,7 @@ WCAG accessibility standards.
 <p>Beginning with EPUB 3.0, the primary accessible publishing standard, DAISY DTBook and the primary commercial publishing format merged. DAISY’s Digital Talking Book <a href="http://www.daisy.org/daisyniso-standard-dtd-and-css-files">[Z3986-2005]</a> is an XML-based file format and puts an emphasis on structural encoding to enable reading for the visually impaired audience. EPUB 2 allowed DTBook as an alternate syntax. The EPUB 3 specification merged DAISY and EPUB, making accessibility considerations a concern for all publishers, authors, and readers. The EPUB 3.0.1 specification is available at [[EPUB3]]. One of the features of this relationship is the <a href="http://www.idpf.org/epub/vocab/structure/">EPUB structural semantics vocabulary</a>, a namespaced vocabulary that enables semantic inflection of HTML elements. In 2015, several of these terms have been transformed into prefixed ARIA roles in <a href="http://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0</a>.  </p>
 
     <p>The IDPF and W3C Digital Publishing Interest Group work closely together on many issues, including broadening the definition of Web Accessibility to include long-form content. The Digital Publishing Interest Group’s Charter includes advancing EPUB 3 as one of the goals. Among the success criteria are providing advice to the IDPF EPUB 3.1 Working Group and advancing what is now called Portable Web Publications [[PWP]], a vision for the convergence of future of digital documents and the Web. Integrating the accessibility functionality that is native to the Web with the additions that DAISY and the IDPF have created is part of that vision.</p>
-       
+
 </section>
 <section>
 <h2>References:</h2>
@@ -483,7 +490,7 @@ WCAG accessibility standards.
   <p>The W3C standards bodies have developed multiple ways of creating extended descriptions for certain page elements, available for accessibility purposes. WAI-ARIA 1.1 has <strong>complete when we know the answer</strong>, and HTML5 has longdesc [[html-longdesc]]. Neither of these fulfills all of the use cases needed by accessible publishing, however. Diagrammar is being developed to address this set of use cases.</p>
 
 <p>The Diagrammar team intends that the XML encoding of Diagrammar data will be transformed to HTML for presentation. Therefore, it will be useful for ongoing communication to continue.</p>
-    
+
 </section>
 <section>
 <h2>Specification Maintainance</h2>
@@ -499,7 +506,7 @@ WCAG accessibility standards.
 
 <p>Diagrammar is an XML framework to hold multiple extended description types, to make a wide range of content types accessible: images, tables, charts, animations, 3D animations etc.  Diagrammar defines a data model for extended descriptions and associated metadata.  It provides a structured, standard way for extended descriptions data to be modeled, including different modality types for extended descriptions.  </p>
 
-    
+
 </section>
 <section>
 <h2>References:</h2>
@@ -527,6 +534,6 @@ WCAG accessibility standards.
       <dd>Jeanne Spellman</dd>
 </dl>
 </section>
-  
+
   </body>
 </html>
