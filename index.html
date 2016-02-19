@@ -38,7 +38,33 @@
                 "status" : "Working Editor Draft Specification",
                 "publisher": "IDPF"
             },
-            "IDPF-GITHUB": {
+            "CSS-Paged-Media": {
+                 "authors": [
+                 "Melinda Grant",
+                 "Elika J. Etemad",
+                 "Håkon Wium Lie",
+                 "Simon Sapin"
+                 ],
+                 "title": "Page-Margin Boxes",
+                 "href": "http://www.w3.org/TR/css3-page/#margin-boxes",
+                 "rawDate": "2013-03-14",
+                 "publisher": "W3C"
+             },
+            "CSS3-Selector-First-Letter": {
+                 "authors": [
+                 "Tantek Çelik",
+                 "Elika J. Etemad",
+                 "Daniel Glazman",
+                 "Ian Hickson",
+                 "Peter Linss",
+                 "John Williams"
+                 ],
+                 "title": "Selectors Level 3",
+                 "href": "http://www.w3.org/TR/css3-selectors/#first-letter",
+                 "rawDate": "2011-09-11",
+                 "publisher": "W3C"
+             },
+             "IDPF-GITHUB": {
                 "authors": [
                   "Matt Garrish",
                   "Nachiket Patel",
@@ -69,7 +95,7 @@
                  "rawDate": "2005",
                  "publisher": "DAISY Consortium"
              },             
-             "DPUB-Minutes":{
+             "DPUB-Minutes-3":{
                   "authors": [
                     "Digital Publishing Interest Group"
                     ],
@@ -78,7 +104,26 @@
                   "rawDate": "2015-05-15",
                   "publisher": "W3C"
              },
-             "WAI-Wiki": {
+             "DPUB-Minutes-4":{
+                  "authors": [
+                    "Digital Publishing Interest Group"
+                    ],
+                  "title": "Digital Publishing Interest Group discussion about list titles",
+                  "href": "http://www.w3.org/2015/05/15-dpub-minutes.html#item04",
+                  "rawDate": "2015-05-15",
+                  "publisher": "W3C"
+             },
+            
+              "WAI-IG-Minutes":{
+                  "authors": [
+                    "WAI Interest Group"
+                    ],
+                  "title": "Discussion about deaply nested headings",
+                  "href": "https://lists.w3.org/Archives/Public/w3c-wai-ig/2015AprJun/0039.html",
+                  "rawDate": "2015-04-23",
+                  "publisher": "W3C"
+             },
+               "WAI-Wiki": {
                   "authors": [
                       "WAI Members"
                   ],
@@ -311,13 +356,13 @@ a way needs to exist for a user to accurately identify the page number, and to n
 continuous reading by screen reader users, and should be accurate and accessible for users using Assistive Technologies which may resize or reflow text
 on the screen.</p>
 
-  <p>A method for providing page numbers is addressed in CSS Paged Media Module Level 3 [[css3-page]], which applies to the scenario of pagination of text being sent to a printer from a web page. If these or similar methods can be utilized in user-agents to facilitate access to accurate page numbers and pagination, a solution to the above stated issue may already exist.</p>
+  <p>A method for providing page numbers is addressed in CSS Paged Media Module Level 3 [[CSS3-PAGE]], which applies to the scenario of pagination of text being sent to a printer from a web page. If these or similar methods can be utilized in user-agents to facilitate access to accurate page numbers and pagination, a solution to the above stated issue may already exist.</p>
 
   <p>More investigation and discussion with the pagination CSS work being done is necessary.</p>
 
   <p>References</p>
   <ul>
-    <li><a href="http://www.w3.org/TR/css3-page/#margin-boxes">CSS Paged Media Module Level 3</a> Page-Margin Boxes</li>
+    <li>[[CSS-Paged-Media]] Module Level 3 Page-Margin Boxes</li>
   </ul>
 </section>
 
@@ -334,8 +379,8 @@ on the screen.</p>
   </ol>
   <p>References:</p>
   <ul>
-    <li>CSS Speech Module [[css3-speech]]</li>
-    <li>Pronunciation Lexicon Specification (PLS) [[pronunciation-lexicon]]</li>
+    <li>CSS Speech Module [[CSS3-SPEECH]]</li>
+    <li>Pronunciation Lexicon Specification (PLS) [[PRONUNCIATION-LEXICON]]</li>
   </ul>
 
 </section>
@@ -351,9 +396,9 @@ on the screen.</p>
 
   <p>References:</p>
   <ul>
-    <li>Item #3 5/15/2015 DPUB Minutes [[DPUB-Minutes]]</li>
+    <li>Item #3 5/15/2015 DPUB Minutes [[DPUB-Minutes-3]]</li>
     <li>Using role="heading" to identify headings [[WAI-Wiki]]</li>
-    <li><a href="https://lists.w3.org/Archives/Public/w3c-wai-ig/2015AprJun/0039.html">April-June 2015 WAI-IG Minutes</a></li>
+    <li>April-June 2015 [[WAI-IG-Minutes]]</li>
   </ul>
 </section>
 
@@ -378,7 +423,7 @@ on the screen.</p>
 </p>
 <p>References:</p>
 <ul>
-  <li><a href="http://www.w3.org/2015/05/15-dpub-minutes.html#item04">Item #4 5/15/2015 DPUB Minutes</a></li>
+  <li>Item #4 5/15/2015 [[DPUB-Minutes-4]]</li>
 </ul>
 </section>
 
@@ -386,7 +431,7 @@ on the screen.</p>
 <h4>Drop Cap</h4>
   <p><strong>Suggestion 1 for UAAG:</strong> possible addition to UAAG techniques.</p>
   <p><strong>Suggestion 2 for WAI Outreach:</strong> Outreach to content creators that CSS 3 solves the drop cap problem accessibly.</p>
-<p>Comments: <a href="http://www.w3.org/TR/css3-selectors/#first-letter">The CSS 3 selector first-letter</a> allows the creation of accessible drop caps, and it is widely supported in user agents. However, it is not widely supported in authoring tools, nor is it widely known to content creators. When drop caps are created without using this CSS3 selector, this causes accessibility issues when the two components of the word are read as separate words. Outreach to user agent creators and content creators is needed.</p>
+<p>Comments: The [[CSS3-Selector-First-Letter]] allows the creation of accessible drop caps, and it is widely supported in user agents. However, it is not widely supported in authoring tools, nor is it widely known to content creators. When drop caps are created without using this CSS3 selector, this causes accessibility issues when the two components of the word are read as separate words. Outreach to user agent creators and content creators is needed.</p>
 <p>References:</p>
 <ul>
   <li> <a href="http://www.w3.org/TR/css3-selectors/#first-letter">The CSS 3 selector first-letter</a></li>
@@ -462,7 +507,7 @@ on the screen.</p>
 	    </ul>
         <p>References:</p>
         <ul>
-             <li>CSS Speech Module[[css3-speech]]</li>
+             <li>CSS Speech Module[[CSS3-SPEECH]]</li>
         </ul>
 </section>
 
@@ -535,7 +580,7 @@ WCAG accessibility standards.
 <section>
 <h2>Historical Context</h2>
 
-<p>Beginning with EPUB 3.0, the primary accessible publishing standard, DAISY DTBook and the primary commercial publishing format merged. DAISY’s Digital Talking Book [[DAISY-DTD]] is an XML-based file format and puts an emphasis on structural encoding to enable reading for the visually impaired audience. EPUB 2 allowed DTBook as an alternate syntax. The EPUB 3 specification merged DAISY and EPUB, making accessibility considerations a concern for all publishers, authors, and readers. The EPUB 3.0.1 specification is available at [[EPUB3]]. One of the features of this relationship is the <a href="http://www.idpf.org/epub/vocab/structure/">EPUB structural semantics vocabulary</a>, a namespaced vocabulary that enables semantic inflection of HTML elements. In 2015, several of these terms have been transformed into prefixed ARIA roles in <a href="http://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0</a>.  
+<p>Beginning with EPUB 3.0, the primary accessible publishing standard, DAISY DTBook and the primary commercial publishing format merged. DAISY’s Digital Talking Book [[DAISY-DTD]] is an XML-based file format and puts an emphasis on structural encoding to enable reading for the visually impaired audience. EPUB 2 allowed DTBook as an alternate syntax. The EPUB 3 specification merged DAISY and EPUB, making accessibility considerations a concern for all publishers, authors, and readers. The EPUB 3.0.1 specification is available at [[EPUB3]]. One of the features of this relationship is the <a href="http://www.idpf.org/epub/vocab/structure/">EPUB structural semantics vocabulary</a>, a namespaced vocabulary that enables semantic inflection of HTML elements. In 2015, several of these terms have been transformed into prefixed ARIA roles in [[DPUB-ARIA-1.0]].  
 </p>
 
      <p>The IDPF and W3C Digital Publishing Interest Group work closely together on many issues, including broadening the definition of Web Accessibility to include long-form content. The Digital Publishing Interest Group’s Charter includes advancing EPUB 3 as one of the goals. Among the success criteria are providing advice to the IDPF EPUB 3.1 Working Group and advancing what is now called Portable Web Publications [[PWP]], a vision for the convergence of future of digital documents and the Web. Integrating the accessibility functionality that is native to the Web with the additions that DAISY and the IDPF have created is part of that vision.</p>
@@ -547,7 +592,7 @@ WCAG accessibility standards.
             <li>[[DAISY-DTD]]</li>
             <li>EPUB 3.0.1 Specification [[EPUB3]]</li>
             <li>EPUB 3.1 Work Plan [[EPUB3.1]]</li>
-          <li>Digital Publishing WAI-ARIA Module 1.0 [[dpub-aria-1.0]]</li>
+          <li>Digital Publishing WAI-ARIA Module 1.0 [[DPUB-ARIA-1.0]]</li>
             <li>IDPF's GitHub Repository [[IDPF-GITHUB]]</li>
         </ul>
 
@@ -559,7 +604,7 @@ WCAG accessibility standards.
 <section>
 <h2>Diagrammar's relevance to the W3C and accessible digital publishing</h2>
 
-  <p>The W3C standards bodies have developed multiple ways of creating extended descriptions for certain page elements, available for accessibility purposes. WAI-ARIA 1.1 has <strong>complete when we know the answer</strong>, and HTML5 has longdesc [[html-longdesc]]. Neither of these fulfills all of the use cases needed by accessible publishing, however. Diagrammar is being developed to address this set of use cases.</p>
+  <p>The W3C standards bodies have developed multiple ways of creating extended descriptions for certain page elements, available for accessibility purposes. WAI-ARIA 1.1 has <strong>complete when we know the answer</strong>, and HTML5 has longdesc [[HTML-LONGDESC]]. Neither of these fulfills all of the use cases needed by accessible publishing, however. Diagrammar is being developed to address this set of use cases.</p>
 
 <p>The Diagrammar team intends that the XML encoding of Diagrammar data will be transformed to HTML for presentation. Therefore, it will be useful for ongoing communication to continue.</p>
 
