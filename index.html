@@ -217,7 +217,7 @@
   </section>
     <section class="introductory">
       <h2 id="intro">Introduction</h2>
-      <p>This document provides informative guidance (but does not set requirements) with regard to the needs of Digital Publishing with regard to W3C guidelines. Is informed by existing guidelines including (but not limited to) [[WCAG20]], [[ATAG20]], [[UAAG20]], and [[WAI-ARIA]]. Where appropriate, it is also informed by other ongoing W3C projects including Portable Web Publications [[PWP]] and the Web Annotation Working Group</a>.</p>
+      <p>This document provides informative guidance (but does not set requirements) with regard to the needs of Digital Publishing with regard to W3C guidelines. Is informed by existing guidelines including (but not limited to) [[WCAG20]], [[ATAG20]], [[UAAG20]], and [[WAI-ARIA]]. Where appropriate, it is also informed by other ongoing W3C projects including, but not limited to, Portable Web Publications [[PWP]] and the Web Annotation Working Group</a>.</p>
       <p>While the World Wide Web Consortium (W3C)'s W3C Web Accessibility Initiative (WAI) is primarily concerned with web technologies, its guidance is also relevant to technologies which are not exclusively web technologies. The digital publishing industry, which creates mixed web and non-web publications using web-based technological tools, is reliant on the standards set by the W3C.</p>
       <p>The current document is focused on the accessibility of digital publishing to people with disabilities and is not intended to supplant any other W3C work. </p>
 	</section>
@@ -260,19 +260,20 @@ This document is aimed at those involved at creating and modifying existing W3C 
 
 A number of requirements for the digital publishing industry are not currently addressed by W3C standards. Those which can be meaningfully addressed by current WAI efforts are listed here in order of priority. Gaps which have been recognized but cannot be usefully addressed without further research are documented Appendix A.
 
-Some of these suggestions request changes to specifications and guidelines. Others request changes to existing techniques documents. Others offer suggestions for further outreach.  Where possible, we indicated which set of guidelines might be best positioned to address the change. However, these suggestions are based on the limited knowledge of the Digital Publishing Interest Group, and may be incorrect.
+Some of these suggestions request changes to specifications and guidelines. Others request changes to existing techniques documents. Others offer suggestions for further outreach.  Where possible, we indicated which set of guidelines might be best positioned to address the change. However, these suggestions are based on the limited knowledge of the members of Digital Publishing Interest Group, and may be incorrect.
 
 <section>
 <h4>Navigating Among Multiple Documents</h4>
-  <p><strong>Suggestion:</strong> Add discussion of packaged documents to WCAG or author extension of WCAG for packaged documents. </p>
-    <p>Many digital publications are made up of more than one document. For example, often, every chapter in a book be a separate HTML file. In an EPUB file, these are packaged together using a specified mechanism with a method of navigating to the components of the publication. At this point, there is no prescribed method in W3C specifications for navigating among related or packaged components. All documentation and most tools related to accessibility assume that the user is encountering one document. </p>
+  <p><strong>Suggestion:</strong> Add discussion of packaged documents to WCAG. </p>
+  <p><strong>Suggestion:</strong> Add author extension to WCAG for packaged documents. </p>
+    <p>Many digital publications are made up of more than one document. For example, often, every chapter in a book be a separate HTML file. In an EPUB, for example, these are packaged together using a specified mechanism with a method of navigating to the components of the publication. At this point, there is no prescribed method in W3C specifications for navigating among related or packaged components. All documentation and most tools related to accessibility assume that the user is encountering one document. </p>
     <p><i><i>Use Case:</i></i> User follows link from index to a paragraph in middle of chapter 23 and realizes that the second entry in index is more helpful. User must return to index (separate HTML document) to access the link to the second index entry.</p>
     <p><i><i>Use Case:</i></i> Publisher wants to test accessibility of packaged publication to assess whether users can access all elements listed in the table of contents of a publication. Each HTML file passes validation and is accessible itself, but non-sighted reader cannot access one component. Developers did not catch this because it is technically WCAG-compliant.</p>
 </section>
 
 <section>
 <h4>Skippability</h4>
-  <p><strong>Suggestion for UAAG:</strong> User agents need to implement skippability, and it cannot be confined to users of AT.</p>
+  <p><strong>Suggestion (UAAG):</strong> User agents need to implement skippability, and it cannot be confined to users of AT.</p>
   <p>Comments: This is a user preference / personalization issue. User must be able to customize what is visible, what is read, etc.</p>
   <ol>
     <li>This should be an option for visual as well as aural presentation.</li>
@@ -280,7 +281,7 @@ Some of these suggestions request changes to specifications and guidelines. Othe
   </ol>
   <p><i>Use cases:</i></p>
   <ul>
-    <li><i>Use Case:</i> User does not want to hear page numbers or headers, but does want to hear footnotes.</li>
+    <li><i>Use Case:</i> User does not want to read page numbers or headers by default, but does want to read footnotes.</li>
   </ul>
   <p>References:</p>
   <ul>
@@ -290,23 +291,22 @@ Some of these suggestions request changes to specifications and guidelines. Othe
 
 <section>
 <h4>Escapability</h4>
-  <p><strong>Suggestion for UAAG:</strong> User agents need to implement escape to the next sibling or parent element, and it cannot be confined to users of AT.</p>
+  <p><strong>Suggestion (UAAG):</strong> User agents need to implement escape to the next sibling or parent element, and it cannot be confined to users of AT.</p>
         <p>Comments: Users need to be able to immediately move to the next non-contained block element. This is particularly a problem for users who browse the web at high magnification, and for users on mobile. When a user is in the middle of a lengthy element, there needs to be a way for them to move to the next sibling or parent with a simple command. Mobility impaired users are also greatly affected by this need, especially but not exclusively on mobile.</p>
-        <ol>
-            <li>This should be an option for visual as well as aural presentation.</li>
-        </ol>
         <p><i>Use cases:</i></p>
         <ul>
-             <li><i>Use Case:</i> A chemistry book has a long table of each of the elements in the periodic table. The book's reader does not need to see all of the elements in the table, but they do need to read the text immediately afterwards. They need a simple way to get from the complex table to the next sibling or parent element without endless scrolling.</li>
+             <li><i>Use Case:</i> A chemistry book has a long table of each of the elements in the periodic table. The reader has entered the table, and realizes they do not need to see all of the elements in the table, but they do need to read the text immediately afterwards. They need a simple way to get from the complex table to the next sibling or parent element without endless scrolling.</li>
+             <li><i>Use Case:</i> The reader is reading a magazine article, and realizes the next item in the article is an inset sidebar of a document containing a multitude of different types of data, including a chart, an image gallery, an infographic, a video, and some text. This information takes up several screens of content at the reader's zoom level. The reader wants to skip past the sidebar and return to the content after the enclosing container.</li>
         </ul>
 </section>
 
 
 <section>
 <h4>Page Numbers / Pagination</h4>
-    <p><strong>Suggestion:</strong> UAAG suggestion and WCAG suggestion, probably also ATAG suggestion </p>
+    <p><strong>Suggestion (UAAG):</strong> User agents need to enable, where relevant, both distinct concepts of pages (described below), including allowing users to jump to page numbers in either model, or view specific pages in either model.</p>
+    <p><strong>Suggestion (WCAG):</strong> Implement a concept such as EPUB's correspondence with print pages (<pre>page-list</pre> and <pre>pagebreak</pre>).</p>
 
-  <p>Comments: For electronic publications, especially those intended to have direct correspondence to printed "hardcopy" publications such as textbooks,
+  <p>Comments: For electronic publications, especially those intended to have direct correspondence to printed "hardcopy" publications,
 a way needs to exist for a user to accurately identify the page number, and to navigate accordingly. This method must be accessible, and should not disrupt
 continuous reading by screen reader users, and should be accurate and accessible for users using Assistive Technologies which may resize or reflow text
 on the screen.</p>
@@ -314,6 +314,13 @@ on the screen.</p>
   <p>A method for providing page numbers is addressed in CSS Paged Media Module Level 3 [[css3-page]], which applies to the scenario of pagination of text being sent to a printer from a web page. If these or similar methods can be utilized in user-agents to facilitate access to accurate page numbers and pagination, a solution to the above stated issue may already exist.</p>
 
   <p>More investigation and discussion with the pagination CSS work being done is necessary.</p>
+
+        <p><i>Use cases:</i></p>
+        <ul>
+             <li><i>Use Case:</i> A magazine has a print edition and an online edition. The online edition is configured as a standard website, not as an EPUB. To boost print sales, the magazine would like to provide special interactive features for subscribers of their print magazine. These features need the reader to be able to easily jump to the page number they're currently reading in the print edition, or to know what page of the print edition corresponds to the website content they are currently viewing.</li>
+             <li><i>Use Case:</i> A high school teacher has assigned a novel, and all the students are reading a particular edition for convenience. One of the students is reading the ebook for accessibility reasons, and needs to be able to turn from page 56 to page 53 when the teacher says to turn back three pages.</li>
+             <li><i>Use Case:</i> That same student has the page size set to the viewable portal of their device at a particular zoom level, so their paginated view in their ebook reader does not correspond to a page of the print edition. The student remembers they saw something they needed three screens ago, and wants to skip back those three screens.</p>
+        </ul>
 
   <p>References</p>
   <ul>
