@@ -446,7 +446,7 @@ Some of these suggestions request changes to specifications and guidelines. Othe
 <h4>Navigating Among Multiple Documents</h4>
   <p><strong>Suggestion 1:</strong> Add discussion of packaged documents to WCAG. </p>
   <p><strong>Suggestion 2:</strong> Add author extension to WCAG for packaged documents. </p>
-    <p>Many digital publications are made up of more than one document. For example, often, every chapter in a book be a separate HTML file. In an EPUB, for example, these are packaged together using a specified mechanism with a method of navigating to the components of the publication. At this point, there is no prescribed method in W3C specifications for navigating among related or packaged components. All documentation and most tools related to accessibility assume that the user is encountering one document. </p>
+    <p>Many digital publications are made up of more than one document. For example, often, every chapter in a book may be a separate HTML file. In an EPUB, for example, these are packaged together using a specified mechanism with a method of navigating to the components of the publication. At this point, there is no prescribed method in W3C specifications for navigating among related or packaged components. All documentation and most tools related to accessibility assume that the user is encountering one document. </p>
     <p>Use Case: User follows link from index to a paragraph in middle of chapter 23 and realizes that the second entry in index is more helpful. User must return to index (separate HTML document) to access the link to the second index entry.</p>
     <p>Use Case: Publisher wants to test accessibility of packaged publication to assess whether users can access all elements listed in the table of contents of a publication. Each HTML file passes validation and is accessible itself, but non-sighted reader cannot access one component. Developers did not catch this because it is technically WCAG-compliant.</p>
 </section>
@@ -472,11 +472,12 @@ Some of these suggestions request changes to specifications and guidelines. Othe
 <section>
 <h4>Escapability</h4>
   <p><strong>Suggestion (UAAG):</strong> User agents need to implement escape to the next sibling or parent element, and it cannot be confined to users of AT.</p>
-        <p>Comments: Users need to be able to immediately move to the next non-contained block element. This is particularly a problem for users who browse the web at high magnification, and for users on mobile. When a user is in the middle of a lengthy element, there needs to be a way for them to move to the next sibling or parent with a simple command. Mobility impaired users are also greatly affected by this need, especially but not exclusively on mobile.</p>
+        <p>Comments: Users need to be able to immediately move to the next non-contained block element. This is particularly a problem for users who browse the web at high magnification, and for users on mobile devices. When a user is in the middle of a lengthy element, there needs to be a way for them to move to the next sibling or parent with a simple command. Similarly the user may need to esecape back to the previous block element. Mobility impaired users are also greatly affected by this need, especially but not exclusively on mobile devices with limited screen size.</p>
         <p>Use cases:</p>
         <ul>
              <li>Use Case: A chemistry book has a long table of each of the elements in the periodic table. The reader has entered the table, and realizes they do not need to see all of the elements in the table, but they do need to read the text immediately afterwards. They need a simple way to get from the complex table to the next sibling or parent element without endless scrolling.</li>
              <li>Use Case: The reader is reading a magazine article, and realizes the next item in the article is an inset sidebar of a document containing a multitude of different types of data, including a chart, an image gallery, an infographic, a video, and some text. This information takes up several screens of content at the reader's zoom level. The reader wants to skip past the sidebar and return to the content after the enclosing container.</li>
+            <li>Use Case: A student is reading a physics textbook and is currently on a math equations, but forgot what the symbol X represented that was introduced above.  The student would like to skip back to the previous block element which introduced what each symbol meant.</li>
         </ul>
 </section>
 
@@ -554,13 +555,14 @@ on the screen.</p>
   <p>This can be accomplished using aria-labeledby. However, while  provide <em>exactly</em> the necessary functionality for screen reader users, it is only exposed to users of AT. Digital publishing needs this association between a list heading in a list to be available to users who are not using AT. This could be accomplished by a non-aria attribute or element, or by accomplished by making aria-labeledby available to non AT.</p>
   <p>The following is a simple example:
 <pre>&lt;ul&gt;
-&lt;listtitle&gt;Noble Gases&lt;/listtitle&gt;
-&lt;li&gt;Helium&lt;/li&gt;
-&lt;li&gt;Neon&lt;/li&gt;
-&lt;li&gt;Argon&lt;/li&gt;
-&lt;li&gt;Krypton&lt;/li&gt;
-&lt;li&gt;Xenon&lt;/li&gt;
-&lt;li&gt;Radon&lt;/li&gt;&lt;/ul&gt;</pre>
+    &lt;listtitle&gt;Noble Gases&lt;/listtitle&gt;
+    &lt;li&gt;Helium&lt;/li&gt;
+    &lt;li&gt;Neon&lt;/li&gt;
+    &lt;li&gt;Argon&lt;/li&gt;
+    &lt;li&gt;Krypton&lt;/li&gt;
+    &lt;li&gt;Xenon&lt;/li&gt;
+    &lt;li&gt;Radon&lt;/li&gt;
+&lt;/ul&gt;</pre>
 </p>
 </section>
 
@@ -605,7 +607,7 @@ on the screen.</p>
 <section>
         <h4>Annotations</h4>
   <p><strong>Suggestion:</strong> Stay in communication with the Annotations WG.</p>
-        <p>Comments: User created annotations and Highlights adding personal notes to a document must be accessible for creation, editing, and access. The Annotations WG is aware of the accessibility requirement..</p>
+        <p>Comments: User created annotations and highlights adding personal notes to a document must be accessible for creation, editing, and access. The Annotations WG is aware of the accessibility requirement.</p>
         <p>Annotations are a general web requirement, but they are a vital need in the digitl publishing industry. Because of the importance of annotations in the industry, the DPUB Accessibility TF will continue to stay in communication with the Annotation WG.</p>
 	   	<p>Reference:</p>
 	    <ul>
@@ -742,7 +744,7 @@ WCAG accessibility standards.
 <section>
 <h2>Diagrammar's relevance to the W3C and accessible digital publishing</h2>
 
-  <p>The W3C standards bodies have developed multiple ways of creating extended descriptions for certain page elements, available for accessibility purposes. WAI-ARIA 1.1 has <strong>complete when we know the answer</strong>, and HTML5 has longdesc [[HTML-LONGDESC]]. Neither of these fulfills all of the use cases needed by accessible publishing, however. Diagrammar is being developed to address this set of use cases.</p>
+  <p>The W3C standards bodies have developed multiple ways of creating extended descriptions for certain page elements, available for accessibility purposes. WAI-ARIA 1.1 draft proposes using ARIA-DETAILS and ARIA-LINKTYPE, and HTML5 has longdesc [[HTML-LONGDESC]]. Although the proposed ARIA changes addresses most of digital publishing's use cases, there is still a need to have these extended descriptions accessible to those who may not be using assistive technology. Diagrammar is being developed to address this set of use cases.</p>
 
 <p>The Diagrammar team intends that the XML encoding of Diagrammar data will be transformed to HTML for presentation. Therefore, it will be useful for ongoing communication to continue.</p>
 
