@@ -82,7 +82,7 @@
                 "href" : "http://idpf.org/",
                 "publisher": "IDPF"
             },
-           
+
             "IDPF-Guide-Logical-Reading-Order": {
                 "title": "EPUB 3 Accessibility Guidelines: Logical Reading Order",
                 "href" : "http://www.idpf.org/accessibility/guidelines/content/semantics/order.php",
@@ -131,7 +131,7 @@
                  "href": "http://www.daisy.org/daisyniso-standard-dtd-and-css-files",
                  "rawDate": "2005",
                  "publisher": "DAISY Consortium"
-             },  
+             },
              "ANSI-NISO-Z39.98-2012": {
                  "authors": [
                  "DAISY Consortium"
@@ -140,7 +140,7 @@
                  "href": "http://www.daisy.org/z3998/2012/z3998-2012.html",
                  "rawDate": "2012",
                  "publisher": "DAISY Consortium"
-             },  
+             },
               "DPUB-ARIA-FootNote":{
                   "authors": [
                     "Digital Publishing Interest Group"
@@ -159,7 +159,7 @@
                   "rawDate": "2015-07-07",
                   "publisher": "W3C"
              },
-          
+
              "DPUB-Minutes-3":{
                   "authors": [
                     "Digital Publishing Interest Group"
@@ -204,7 +204,7 @@
                   "href": "http://diagramcenter.org/contact-form.html",
                   "publisher": "DIAGRAM Center"
              },
-  
+
               "DIAGRAMMAR":{
                   "authors": [
                     "DIAGRAM Center"
@@ -235,7 +235,7 @@
                   "authors": [
                       "WAI Members"
                   ],
-                  "title": "Using role=&ldqu;heading&rdquo; to identify headings",
+                  "title": "Using role=&ldquo;heading&rdquo; to identify headings",
                   "href": "https://www.w3.org/WAI/GL/wiki/Using_role%3Dheading",
                   "rawDate": "2013-09-12"
               },
@@ -447,14 +447,14 @@
   </section>
     <section class="introductory">
       <h2 id="intro">Introduction</h2>
-      <p>This document provides informative guidance (but does not set requirements) with regard to the needs of Digital Publishing with regard to W3C guidelines. Is informed by existing guidelines including (but not limited to) [[WCAG20]], [[ATAG20]], [[UAAG20]], and [[WAI-ARIA]]. Where appropriate, it is also informed by other ongoing W3C projects including, but not limited to, Portable Web Publications [[PWP]] and the Web Annotation Working Group</a>.</p>
-      <p>While the World Wide Web Consortium (W3C)'s W3C Web Accessibility Initiative (WAI) is primarily concerned with web technologies, its guidance is also relevant to technologies which are not exclusively web technologies. The digital publishing industry, which creates mixed web and non-web publications using web-based technological tools, is reliant on the standards set by the W3C.</p>
+      <p>This document provides a gap analysis concerning Digital Publishing needs in the context of existing WAI W3C guidelines including (but not limited to) [[WCAG20]], [[ATAG20]], [[UAAG20]], and [[WAI-ARIA]]. Where appropriate, this document is also informed by other ongoing W3C projects including, but not limited to, Portable Web Publications [PWP] and the Web Annotation Working Group.</p>
+      <p>The World Wide Web Consortium (W3C)'s W3C Web Accessibility Initiative (WAI) is primarily concerned with web technologies; however, its guidance is also relevant to technologies which are not exclusively web technologies. The digital publishing industry, which creates composite web and non-web publications using web-based technology tools and standards, is reliant on the standards set by the W3C.</p>
       <p>The current document is focused on the accessibility of digital publishing to people with disabilities and is not intended to supplant any other W3C work. </p>
 	</section>
 <section class="introductory">
       <h3>The W3C and Digital Publishing</h3>
-      <p><em>"Digital Publishing"</em> is a generic term for the broad ecosystem of electronic journals, magazines, news, or book publishing (authors, creators, publishers, news organizations, booksellers, accessibility and internationalization specialists, etc.). The formats used by eBook readers and tablets for electronic books, magazines, journals and educational resources are largely based on W3C Technologies, such as (X)HTML, CSS, SVG, SMIL, MathML, or various Web APIs. Commercial publishers also rely on W3C technologies in their back-end processing all the way from authoring through to delivering the printed or electronic product and beyond. In general one can say that the Publishing Industry is one of the largest communities relying large palette of W3C technologies. </p>
-      <p> However, the alignment of the needs of the Publishing Industry and the various W3C recommendations is not satisfactory. Necessary features may be missing in the W3C documents, or may be in draft only; as a result, for example, EPUB3, the standard for electronic books, had to introduce its own extensions to cover the needs of publishing.</p>
+      <p><em>Digital Publishing</em> is a generic term for the broad ecosystem of electronic journals, magazines, news, or book publishing (authors, creators, publishers, news organizations, booksellers, accessibility and internationalization specialists, etc.). Formats used by eBook readers and tablets for electronic books, magazines, journals and educational resources are W3C Technology-based. (X)HTML, CSS, SVG, SMIL, MathML, and various Web APIs are all part of modern digital publishing workflows. Commercial publishers also rely on W3C technologies in their back-end production workflows all the way from authoring through to delivering printed or electronic product and beyond. In general, one can say that the Publishing Industry is one of the largest communities relying heavily on W3C specifications and technology.</p>
+      <p> However, a gap currently exists between the alignment of Publishing Industry needs and the various W3C recommendations. Features necessary for the success of digital publishing may be missing in W3C documents, or may be in draft only; as a result, for example, EPUB 3, the standard for electronic books, introduced extensions to support publishing-specific requirements.</p>
 </section>
       <!--
 <section class="introductory">
@@ -481,129 +481,109 @@
 <section>
 <h2>Audience</h2>
 
-This document is aimed at those involved at creating and modifying existing W3C specifications, especially those oriented around accessibility.
+<p>The audience of this document includes involved people creating and modifying existing W3C specifications, especially those oriented around accessibility.</p>
 </section>
 
 
 <section>
-<h2>Digital Publishing Issues not currently addressed by W3C Standards</h2>
-
-A number of requirements for the digital publishing industry are not currently addressed by W3C standards. Those which can be meaningfully addressed by current WAI efforts are listed here in order of priority. Gaps which have been recognized but cannot be usefully addressed without further research are documented Appendix A.
-
-Some of these suggestions request changes to specifications and guidelines. Others request changes to existing techniques documents. Others offer suggestions for further outreach.  Where possible, we indicated which set of guidelines might be best positioned to address the change. However, these suggestions are based on the limited knowledge of the members of Digital Publishing Interest Group, and may be incorrect.
-
+<h2>The Gap Between Digital Publishing Issues and W3C Standards</h2>
+<p>A gap exists between specific digital publishing industry requirements and W3C standards working group efforts to date. Requirements that WAI efforts may address in the future are listed here in order of priority. Additional publishing industry requirements exist, but cannot sufficiently be addressed without further research documented Appendix A. Some suggestions request changes or additions to W3C specifications and guidelines. Additional proposals seek changes to existing W3C technique documentation and offer suggestions for further outreach. Where possible, we indicated which of the existing W3C guidelines might be best positioned to address the change. However, all suggestions are based on the limited knowledge of the members of Digital Publishing Interest Group, and may be incorrect.</p>
 <section>
-<h4>Navigating Among Multiple Documents</h4>
-  <p><strong>Suggestion 1:</strong> Add discussion of packaged documents to WCAG. </p>
-  <p><strong>Suggestion 2:</strong> Add author extension to WCAG for packaged documents. </p>
-    <p>Many digital publications are made up of more than one document. For example, often, every chapter in a book may be a separate HTML file. In an EPUB, for example, these are packaged together using a specified mechanism with a method of navigating to the components of the publication. At this point, there is no prescribed method in W3C specifications for navigating among related or packaged components. All documentation and most tools related to accessibility assume that the user is encountering one document. </p>
-    <p>Use Case: User follows link from index to a paragraph in middle of chapter 23 and realizes that the second entry in index is more helpful. User must return to index (separate HTML document) to access the link to the second index entry.</p>
-    <p>Use Case: Publisher wants to test accessibility of packaged publication to assess whether users can access all elements listed in the table of contents of a publication. Each HTML file passes validation and is accessible itself, but non-sighted reader cannot access one component. Developers did not catch this because it is technically WCAG-compliant.</p>
+<h4>Navigating Within Multiple Documents or Packaged Documents</h4>
+<p>Digital publishing use cases exist to allow users to navigate among multiple documents or collections of documents that make up a publication's whole. For example:</p>
+<ul>
+  <li>A user follows a hyperlink from a publication index to a paragraph in middle of chapter 23 and subsequently realizes that the second index entry may have been a better choice. The user must now return to the publication index (very likely a separate HTML document) to access the link to the second index entry.</li>
+  <li>A publisher wants to test packaged publication accessibility to assess whether users can access all elements listed in the publication's table of contents. Each HTML file passes validation and is accessible itself, but non-sighted reader cannot access one component. The content developers did not catch this singular oversight because each page in the publication is technically WCAG-compliant.</li>
+</ul>
+<p><strong>The Gap: </strong>Many digital publications are made up of more than one document. A common practice exists to divide every chapter in books into individual HTML files. EPUB 3 titles, for example, are packaged using a specified mechanism with a method of navigating to each publication component. Current W3C specifications provide no treatment or suggestions for navigating through related or packaged content documents. Existing WAI documentation and most tools related to accessibility assume that the user is encountering one document.</p>
+<p><strong>Potential options for addressing the gap:</strong></p>
+<ol>
+  <li>Add discussion of the packaged document use case to WCAG.</li>
+  <li>Add an author extension that addresses use cases to WCAG.</li>
+</ol>
 </section>
 
 <section>
 <h4>Skippability</h4>
-  <p><strong>Suggestion (UAAG):</strong> User agents need to implement skippability, and it cannot be confined to users of AT.</p>
-  <p>Comments: This is a user preference / personalization issue. User must be able to customize what is visible, what is read, etc.</p>
-  <ol>
-    <li>This should be an option for visual as well as aural presentation.</li>
-    <li>Skipped elements need to be discoverable later.</li>
-  </ol>
-  <p>Use cases:</p>
-  <ul>
-    <li>Use Case: User does not want to read page numbers or headers by default, but does want to read footnotes.</li>
-  </ul>
-  <p>References:</p>
-  <ul>
-    <li>Daisy Skippable Structures Recommendation [[DAISY]]</li>
-  </ul>
+  <p>A digital publishing use case exists to allow accessible technology users to "skip" through text components as they read. For example, a user does not want to read page numbers or headers by default. The user does want to read the footnotes when they encounter a footnote callout within the text.</p>
+  <p>Skippability is a common user preference in assistive technology (AT) tools allowing the user to personalize the content read aloud to a very precise specification. Assistive technology users expect to be able to customize which content components get read aloud or displayed to the user. Further, users expect to be able to navigate or go back to skipped elements at a later time. Skipped elements must remain discoverable to assistive technology.</p>
+  <p><strong>The Gap: </strong>Current W3C accessibility specifications and guidelines do not what would be considered implementation guidance to non-assistive technology users.</p>
+  <p><strong>Potential options for addressing the gap: </strong>Add language to the [[UAAG]] discussing the need for User agents to implement skippability. Further, the concept of skippability, in general, should not be confined to users of AT.</p>
+  <p><strong>Reference: </strong> DAISY Skippable Structures Recommendation [[DAISY]]</p>
 </section>
 
 <section>
 <h4>Escapability</h4>
-  <p><strong>Suggestion (UAAG):</strong> User agents need to implement escape to the next sibling or parent element, and it cannot be confined to users of AT.</p>
-        <p>Comments: Users need to be able to immediately move to the next non-contained block element. This is particularly a problem for users who browse the web at high magnification, and for users on mobile devices. When a user is in the middle of a lengthy element, there needs to be a way for them to move to the next sibling or parent with a simple command. Similarly the user may need to esecape back to the previous block element. Mobility impaired users are also greatly affected by this need, especially but not exclusively on mobile devices with limited screen size.</p>
-        <p>Use cases:</p>
-        <ul>
-             <li>Use Case: A chemistry book has a long table of each of the elements in the periodic table. The reader has entered the table, and realizes they do not need to see all of the elements in the table, but they do need to read the text immediately afterwards. They need a simple way to get from the complex table to the next sibling or parent element without endless scrolling.</li>
-             <li>Use Case: The reader is reading a magazine article, and realizes the next item in the article is an inset sidebar of a document containing a multitude of different types of data, including a chart, an image gallery, an infographic, a video, and some text. This information takes up several screens of content at the reader's zoom level. The reader wants to skip past the sidebar and return to the content after the enclosing container.</li>
-            <li>Use Case: A student is reading a physics textbook and is currently on a math equations, but forgot what the symbol X represented that was introduced above.  The student would like to skip back to the previous block element which introduced what each symbol meant.</li>
-        </ul>
+<p>Multiple digital publishing use cases exist allowing AT users to move immediately to the next non-contained block element. Moving quickly within text is a particular problem for AT users who browse the web and read at high magnification or mobility impaired users using AT regardless of device platform.</p>
+<p>More specifically, a user in the middle of an element of length needs to be able to move to the next sibling or parent with a simple command. Similarly, the user may need to escape back to the previous text block. Examples include:</p>
+<ul>
+  <li> A chemistry book has a long table of each of the elements in the periodic table. The reader has entered the table, and realizes they do not need to see all of the elements in the table, but they do need to read the text immediately afterward. The user needs to get from the table to the next sibling or parent element without endless scrolling.</li>
+  <li>A user is reading a magazine article and realizes the next item in the article is an inset sidebar of a document containing a multitude of different types of data, including a chart, an image gallery, an infographic, a video, and some text. This information takes up several screens of content at the reader's zoom level. The user wants to skip past the sidebar and return to the content after the enclosing container.</li>
+  <li>A student reading a physics textbook encountered a math equation but has forgotten what the previously introduced symbol X represented. The student would like to skip back to the previous block element to review the text describing the purpose of symbol X.</li>
+</ul>
+<p><strong>The Gap: </strong>Current W3C accessibility specifications and guidelines do not what would be considered implementation guidance to non-assistive technology users.</p>
+<p><strong>Potential options for addressing the gap: </strong>Add language to the [[UAAG]] discussing the need for User agents to implement escapability. Further, the concept of escapability, in general, should not be confined to users of AT.</p>
 </section>
-
 
 <section>
 <h4>Page Numbers / Pagination</h4>
-    <p><strong>Suggestion 1 (WCAG):</strong> Implement a concept such as EPUB's correspondence with print pages<pre>page-list</pre> and <pre>pagebreak</pre></p>
-    <p><strong>Suggestion 2 (UAAG):</strong> User agents need to enable, where relevant, both distinct concepts of pages (described below), including allowing users to jump to page numbers in either model, or view specific pages in either model.</p>
-
-  <p>Comments: For electronic publications, especially those intended to have direct correspondence to printed "hardcopy" publications,
-a way needs to exist for a user to accurately identify the page number, and to navigate accordingly. This method must be accessible, and should not disrupt
-continuous reading by screen reader users, and should be accurate and accessible for users using Assistive Technologies which may resize or reflow text
-on the screen.</p>
-
-  <p>A method for providing page numbers is addressed in CSS Paged Media Module Level 3 [[CSS3-PAGE]], which applies to the scenario of pagination of text being sent to a printer from a web page. If these or similar methods can be utilized in user-agents to facilitate access to accurate page numbers and pagination, a solution to the above stated issue may already exist.</p>
-
-  <p>More investigation and discussion with the pagination CSS work being done is necessary.</p>
-
-        <p>Use cases:</p>
-        <ul>
-             <li>Use Case: A magazine has a print edition and an online edition. The online edition is configured as a standard website, not as an EPUB. To boost print sales, the magazine would like to provide special interactive features for subscribers of their print magazine. These features need the reader to be able to easily jump to the page number they're currently reading in the print edition, or to know what page of the print edition corresponds to the website content they are currently viewing.</li>
-             <li>Use Case: A high school teacher has assigned a novel, and all the students are reading a particular edition for convenience. One of the students is reading the ebook for accessibility reasons, and needs to be able to turn from page 56 to page 53 when the teacher says to turn back three pages.</li>
-             <li>Use Case: That same student has the page size set to the viewable portal of their device at a particular zoom level, so their paginated view in their ebook reader does not correspond to a page of the print edition. The student remembers they saw something they needed three screens ago, and wants to skip back those three screens.</p>
-        </ul>
-
-  <p>References</p>
-  <ul>
-    <li>[[CSS-Paged-Media]] Module Level 3 Page-Margin Boxes</li>
-  </ul>
+<p>Multiple digital publishing use cases exist for allowing users to work with and manipulate paged content that does not necessarily flow vertically similar to the content most web pages. Many electronic publications have intentional correspondence to printed publications.</p>
+<p>Specific examples of page number/pagination use cases include:</p>
+<ul>
+  <li>A magazine publishes both print and online editions. The publisher distributes the online edition as a website (rather than as a standalone EPUB). To boost sales of the magazine's print edition, the publisher would like to provide special interactive features to print subscribers. The interactive features require that readers are easily able to jump to the page number they're currently reading in the print edition, or to know what page of the print edition corresponds to the website content they are currently viewing.</li>
+  <li>A high school teacher has assigned a novel, and all the students are reading a particular published edition for convenience. One of the students uses AT and is reading the ebook with preference set to resize and reflow the content. In class, the teacher instructs the students to turn from page 56 to page 53. The AT user must also be able to locate pages 56 and 53 to keep pace with the rest of the class.
+    <p>The student using AT has set the page size on the viewable area of their AT to a particular zoom level, so their paginated view in their ebook reader does not correspond to a page of the print edition. The student remembers they saw something they needed three screens ago and wants to skip back those three screens.</p>
+  </li>
+</ul>
+<p><strong>The Gap: </strong> Current W3C accessibility documentation and practices do not contain any discussion of the need for users to identify and navigate content based on locators corresponding printed publication page numbers. AT users need a means of quickly and accurately navigating digital publications by locators corresponding to printed page numbers, regardless of whether or not the user has set their preferences to resize or reflow text. Further, the mechanism to support navigating text by locators and page numbers should not disrupt continuous reading for students using Aural AT solutions.</p>
+<p><strong>Potential options for addressing the gap: </strong>The CSS Paged Media Module Level 3 [[CSS3-PAGE]] describes a method for providing page numbers in the context of a scenario where the text is paginated when sent to a printer from a web page. User agents could implement a similar solution facilitating access to accurate page numbers and pagination.</p>
+<p>The W3C WCAG and DPUB working groups should engage with the CSS Pagination working group to determine whether an acceptable, accessible solution for addressing page numbers and pagination already exists.</p>
+<p><strong>Potential interim options for addressing the gap: </strong></p>
+<ol>
+  <li>Add language to the [[WCAG]] implementing a concept corresponding to the EPUB 3 specifications to create print pagination corresponding locators using  <code>page-list</code> and <code>pagebreak</code> concepts.</li>
+  <li>Provide implementation guidance to User agents instructing the need to enable, where relevant, both distinct concepts of pages (described below), including allowing users to jump to page numbers in either model or view specific pages in either model.</li>
+</ol>
+<p><strong>Reference: </strong>[[CSS-Paged-Media]] Module Level 3 Page-Margin Boxes</p>
 </section>
 
 <section>
 <h4>Phonetic spellings of proper nouns and jargon terms</h4>
-  <p><strong>Suggestion:</strong> New or modified specification allowing simple pronunciation schemes to be shared among multiple publications.</p>
-
-  <p>Comments: Publishers need to be able to put in suggested pronunciation for proper nouns, acronyms, and field-specific jargon terms. The Pronunciation Lexicon (PLS) exists but it is exceptionally  difficult to use, and doesn't scale well to a large publisher's use cases. The CSS3 Speech module also exists, however the EPUB31 revision working group agreed to deprecate the speech properties due to lack of adoption.</p>
-
-  <p>Use cases:</p>
-  <ol>
-    <li>Use Case: A chemistry book needs to use the accepted pronunciations of chemistry terms to maximize clarity. It references a pre-existing pronunciation dictionary made available by the American Chemical Society that uses community-agreed-upon standards.
-    <li>Use Case: The trade novel THE LIVES OF CHRISTOPHER CHANT by Diana Wynne Jones, in which there is a plot point that a character's name is spelled "Ralph" but pronounced "Rafe," can be correctly encoded using a local pronunciation dictionary.
-    <li>Use Case: Reading systems support the pronunciation dictionary reference and expose the data to Accessibility APIs.
-  </ol>
-  <p>References:</p>
-  <ul>
-    <li>CSS Speech Module [[CSS3-SPEECH]]</li>
-    <li>Pronunciation Lexicon Specification (PLS) [[PRONUNCIATION-LEXICON]]</li>
-  </ul>
-
+<p>Multiple digital publishing use cases exist to enable AT solutions to support phonetic spelling of proper nouns and jargon. For example:</p>
+<ul>
+  <li>A chemistry book needs to use the accepted pronunciations of chemistry terms to maximize clarity. It references a pre-existing pronunciation dictionary made available by the American Chemical Society that uses community-agreed-upon standards.</li>
+  <li>The trade novel THE LIVES OF CHRISTOPHER CHANT by Diana Wynne Jones, in which there is a plot point that a character's name is spelled "Ralph" but pronounced "Rafe," can be correctly encoded using a local pronunciation dictionary.</li>
+  <li>Reading systems support the pronunciation dictionary reference and expose the data to Accessibility APIs.</li>
+</ul>
+<p>Publishers need to be able to put in suggested pronunciation for proper nouns, acronyms, and field-specific jargon terms. The Pronunciation Lexicon (PLS) exists, but it is exceptionally difficult to use and doesn't scale well to a large publisher's use cases. The CSS3 Speech module [[CSS3-SPEECH]] also exists. However, the EPUB 3.1 revision working group agreed to deprecate the speech properties due to lack of adoption.</p>
+<p><strong>The Gap: </strong>Current W3C accessibility specifications and guidelines do not address what are considered implementation guidance to non-assistive technology users.</p>
+<p><strong>Potential solution for addressing the gap: </strong>Consider developing a new or modifying an existing specification allowing simple pronunciation schemes for reference among multiple publications.</p>
+<p><strong>References:</strong></p>
+<ul>
+  <li>CSS Speech Module [[CSS3-SPEECH]]</li>
+  <li>Pronunciation Lexicon Specification (PLS) [[PRONUNCIATION-LEXICON]]</li>
+</ul>
 </section>
 
 <section>
 <h4>Deeply Nested Heading Levels Best Practices</h4>
-  <p><strong>Suggestion:</strong> Add to WCAG Techniques and to the WAI Tutorials.</p>
-  <p>Comments: It is not easy to determine what best practice is for deeply nested  headings, headings that go beyond &lt;h6&gt;. Best Practices should be clearly established and easy to find.  Use cases in books are more frequent than other circumstances. This is likeliest to occur if an &lt;aside&gt; begins with &lt;h5&gt; or &lt;h6&gt;. </p>
-
-  <ol>
-    <li>Use Case: Encyclopedias and similar detailed reference works often have many levels of headings.</li>
-  </ol>
-
-  <p>References:</p>
-  <ul>
-    <li>Item #3 5/15/2015 DPUB Minutes [[DPUB-Minutes-3]]</li>
-    <li>Using role="heading" to identify headings [[WAI-Wiki]]</li>
-    <li>April-June 2015 [[WAI-IG-Minutes]]</li>
-  </ul>
+<p>Digital publishing use cases exist to support encyclopedias and similarly detailed reference works containing many levels of headings.</p>
+<p>It is not easy to determine what best practice is for deeply nested headings, headings that go beyond <code>&lt;h6>&gt;</code>. Best Practices should be clearly established and easy to find. Use cases in books are more frequent than other circumstances. This is likeliest to occur if an <code>&lt;aside&gt;</code> begins with <code>&lt;h5&gt;</code> or <code>&lt;h6&gt;</code>.</p>
+<p><strong>The Gap: </strong>Current W3C accessibility specifications and guidelines do not address what are considered implementation guidance to non-assistive technology users.</p>
+<p><strong>Potential solution for addressing the gap: </strong>Add specific guidance related to supporting deeply nested heading levels in reference works to WCAG Techniques and the WAI Tutorials.</p>
+<p><strong>References:</strong></p>
+<ul>
+  <li>Item #3 5/15/2015 DPUB Minutes [[DPUB-Minutes-3]]</li>
+  <li>Using role="heading" to identify headings [[WAI-Wiki]] April-June 2015 [][WAI-IG-Minutes]]</li>
+</ul>
 </section>
 
 <section>
 <h4>Semantic List-Head</h4>
-  <p><strong>Suggestion 1 (ARIA):</strong> Outreach to ARIA WG about proposing aria-labelledby be exposed by user agents directly without AT.</p>
-  <p><strong>Suggestion 2:</strong> Outreach to various groups about alternative non-ARIA semantically meaningful list heading.</p>
-  <p>Comments: There is no clear method of associating a title of a list with the list items. This can be accomplished using artificial wrappers, such as &lt;div&gt;, but the list elements (&lt;ul&gt; and &lt;ol&gt;) should include titles. It is tempting to use the h1 – h6 elements, but these have the native semantics of aria role=”heading”, offering unwanted default navigation. It would be useful if there were a role of element called "listtitle" or something similar. This should be an option for visual as well as aural presentation.</p>
-
-  <p>This can be accomplished using aria-labeledby. However, while  provide <em>exactly</em> the necessary functionality for screen reader users, it is only exposed to users of AT. Digital publishing needs this association between a list heading in a list to be available to users who are not using AT. This could be accomplished by a non-aria attribute or element, or by accomplished by making aria-labeledby available to non AT.</p>
-  <p>The following is a simple example:
+<p>A digital publishing use case exists to support a semantic title or head within a list.</p>
+<p><strong>The Gap: </strong>Currently, no clear method of associating a title with a list exists in any W3C specification.</p>
+<p>Creating the visual effect of a list containing a semantic title or head can be accomplished using markup wrappers such as <code>&lt;div&gt;</code>, but list elements (<code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>) should include titles.</p>
+<p>It is tempting to use HTML5 h1 – h6 elements but these elements may contain the ARIA <code>role="heading"</code> attribute, offering unwanted default navigation. A potentially useful option would be to include a role value as part of an element called <code>"listtitle"</code> (or something similar). The option to include a semantic title in a list requires support in visual as well as aural presentations.</p>
+<p>Consider the following simple example:</p>
 <pre>&lt;ul&gt;
     &lt;listtitle&gt;Noble Gases&lt;/listtitle&gt;
     &lt;li&gt;Helium&lt;/li&gt;
@@ -613,22 +593,32 @@ on the screen.</p>
     &lt;li&gt;Xenon&lt;/li&gt;
     &lt;li&gt;Radon&lt;/li&gt;
 &lt;/ul&gt;</pre>
-</p>
+<p>It is tempting to use HTML5 h1 – h6 elements but these elements may contain the ARIA <code>role="heading"</code> attribute, offering unwanted default navigation. A potentially useful option would be to include a role value as part of an element called <code>"listtitle"</code> (or something similar). The option to include a semantic title in a list requires support in visual as well as aural presentations.</p>
+<p><strong>Potential solutions for addressing the gap: </strong></p>
+<ol>
+  <li>Contact the ARIA WG and request a discussion to consider proposing to expose <code>aria-labelledby</code> to all user agents regardless of whether or not the user agent is AT.</li>
+  <li>Contact various other interested W3C working and interest groups to consider alternative proposals to support a non-ARIA-based semantically useful list heading.</li>
+</ol>
 </section>
 
 <section>
 <h4>Drop Cap</h4>
-  <p><strong>Suggestion 1 (ATAG):</strong> Possible addition to ATAG techniques.</p>
-  <p><strong>Suggestion 2 (WAI Outreach):</strong> Outreach to content creators that CSS 3 solves the drop cap problem accessibly.</p>
-<p>Comments: The [[CSS3-Selector-First-Letter]] allows the creation of accessible drop caps, and it is widely supported in user agents. However, it is not widely supported in authoring tools, nor is it widely known to content creators. When drop caps are created without using this CSS3 selector, this causes accessibility issues when the two components of the word are read as separate words. Outreach to authoring tool creators and content creators is needed.</p>
+<p>The [[CSS3-Selector-First-Letter]] allows the creation of accessible drop caps in support of typographic layout designs that originated in print publishing.  [[CSS3-Selector-First-Letter]] is widely supported by user agents; however, it is not widely supported in authoring tools, nor is it widely known to content creators. Drop caps created without using the [[CSS3-Selector-First-Letter]] selector cause accessibility issues. Without the [[CSS3-Selector-First-Letter]], AT user agents treat the drop-cap and the remainder of the word as separate words.</p>
+<p><strong>The Gap: </strong>Additional outreach to authoring tool creators and content creators is needed to ensure that the purpose and functionality enabled by including [CSS3-Select-First-Letter] are required.</p>
+<p><strong>Potential solutions for addressing the gap: </strong></p>
+<ol>
+  <li>Work with the WAI WG on a plan to better publicize the existence and purpose of [[CSS3-Selector-First-Letter]] in [[ATAG]] techniques.</li>
+  <li>Work with the WAI WG outreach committee to better inform content creators that CSS3 is already capable of creating accessible drop-caps via the [[CSS3-Selector-First-Letter]] selector, and to discourage the use of other, ad hoc solutions.</li>
+</ol>
 </section>
 
 <section>
 <h4>Discoverability</h4>
-  <p><strong>Suggestion:</strong> Identify and recommend a mechanism to enable the declaration and discoverability of metadata on a digital publication, notably to describe its accessibility properties.</p>
-  <p>Digital publications are often distributed through various channels, for instance in online book stores. These channels are typically aggregators that have almost no control on the publications' content and quality. Besides, a single intellectual work can be available as several digital editions, with varying quality and accessibility features.</p>
-  <p>When users want to acquire digital publications, they need to know if the content will be accessible to them. It is crucial that the accessibility properties of a digital publication can be declared as metadata, and that it can be made available to any interested party. For instance, an online book store would need to access such metadata and convey the information to its users so that they can discover which content is suitable to them.</p>
-  <p>References:</p>
+<p>Digital publications are often distributed through various channels, for instance in online bookstores. These channels are typically aggregators that have almost no control over publications' content and quality. Besides, a single intellectual work can be distributed as several digital editions, with varying quality and accessibility features.</p>
+<p>When users want to acquire digital publications, they need to know if the content will be accessible to them. Therefore, it is crucial that accessibility properties of a digital publication exist as metadata, and that such metadata can be made available to any interested party. For instance, an online bookstore would access such metadata to convey the information to users so that they can discover which digital distribution of a title contains the accessible features specific to their needs.</p>
+<p><strong>The Gap: </strong>The Gap: There is no current recommended standard or specification for recording digital publishing metadata stating that a title is accessible and enumerating the properties of the publication that are AT-compatible.</p>
+<p><strong>Potential solution for addressing the gap: </strong>Work with W3C WAI community to identify and recommend a mechanism to enable the declaration and discoverability of metadata on a digital publication, notably to describe its accessibility properties.</p>
+<p>References:</p>
   <ul>
     <li><a href="http://schema.org/">Schema.org</a></li>
     <li><a href="https://www.w3.org/wiki/WebSchemas/Accessibility">WebSchemas Accessibility wiki page</a></li>
@@ -638,9 +628,9 @@ on the screen.</p>
 
 <section>
 <h4>Optimized publications</h4>
-  <p><strong>Suggestion:</strong> Outreach to the WCAG WG to figure out how to handle optimized publications.</p>
-  <p>Unlike universal Web content, some digital publications are legitimately designed and optimized for specific user groups; this is the case of audio or braille books made for persons with print disabilities. These publications target specific reading modalities: by design, they cannot meet the universal accessibility principles identified in WCAG, despite the fact that they can be perfectly accessible to their intended audience.</p>
-  <p>It should be made possible to provide guidelines to author and evaluate such optimized digital publications, and to convey their nature to users.</p>
+<p>Unlike general Web content, some digital publications are legitimately designed and optimized for specific user groups; this is the case of audio or braille books made for persons with print disabilities. These publications target specific reading modalities. By design, they cannot meet the universal accessibility principles identified in WCAG, despite the fact that they are accessible to their intended audience.</p>
+<p><strong>The Gap: </strong> Guidelines to author and evaluate optimized, accessible digital publications do not exist.</p>
+<p><strong>Potential solution for addressing the gap: </strong>Work with the W3C WAI community and WCAG WG outreach committee to provide guidelines to author and evaluate optimized digital publications, and to convey their nature to users.</p>
 </section>
 
 <!-- Main content section -->
@@ -650,24 +640,23 @@ on the screen.</p>
 <section class='appendix'>
     <h1>Future work</h1>
 
-    <p>The Digital Publishing Interest Group is not making any recommendations on the following items at this time. They are included to increase awareness of the work we believe still needs to be done for accessibility in the digital publishing space. Some of these points are being addressed by existing W3C working groups already. Others will be investigated by the DPUB IG Accessibility TF in the near future.</p>
+    <p>The Digital Publishing Interest Group is not making any recommendations on the following items at this time. They are included to increase awareness of the work we believe still needs to be done for accessibility in the digital publishing space. Existing W3C working groups are already addressing some of these points. Others will be investigated by the DPUB IG Accessibility TF shortly.</p>
     <section>
         <h4>Layout's Influence On Comprehension</h4>
-        <p><strong>Suggestion:</strong> Although a solution is needed, the DPUB IG has no good suggestions at this time. More research and investigation is warranted.</p>
-            <p>Comments: There is currently no reasonable, scalable, generalizable and sustainable method to provide information about the layout of text on a page to screen readers and braille displays.</p>
-            
-            <p>Certain literary styles such as poetry may use the placement of text to convey extra meaning. There is no consistent method for content creators to make this additional information available to a non-visual display such as a screen reader. We have no suggested approaches at this time. More research and investigation is warranted.</p>
-        <p>Use cases:</p>
+        <p><strong>Use cases:</strong></p>
         <ul>
           <li>Use Case: Concrete poetry, such as "The Mouse's Tail" [[MOUSE]] by Lewis Carroll, "Soweto" [[SOWETO]] by Kamau Braithwaite, or "Women" [[WOMEN]] by May Swenson.</li>
-             <li>Use Case: Puzzles, such as "Headshots" [[HEADSHOTS]], a puzzle which relies on exact location on the page to produce a solution.</li>
+          <li>Use Case: Puzzles, such as "Headshots" [[HEADSHOTS]], a puzzle which relies on exact location on the page to produce a solution.</li>
         </ul>
+        <p>Comments: There is currently no reasonable, scalable, generalizable and sustainable method to provide information about the layout of text on a page to screen readers and braille displays.</p>
+        <p>Certain literary styles such as poetry may use the placement of text to convey extra meaning. There is no consistent method for content creators to make this additional information available to a non-visual display such as a screen reader. We have no suggested approaches at this time. More research and investigation is warranted.</p>
+        <p><strong>Suggestion:</strong> Although a solution is needed, the DPUB IG has no good suggestions at this time. More research and investigation is warranted.</p>
 
 		<p>Contact:</p>
 		<ul>
 		   	<li>None at this time.</li>
 		</ul>
-		
+
         <p>References:</p>
         <ul>
              <li>[[IDPF-Guide-Logical-Reading-Order]]</li>
@@ -676,9 +665,10 @@ on the screen.</p>
 
     <section>
         <h4>Annotations</h4>
-        <p><strong>Suggestion:</strong> Stay in communication with the Annotations WG.</p>
-        <p>Comments: User created annotations and highlights adding personal notes to a document must be accessible for creation, editing, and access. The Annotations WG is aware of the accessibility requirement.</p>
-        <p>Annotations are a general web requirement, but they are a vital need in the digital publishing industry. Because of the importance of annotations in the industry, the DPUB Accessibility TF will continue to stay in communication with the Annotation WG.</p>
+
+        <p>User created annotations and highlights adding personal notes to a document must be accessible for creation, editing, and access. The W3C Annotations WG is aware of the accessibility requirement.</p>
+        <p>Annotations are a general web requirement, but they are a vital need in the digital publishing industry. Because of the importance of annotations in the industry, the DPUB Accessibility TF will continue to stay in communication with the W3C Annotation WG.</p>
+        <p><strong>Suggestion:</strong> Communicate regularly with the W3C Annotations WG.</p>
 	   	<p>Reference:</p>
 	    <ul>
              <li>[[ANNOTATIONS-WG]]</li>
@@ -687,7 +677,7 @@ on the screen.</p>
 
     <section>
         <h4>Notes (Footnotes, Asides, Author Notes, etc.)</h4>
-        <p>Comments: The W3C recently completed the necessary component of this work, with the new DPUB-ARIA 1.0 module. DPUB-ARIA 1.0 includes [[DPUB-ARIA-FootNote]] and [[DPUB-ARIA-FootNotes]]. These roles convey that information is ancillary without conveying information about positioning. This allows authors and user agents to achieve positioning using CSS or scripting while maintaining the flow and navigability of the content.</p>
+        <p>The W3C recently completed the necessary component of this work, with the new DPUB-ARIA 1.0 module. DPUB-ARIA 1.0 includes [[DPUB-ARIA-FootNote]] and [[DPUB-ARIA-FootNotes]]. These roles convey that information is ancillary without conveying information about positioning, allowing authors and user agents to achieve positioning using CSS or scripting while maintaining the flow and navigability of the content.</p>
 
         <p>The Accessibility TF will consider what steps might be taken to publicize the new roles within the digital publishing community.</p>
 
@@ -696,17 +686,17 @@ on the screen.</p>
 		   	<li><a href="mailto:tsiegman@wiley.com">Tzviya Siegman (Wiley)</a></li>
 		   	<li><a href="mailto:mgylling@daisy.org">Markus Gylling (DAISY)</a></li>
 	    </ul>
-	    
+
     </section>
     <section>
         <h4>Positional location of text to indicate different speakers</h4>
-        <p><strong>Suggestion:</strong> Although a solution may be needed, DPub IG has no good suggestions at this time. More research and investigation is warranted. Possibly all use cases can be addressed with CSS.</p>
         <p>Use cases:</p>
          <ul>
              <li>Use Case: comic strips have different speakers on different sides of the page. </li>
              <li>Use Case: poetry </li>
              <li>Use Case: different voices for different speakers. </li>
         </ul>
+        <p><strong>Suggestion:</strong> Although a solution may be needed, DPub IG has no good suggestions at this time. More research and investigation is warranted. Possibly all use cases can be addressed with CSS.</p>
 
 	   	<p>Contact:</p>
 	    <ul>
@@ -720,19 +710,20 @@ on the screen.</p>
 
     <section>
         <h1>Assessments</h1>
+        <p>Use cases:</p>
+           <ul>
+               <li>Adjustable timings needed for accessibility conflict with a proctor's need to control time limits.</li>
+               <li>Extended descriptions of visual elements must be controlled to provide the test taker with the appropriate level of information, possibly customized by the test taker's individualized accommodations (such as an IEP in the United States).</li>
+           </ul>
+        <p>Mark Hakkinen and members of the IMS Accessibility Task Force are leading the effort to harmonize the IMS QTI/APIP accessibility model with HTML5/ARIA and WCAG. A gap analysis is underway at ETS and recommendations for enhancements to both guidelines (including techniques and best practices) and standards, such as the addition of new ARIA attributes. The bulk of these recommendations will come from their group; we will coordinate with them as they request. We've done initial outreach.</p>
         <p><strong>Suggestion:</strong> The DPUB Accessibility Task Force will coordinate with the IMS Assessment Accessibility Task Force</p>
-        <p>Comments: Mark Hakkinen and members of the IMS Accessibility Task Force are leading the effort to harmonize the IMS QTI/APIP accessibility model with HTML5/ARIA and WCAG. This involves gap analysis underway at ETS, and recommendations for enhancements to both guidelines (including techniques and best practices) and standards, such as the addition of new ARIA attributes. The bulk of these recommendations will come from their group; we will coordinate with them as they request. We've done initial outreach.</p>
-	   <p>Use cases:</p>
-        <ul>
-            <li>Adjustable timings needed for accessibility conflict with a proctor's need to control time limits.</li>
-            <li>Extended descriptions of visual elements need to be controlled so they are giving the appropriate level of information to the test taker, possibly customized by the test taker's individualized accomodations (such as an IEP in the United States).</li>
-        </ul>
+
         <p>Contacts:</p>
         <ul>
             <li><a href="mailto:mhakkinen@ets.org">Markku Hakkinen (ETS)</a></li>
             <li>[[IMS-Global]]</li>
         </ul>
-  	
+
         <p>References:</p>
         <ul>
             <li>[[IMS-Global-QTI]]</li>
@@ -743,21 +734,22 @@ on the screen.</p>
 
     <section>
         <h4>Mathematics</h4>
-        <p><strong>Suggestion:</strong>A joint task force of ARIA WG and DPUB IG could investigate potential solutions such as a mathematics/STEM-related ARIA module.</p>
-            <p>Comments: There is currently no reasonable, scalable, generalizable and sustainable method to provide information about mathematical rendering using HTML with CSS or SVG to screen readers and braille displays.</p>
-            
-            <p>While MathML is part of HTML5, virtually all mathematical and scientific content on the web is rendered using HTML (with CSS) and SVG. While these standards are sufficient for visual rendering, there is no consistent method for content creators to make mathematical and scientific information available to a non-visual display such as a screen reader.</p>
         <p>Use cases:</p>
         <ul>
-          <li>Use Case: Mathematics. Tools such as MathJax [[MATHJAX]], MathQuill [[MATHQUILL]], [[MATHEMATICAL]] and many other tools provide HTML and SVG rendering of mathematical content.</li>
-             <li>Use Case: Chemistry. ProgressiveAccess [[PROGRESSIVE]], Avogadro [[AVOGADRO]], jchempaint [[JCHEMPAINT]] and many other tools render chemical information as SVG.</li>
+          <li>Mathematics. Tools such as MathJax [[MATHJAX]], MathQuill [[MATHQUILL]], [[MATHEMATICAL]] and many other tools provide HTML and SVG rendering of mathematical content.</li>
+          <li>Chemistry. ProgressiveAccess [[PROGRESSIVE]], Avogadro [[AVOGADRO]], jchempaint [[JCHEMPAINT]] and many other tools render chemical information as SVG.</li>
         </ul>
+        <p>There is currently no reasonable, scalable, generalizable and sustainable method to provide information about mathematical rendering using HTML with CSS or SVG to screen readers and braille displays.</p>
+
+        <p>While MathML is part of HTML5, virtually all mathematical and scientific content on the web is rendered using HTML (with CSS) and SVG. While these standards are sufficient for visual rendering, there is no consistent method for content creators to make mathematical and scientific information available to a non-visual display such as a screen reader.</p>
+        <p><strong>Suggestion: </strong>A joint task force of the W3C's ARIA WG and DPUB IG could investigate potential solutions such as a mathematics/STEM-related ARIA module.</p>
+
 
 		<p>Contact:</p>
 		<ul>
 		   	<li>None at this time.</li>
 		</ul>
-		
+
         <p>References:</p>
         <ul>
              <li>[[IDPF-Guide-Logical-Reading-Order]]</li>
@@ -768,14 +760,14 @@ on the screen.</p>
 <section class='appendix'>
     <h1>Gap Analysis</h1>
 
-    The Accessibility Task Force of the Digital Publishing Interest Group performed a gap analysis between the needs of the digital publishing industry and WCAG. We did not perform a gap analysis for any other W3C standards. The meaningful results of the gap analysis have been broken out into this Note. However, the full gap analysis is included in the following table. Here the team investigated each technique, whether or not it is a requisite for digital publishing, and indicated in initial comments what should be the jumping off point for discussion in the group.
+    <p>The Accessibility Task Force of the Digital Publishing Interest Group performed a gap analysis identifying the needs of the digital publishing industry and WCAG. We did not perform a gap analysis for any other W3C standards. The meaningful results of the gap analysis have been broken out into this Note. However, the full gap analysis is included in the following table. Here the team investigated each technique, whether or not it is a requisite for digital publishing, and indicated in initial comments what should be the jumping off point for discussion in the group.</p>
 
-    [[DPUB-Accessibility-Wiki]]
+    <p><strong>Reference: </strong>[[DPUB-Accessibility-Wiki]]</p>
 
 </section> <!-- end gap analysis -->
 
 <section class='appendix'>
-    <h1>Relevant work being developed outside the W3C</h1>
+    <h1>Relevant Work in Development Outside the W3C</h1>
 
     <p>Some open specifications under development or maintained outside the W3C have great relevance to the accessibility in the digital publishing sector. Members of the W3C involved in accessibility within digital publishing need to be aware of work happening in these spaces. Here we describe some key projects that are relevant to our work.</p>
 
@@ -787,9 +779,9 @@ on the screen.</p>
     <h1>EPUB</h1>
 
 <section>
-    <h2>EPUB's relevance to  the W3C and accessible digital publishing</h2>
+    <h2>EPUB's relevance to the W3C and accessible digital publishing</h2>
 
-    <p>EPUB is quickly becoming one of the de facto standards in digital publishing, and is gaining global traction.  There are a number of mainstream reading systems that can read ePub books. This standard is actively being updated and improved.  EPUB is based on HTML5 and adheres to the WCAG accessibility standards.</p>
+    <p>EPUB is quickly becoming one of the de facto standards in digital publishing and is gaining global traction. Some existing reading systems read EPUB books. This standard is actively being updated and improved. EPUB is based on HTML5 and adheres to the WCAG accessibility standards.</p>
 
     <h2>Maintainers of the specification</h2>
 
@@ -804,7 +796,7 @@ on the screen.</p>
 
     <p>Beginning with EPUB 3.0, the primary accessible publishing standard, DAISY DTBook and the primary commercial publishing format merged. DAISY’s Digital Talking Book [[DAISY-DTD]] is an XML-based file format and puts an emphasis on structural encoding to enable reading for the visually impaired audience. EPUB 2 allowed DTBook as an alternate syntax. The EPUB 3 specification merged DAISY and EPUB, making accessibility considerations a concern for all publishers, authors, and readers. The EPUB 3.0.1 specification is available at [[EPUB3]]. One of the features of this relationship is the [[IDPF-EPUB-Structure-Semantics-Vocabulary]], a namespaced vocabulary that enables semantic inflection of HTML elements. In 2015, several of these terms have been transformed into prefixed ARIA roles in [[DPUB-ARIA-1.0]].</p>
 
-     <p>The IDPF and W3C Digital Publishing Interest Group work closely together on many issues, including broadening the definition of Web Accessibility to include long-form content. The Digital Publishing Interest Group’s Charter includes advancing EPUB 3 as one of the goals. Among the success criteria are providing advice to the IDPF EPUB 3.1 Working Group and advancing what is now called Portable Web Publications [[PWP]], a vision for the convergence of future of digital documents and the Web. Integrating the accessibility functionality that is native to the Web with the additions that DAISY and the IDPF have created is part of that vision.</p>
+     <p>The IDPF and W3C Digital Publishing Interest Group work closely together on many issues, including broadening the definition of Web Accessibility to include long-form content. The Digital Publishing Interest Group’s Charter includes advancing EPUB 3 as one of the goals. Among the success criteria are providing advice to the IDPF EPUB 3.1 Working Group and advancing what is now called Portable Web Publications [PWP], a vision for the convergence of future of digital documents and the Web. Integrating the accessibility functionality that is native to the Web with the additions that DAISY and the IDPF have created is part of that vision.</p>
 
     <h2>References:</h2>
         <ul>
@@ -822,13 +814,13 @@ on the screen.</p>
 
     <h2>Diagrammar's relevance to the W3C and accessible digital publishing</h2>
 
-    <p>The W3C standards bodies have developed multiple ways of creating extended descriptions for certain page elements, available for accessibility purposes. WAI-ARIA 1.1 draft proposes using ARIA-DETAILS and ARIA-LINKTYPE, and HTML5 has longdesc [[HTML-LONGDESC]]. Although the proposed ARIA changes addresses most of digital publishing's use cases, there is still a need to have these extended descriptions accessible to those who may not be using assistive technology. Diagrammar is being developed to address this set of use cases.</p>
+    <p>The W3C standards bodies have developed multiple ways of creating extended descriptions for certain page elements, available for accessibility purposes. WAI-ARIA 1.1 draft proposes using ARIA-DETAILS and ARIA-LINKTYPE, and HTML5 has longdesc [[HTML-LONGDESC]]. Although the proposed ARIA changes address most of digital publishing's use cases, there is still need to have these extended descriptions accessible to those who may not be using assistive technology. Diagrammar is being developed to address this set of use cases.</p>
 
-    <p>The Diagrammar team intends that the XML encoding of Diagrammar data will be transformed to HTML for presentation. Therefore, it will be useful for ongoing communication to continue.</p>
+    <p>The Diagrammar team intends to support a Diagrammar XML data to HTML transformation for presentation. Therefore, it will be useful for ongoing communication to continue.</p>
 
     <h2>Specification Maintainance</h2>
 
-    <p>Diagrammar is being developed by [[DIAGRAM-Center]], a Benetech initiative, in partnership with the WGBH National Center for Accessible Media and the US Fund for DAISY.</p>
+    <p>[[DIAGRAM-Center]], a Benetech initiative, in partnership with the WGBH National Center for Accessible Media and the US Fund for DAISY, develops DIAGRAMMAR.</p>
 
     <p>Contacts:</p>
     <ul>
@@ -838,15 +830,15 @@ on the screen.</p>
     <h2>Historical Context</h2>
 
 
-    <p>In the early days of the web, there was recognition that images  were an obstacle to persons who are blind and others who could not process the visual information. Today, we find that there are many more types of information objects that are not perceivable to persons with disabilities.  Furthermore, publishers and other content creators recognize that alternative mechanisms for conveying information can benefit everybody. These extended descriptions not only pertain to images but any web element that is visually complex and needs to be described in more detail; the DIAGRAM Center hosts [[DIAGRAMMAR]] use cases for extended description information in multiple formats.  Alternative representations may be required, and we need a way to link a specific web element to multiple representations be it an extended description, simplified description, or a tactile or auditory representation of the element.</p>
+    <p>In the early days of the web, there was recognition that images  were an obstacle to persons who are blind and others who could not process the visual information. Today, we find that there are much more types of information objects that are not perceivable to persons with disabilities.  Furthermore, publishers and other content creators recognize that alternative mechanisms for conveying information can benefit everybody. These extended descriptions not only pertain to images but any web element that is visually complex, requiring a description in more detail; the DIAGRAM Center hosts [[DIAGRAMMAR]] use cases for extended description information in multiple formats.  Alternative representations may be required, and we need a way to link a specific web element to multiple representations be it an extended description, simplified description, or a tactile or auditory representation of the element.</p>
 
-    <p>[[DIAGRAMMAR]] is an XML framework to hold multiple extended description types, to make a wide range of content types accessible: images, tables, charts, animations, 3D animations etc.  [[DIAGRAMMAR]] defines a data model for extended descriptions and associated metadata.  It provides a structured, standard way for extended descriptions data to be modeled, including different modality types for extended descriptions.  </p>
+    <p>[[DIAGRAMMAR]] is an XML framework to hold multiple extended description types, to make a wide range of content types accessible: images, tables, charts, animations, 3D animations, etc.  [[DIAGRAMMAR]] defines a data model for extended descriptions and associated metadata.  It provides a structured, standard way for modeling extended descriptions data, including different modality types for extended descriptions.</p>
 
     <h2>References:</h2>
     <ul>
         <li>[[DIAGRAM-Center]]</li>
         <li>[[DIAGRAMMAR]]</li>
-        <li>[[ANSI-NISO-Z39.98-2012]] "Authoring and Interchange Framework for Adaptive XML Publishing Specification"</li>
+        <li>[[ANSI-NISO-Z39.98-2012]] "Authoring and Interchange Framework for Adaptive XML Publishing Specification."</li>
     </ul>
 </section> <!-- end DIAGRAMMAR -->
 </section> <!-- end outside standards -->
