@@ -487,28 +487,51 @@
 
 <section>
 <h2>The Gap Between Digital Publishing Issues and W3C Standards</h2>
-<p>A gap exists between specific digital publishing industry requirements and W3C standards working group efforts to date. Requirements that WAI efforts may address in the future are listed here in order of priority. Additional publishing industry requirements exist, but cannot sufficiently be addressed without further research documented Appendix A. Some suggestions request changes or additions to W3C specifications and guidelines. Additional proposals seek changes to existing W3C technique documentation and offer suggestions for further outreach. Where possible, we indicated which of the existing W3C guidelines might be best positioned to address the change. However, all suggestions are based on the limited knowledge of the members of Digital Publishing Interest Group, and may be incorrect.</p>
+<p>A gap exists between specific digital publishing industry requirements and W3C standards working group efforts to date. Requirements that WAI efforts may address in the future are listed here in order of priority. Additional publishing industry requirements exist, but cannot sufficiently be addressed without further research documented Appendix A. Some suggestions request changes or additions to W3C WAI Specifications and Guidelines. Additional proposals seek changes to existing W3C technique documentation and offer suggestions for further outreach. Where possible, we indicated which of the existing W3C guidelines might be best positioned to address the change. However, all suggestions are based on the limited knowledge of the members of Digital Publishing Interest Group, and may be incorrect.</p>
 <section>
 <h4>Navigating Within Multiple Documents or Packaged Documents</h4>
 <p>Digital publishing use cases exist to allow users to navigate among multiple documents or collections of documents that make up a publication's whole. For example:</p>
 <ul>
-  <li>A user follows a hyperlink from a publication index to a paragraph in middle of chapter 23 and subsequently realizes that the second index entry may have been a better choice. The user must now return to the publication index (very likely a separate HTML document) to access the link to the second index entry.</li>
-  <li>A publisher wants to test packaged publication accessibility to assess whether users can access all elements listed in the publication's table of contents. Each HTML file passes validation and is accessible itself, but non-sighted reader cannot access one component. The content developers did not catch this singular oversight because each page in the publication is technically WCAG-compliant.</li>
+  <li>Bidirectional linking: A user follows a hyperlink from a publication index to a paragraph in middle of chapter 23 and subsequently realizes that the second index entry may have been a better choice. The user must now return to the publication index (very likely a separate HTML document) to access the link to the second index entry.</li>
+  <li>A publisher wants to test publication accessibility of an ordered collection of documents to assess whether users can access all elements listed in the publication's table of contents - a single document in the collection specific to navigating an ordered collection of HTML documents. The navigation page and the ordered collection of HTML documents make up a single content package.
+</li>
 </ul>
-<p><strong>The Gap: </strong>Many digital publications are made up of more than one document. A common practice exists to divide every chapter in books into individual HTML files. EPUB 3 titles, for example, are packaged using a specified mechanism with a method of navigating to each publication component. Current W3C specifications provide no treatment or suggestions for navigating through related or packaged content documents. Existing WAI documentation and most tools related to accessibility assume that the user is encountering one document.</p>
+<p><strong>The Gap: </strong>Individual HTML documents in a package may not all be WCAG-compliant due to the lack of elements such as navigation, but the content package itself is WCAG-compliant because the detailed navigation HTML document is a directory of the entire package. As such, a package could be considered WCAG-compliant, but a non-sighted reader may not be able to identify or access non-WCAG-compliant documents within the package. Content developers did not catch this singular oversight when they were checking the package navigation document for WCAG compliance instead of every document in the package.</p>
+<p>Many digital publications are made up of more than one document. A common practice exists to divide every chapter in books into individual HTML files. EPUB 3 titles, for example, are packaged using a specified mechanism enabling navigation to each publication component. Current W3C WAI Specifications and Guidelines provide no treatment or suggestions for navigating through ordered, packaged content documents. Existing W3C WAI Specifications, Guidelines, and most tools related to accessibility assume that the user is encountering a single whole document.</p>
 <p><strong>Potential options for addressing the gap:</strong></p>
 <ol>
-  <li>Add discussion of the packaged document use case to WCAG.</li>
-  <li>Add an author extension that addresses use cases to WCAG.</li>
+  <li>Add discussion of the packaged document use case to W3C WAI Specifications and Guidelines.</li>
+  <li>Add an author extension that addresses use cases to W3C WAI Specifications and Guidelines.</li>
 </ol>
+</section>
+
+<section>
+<h4>Discoverability</h4>
+<p>Digital publications are often distributed through various channels, for instance in online bookstores. These channels are typically aggregators that have almost no control over publications' content and quality. Besides, a single intellectual work can be distributed as several digital editions, with varying quality and accessibility features.</p>
+<p>When users want to acquire digital publications, they need to know if the content will be accessible to them. Therefore, it is crucial that accessibility properties of a digital publication exist as metadata, and that such metadata can be made available to any interested party. For instance, an online bookstore would access such metadata to convey the information to users so that they can discover which digital distribution of a title contains the accessible features specific to their needs.</p>
+<p><strong>The Gap: </strong>The Gap: There is no current recommended standard or specification for recording digital publishing metadata stating that a title is accessible and enumerating the properties of the publication that are AT-compatible.</p>
+<p><strong>Potential solution for addressing the gap: </strong>Work with W3C WAI community to identify and recommend a mechanism to enable the declaration and discoverability of metadata on a digital publication, notably to describe its accessibility properties.</p>
+<p>References:</p>
+  <ul>
+    <li><a href="http://schema.org/">Schema.org</a></li>
+    <li><a href="https://www.w3.org/wiki/WebSchemas/Accessibility">WebSchemas Accessibility wiki page</a></li>
+    <li><a href="http://www.editeur.org/files/ONIX%20for%20books%20-%20code%20lists/ONIX_BookProduct_Codelists_Issue_32.html#codelist196">ONIX E-publication Accessibility Details (List 196)</a></li>
+  </ul>
+</section>
+
+<section>
+<h4>Optimized publications</h4>
+<p>Unlike general Web content, some digital publications are legitimately designed and optimized for specific user groups; this is the case of audio or braille books made for persons with print disabilities. These publications target specific reading modalities. By design, they cannot meet the universal accessibility principles identified in WCAG, despite the fact that they are accessible to their intended audience.</p>
+<p><strong>The Gap: </strong> Guidelines to author and evaluate optimized, accessible digital publications do not exist.</p>
+<p><strong>Potential solution for addressing the gap: </strong>Work with the W3C WAI community and WCAG WG outreach committee to provide guidelines to author and evaluate optimized digital publications, and to convey their nature to users.</p>
 </section>
 
 <section>
 <h4>Skippability</h4>
   <p>A digital publishing use case exists to allow accessible technology users to "skip" through text components as they read. For example, a user does not want to read page numbers or headers by default. The user does want to read the footnotes when they encounter a footnote callout within the text.</p>
   <p>Skippability is a common user preference in assistive technology (AT) tools allowing the user to personalize the content read aloud to a very precise specification. Assistive technology users expect to be able to customize which content components get read aloud or displayed to the user. Further, users expect to be able to navigate or go back to skipped elements at a later time. Skipped elements must remain discoverable to assistive technology.</p>
-  <p><strong>The Gap: </strong>Current W3C accessibility specifications and guidelines do not what would be considered implementation guidance to non-assistive technology users.</p>
-  <p><strong>Potential options for addressing the gap: </strong>Add language to the [[UAAG]] discussing the need for User agents to implement skippability. Further, the concept of skippability, in general, should not be confined to users of AT.</p>
+  <p><strong>The Gap: </strong>Current W3C WAI accessibility Specifications and Guidelines do not address what would be considered implementation guidance to non-assistive technology users.</p>
+  <p><strong>Potential options for addressing the gap: </strong>Add language to the W3C WAI specifications discussing the need for User agents to implement skippability. Further, the concept of skippability, in general, should not be confined to users of AT.</p>
   <p><strong>Reference: </strong> DAISY Skippable Structures Recommendation [[DAISY]]</p>
 </section>
 
@@ -521,27 +544,27 @@
   <li>A user is reading a magazine article and realizes the next item in the article is an inset sidebar of a document containing a multitude of different types of data, including a chart, an image gallery, an infographic, a video, and some text. This information takes up several screens of content at the reader's zoom level. The user wants to skip past the sidebar and return to the content after the enclosing container.</li>
   <li>A student reading a physics textbook encountered a math equation but has forgotten what the previously introduced symbol X represented. The student would like to skip back to the previous block element to review the text describing the purpose of symbol X.</li>
 </ul>
-<p><strong>The Gap: </strong>Current W3C accessibility specifications and guidelines do not what would be considered implementation guidance to non-assistive technology users.</p>
-<p><strong>Potential options for addressing the gap: </strong>Add language to the [[UAAG]] discussing the need for User agents to implement escapability. Further, the concept of escapability, in general, should not be confined to users of AT.</p>
+<p><strong>The Gap: </strong>Current W3C WAI Specifications and Guidelines do not what would be considered implementation guidance to non-assistive technology users.</p>
+<p><strong>Potential options for addressing the gap: </strong>Add language to the W3C WAI Specifications and Guidelines discussing the need for User agents to implement escapability. Further, the concept of escapability, in general, should not be confined to users of AT.</p>
 </section>
 
 <section>
-<h4>Page Numbers / Pagination</h4>
-<p>Multiple digital publishing use cases exist for allowing users to work with and manipulate paged content that does not necessarily flow vertically similar to the content most web pages. Many electronic publications have intentional correspondence to printed publications.</p>
-<p>Specific examples of page number/pagination use cases include:</p>
+<h4>Page Markers / Pagination</h4>
+<p>Multiple digital publishing use cases exist for allowing users to work with and manipulate paged content that does not necessarily flow vertically similar to the content most web pages. Many electronic publications have intentional correspondence to printed publications. Some electronic publications may have the equivalent of page markers for coordinating specific points in text across multiple editions. Therefore, the concept of page markers/locators is not a throw-back to print publishing.</p>
+<p>Specific examples of page marker/pagination use cases include:</p>
 <ul>
-  <li>A magazine publishes both print and online editions. The publisher distributes the online edition as a website (rather than as a standalone EPUB). To boost sales of the magazine's print edition, the publisher would like to provide special interactive features to print subscribers. The interactive features require that readers are easily able to jump to the page number they're currently reading in the print edition, or to know what page of the print edition corresponds to the website content they are currently viewing.</li>
-  <li>A high school teacher has assigned a novel, and all the students are reading a particular published edition for convenience. One of the students uses AT and is reading the ebook with preference set to resize and reflow the content. In class, the teacher instructs the students to turn from page 56 to page 53. The AT user must also be able to locate pages 56 and 53 to keep pace with the rest of the class.
+  <li>A magazine publishes both print and online editions. The publisher distributes the online edition as a website (rather than as a standalone EPUB). To boost sales of the magazine's print edition, the publisher would like to provide special interactive features to print subscribers. The interactive features require that readers are easily able to jump to the page marker they're currently reading in the print edition, or to know what page of the print edition corresponds to the website content they are currently viewing.</li>
+  <li>A high school teacher has assigned a novel, and all the students are reading a particular published edition for convenience. One of the students uses AT and is reading the ebook with AT preferences set to resize and reflow the content. In class, the teacher instructs the students to turn from page 56 to page 53. The AT user must also be able to locate pages 56 and 53 to keep pace with the rest of the class.
     <p>The student using AT has set the page size on the viewable area of their AT to a particular zoom level, so their paginated view in their ebook reader does not correspond to a page of the print edition. The student remembers they saw something they needed three screens ago and wants to skip back those three screens.</p>
   </li>
 </ul>
-<p><strong>The Gap: </strong> Current W3C accessibility documentation and practices do not contain any discussion of the need for users to identify and navigate content based on locators corresponding printed publication page numbers. AT users need a means of quickly and accurately navigating digital publications by locators corresponding to printed page numbers, regardless of whether or not the user has set their preferences to resize or reflow text. Further, the mechanism to support navigating text by locators and page numbers should not disrupt continuous reading for students using Aural AT solutions.</p>
+<p><strong>The Gap: </strong> Current W3C WAI Specifications and Guidelines do not contain discussion of the user need to identify and navigate content based on markers (also called locators) that may or may not correspond to printed publication page numbers. AT users need a means of quickly and accurately navigating digital publications by locators corresponding to printed page markers, regardless of whether or not the user has set their preferences to resize or reflow text. Further, the mechanism to support navigating text by locators and page markers should not disrupt continuous reading for students using Aural AT solutions.</p>
 <p><strong>Potential options for addressing the gap: </strong>The CSS Paged Media Module Level 3 [[CSS3-PAGE]] describes a method for providing page numbers in the context of a scenario where the text is paginated when sent to a printer from a web page. User agents could implement a similar solution facilitating access to accurate page numbers and pagination.</p>
 <p>The W3C WCAG and DPUB working groups should engage with the CSS Pagination working group to determine whether an acceptable, accessible solution for addressing page numbers and pagination already exists.</p>
 <p><strong>Potential interim options for addressing the gap: </strong></p>
 <ol>
-  <li>Add language to the [[WCAG]] implementing a concept corresponding to the EPUB 3 specifications to create print pagination corresponding locators using  <code>page-list</code> and <code>pagebreak</code> concepts.</li>
-  <li>Provide implementation guidance to User agents instructing the need to enable, where relevant, both distinct concepts of pages (described below), including allowing users to jump to page numbers in either model or view specific pages in either model.</li>
+  <li>Add language to W3C WAI Specifications and Guidelines implementing a concept corresponding to the EPUB 3 specifications to create print pagination corresponding locators using  <code>page-list</code> and <code>pagebreak</code> concepts.</li>
+  <li>Provide implementation guidance to User Agents instructing the need to enable, where relevant, both distinct concepts of pages (described below), including allowing users to jump to page numbers in either model or view specific pages in either model.</li>
 </ol>
 <p><strong>Reference: </strong>[[CSS-Paged-Media]] Module Level 3 Page-Margin Boxes</p>
 </section>
@@ -555,8 +578,8 @@
   <li>Reading systems support the pronunciation dictionary reference and expose the data to Accessibility APIs.</li>
 </ul>
 <p>Publishers need to be able to put in suggested pronunciation for proper nouns, acronyms, and field-specific jargon terms. The Pronunciation Lexicon (PLS) exists, but it is exceptionally difficult to use and doesn't scale well to a large publisher's use cases. The CSS3 Speech module [[CSS3-SPEECH]] also exists. However, the EPUB 3.1 revision working group agreed to deprecate the speech properties due to lack of adoption.</p>
-<p><strong>The Gap: </strong>Current W3C accessibility specifications and guidelines do not address what are considered implementation guidance to non-assistive technology users.</p>
-<p><strong>Potential solution for addressing the gap: </strong>Consider developing a new or modifying an existing specification allowing simple pronunciation schemes for reference among multiple publications.</p>
+<p><strong>The Gap: </strong>Current W3C WAI Specifications and Guidelines do not address what are considered implementation guidance to non-assistive technology users.</p>
+<p><strong>Potential solution for addressing the gap: </strong>Consider developing a new or modifying an existing W3C Specification or Guideline allowing simple pronunciation schemes for reference among multiple publications.</p>
 <p><strong>References:</strong></p>
 <ul>
   <li>CSS Speech Module [[CSS3-SPEECH]]</li>
@@ -567,9 +590,9 @@
 <section>
 <h4>Deeply Nested Heading Levels Best Practices</h4>
 <p>Digital publishing use cases exist to support encyclopedias and similarly detailed reference works containing many levels of headings.</p>
-<p>It is not easy to determine what best practice is for deeply nested headings, headings that go beyond <code>&lt;h6>&gt;</code>. Best Practices should be clearly established and easy to find. Use cases in books are more frequent than other circumstances. This is likeliest to occur if an <code>&lt;aside&gt;</code> begins with <code>&lt;h5&gt;</code> or <code>&lt;h6&gt;</code>.</p>
-<p><strong>The Gap: </strong>Current W3C accessibility specifications and guidelines do not address what are considered implementation guidance to non-assistive technology users.</p>
-<p><strong>Potential solution for addressing the gap: </strong>Add specific guidance related to supporting deeply nested heading levels in reference works to WCAG Techniques and the WAI Tutorials.</p>
+<p>It is not easy to determine what best practice is for deeply nested headings, headings that go beyond <code>&lt;h6&gt;</code>. Best Practices should be clearly established and easy to find. Use cases in books are more frequent than other circumstances. This is likeliest to occur if an <code>&lt;aside&gt;</code> begins with <code>&lt;h5&gt;</code> or <code>&lt;h6&gt;</code>.</p>
+<p><strong>The Gap: </strong>Current W3C WAI Specifications and Guidelines do not address what are considered implementation guidance to non-assistive technology users.</p>
+<p><strong>Potential solution for addressing the gap: </strong>Add specific guidance related to supporting deeply nested heading levels in reference works to W3C WAI Specifications, Guidelines, and Tutorials.</p>
 <p><strong>References:</strong></p>
 <ul>
   <li>Item #3 5/15/2015 DPUB Minutes [[DPUB-Minutes-3]]</li>
@@ -599,38 +622,6 @@
   <li>Contact the ARIA WG and request a discussion to consider proposing to expose <code>aria-labelledby</code> to all user agents regardless of whether or not the user agent is AT.</li>
   <li>Contact various other interested W3C working and interest groups to consider alternative proposals to support a non-ARIA-based semantically useful list heading.</li>
 </ol>
-</section>
-
-<section>
-<h4>Drop Cap</h4>
-<p>The [[CSS3-Selector-First-Letter]] allows the creation of accessible drop caps in support of typographic layout designs that originated in print publishing.  [[CSS3-Selector-First-Letter]] is widely supported by user agents; however, it is not widely supported in authoring tools, nor is it widely known to content creators. Drop caps created without using the [[CSS3-Selector-First-Letter]] selector cause accessibility issues. Without the [[CSS3-Selector-First-Letter]], AT user agents treat the drop-cap and the remainder of the word as separate words.</p>
-<p><strong>The Gap: </strong>Additional outreach to authoring tool creators and content creators is needed to ensure that the purpose and functionality enabled by including [CSS3-Select-First-Letter] are required.</p>
-<p><strong>Potential solutions for addressing the gap: </strong></p>
-<ol>
-  <li>Work with the WAI WG on a plan to better publicize the existence and purpose of [[CSS3-Selector-First-Letter]] in [[ATAG]] techniques.</li>
-  <li>Work with the WAI WG outreach committee to better inform content creators that CSS3 is already capable of creating accessible drop-caps via the [[CSS3-Selector-First-Letter]] selector, and to discourage the use of other, ad hoc solutions.</li>
-</ol>
-</section>
-
-<section>
-<h4>Discoverability</h4>
-<p>Digital publications are often distributed through various channels, for instance in online bookstores. These channels are typically aggregators that have almost no control over publications' content and quality. Besides, a single intellectual work can be distributed as several digital editions, with varying quality and accessibility features.</p>
-<p>When users want to acquire digital publications, they need to know if the content will be accessible to them. Therefore, it is crucial that accessibility properties of a digital publication exist as metadata, and that such metadata can be made available to any interested party. For instance, an online bookstore would access such metadata to convey the information to users so that they can discover which digital distribution of a title contains the accessible features specific to their needs.</p>
-<p><strong>The Gap: </strong>The Gap: There is no current recommended standard or specification for recording digital publishing metadata stating that a title is accessible and enumerating the properties of the publication that are AT-compatible.</p>
-<p><strong>Potential solution for addressing the gap: </strong>Work with W3C WAI community to identify and recommend a mechanism to enable the declaration and discoverability of metadata on a digital publication, notably to describe its accessibility properties.</p>
-<p>References:</p>
-  <ul>
-    <li><a href="http://schema.org/">Schema.org</a></li>
-    <li><a href="https://www.w3.org/wiki/WebSchemas/Accessibility">WebSchemas Accessibility wiki page</a></li>
-    <li><a href="http://www.editeur.org/files/ONIX%20for%20books%20-%20code%20lists/ONIX_BookProduct_Codelists_Issue_32.html#codelist196">ONIX E-publication Accessibility Details (List 196)</a></li>
-  </ul>
-</section>
-
-<section>
-<h4>Optimized publications</h4>
-<p>Unlike general Web content, some digital publications are legitimately designed and optimized for specific user groups; this is the case of audio or braille books made for persons with print disabilities. These publications target specific reading modalities. By design, they cannot meet the universal accessibility principles identified in WCAG, despite the fact that they are accessible to their intended audience.</p>
-<p><strong>The Gap: </strong> Guidelines to author and evaluate optimized, accessible digital publications do not exist.</p>
-<p><strong>Potential solution for addressing the gap: </strong>Work with the W3C WAI community and WCAG WG outreach committee to provide guidelines to author and evaluate optimized digital publications, and to convey their nature to users.</p>
 </section>
 
 <!-- Main content section -->
