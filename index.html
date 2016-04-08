@@ -642,7 +642,6 @@
 <p>A digital publishing use case exists to support a semantic title or head within a list.</p>
 <p><strong>The Gap: </strong>Currently, no clear method of associating a title with a list exists in any W3C specification.</p>
 <p>Creating the visual effect of a list containing a semantic title or head can be accomplished using markup wrappers such as <code>&lt;div&gt;</code>, but list elements (<code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>) should include titles.</p>
-<p>It is tempting to use HTML5 h1 – h6 elements but these elements may contain the ARIA <code>role="heading"</code> attribute, offering unwanted default navigation. A potentially useful option would be to include a role value as part of an element called <code>"listtitle"</code> (or something similar). The option to include a semantic title in a list requires support in visual as well as aural presentations.</p>
 <p>Consider the following simple example:</p>
 <pre>&lt;ul&gt;
     &lt;listtitle&gt;Noble Gases&lt;/listtitle&gt;
