@@ -614,13 +614,13 @@
   <li>The trade novel THE LIVES OF CHRISTOPHER CHANT by Diana Wynne Jones, in which there is a plot point that a character's name is spelled "Ralph" but pronounced "Rafe," can be correctly encoded using a local pronunciation dictionary.</li>
   <li>Reading systems support the pronunciation dictionary reference and expose the data to Accessibility APIs.</li>
 </ul>
-<p>Publishers need to be able to put in suggested pronunciation for proper nouns, acronyms, and field-specific jargon terms. The Pronunciation Lexicon (PLS) exists, but it is exceptionally difficult to use and doesn't scale well to a large publisher's use cases. The CSS3 Speech module [[CSS3-SPEECH]] also exists. However, the EPUB 3.1 revision working group agreed to deprecate the speech properties due to lack of adoption.</p>
-<p><strong>The Gap: </strong>Current W3C WAI Specifications and Guidelines do not address what are considered implementation guidance to non-assistive technology users.</p>
-<p><strong>Potential solution for addressing the gap: </strong>Consider developing a new or modifying an existing W3C Specification or Guideline allowing simple pronunciation schemes for reference among multiple publications.</p>
+<p>Publishers need to be able to put in suggested pronunciation for proper nouns, acronyms, and field-specific jargon terms. The Pronunciation Lexicon (PLS) and Speech Synthesis Markup Language (SSML) lack widespread adoption, probably because of the lack of tools useful for large-scale publishing production as well as the lack of reading system support. The CSS3 Speech module [[CSS3-SPEECH]] doesn't currently address pronunciation. Additionally, the EPUB 3.1 revision working group agreed to deprecate the speech properties due to lack of adoption.</p>
+<p><strong>The Gap: </strong>Current W3C WAI Specifications and Guidelines have poor implementation, probably due to lack of authoring tools, reading system support, and implementation guidance.</p>
 <p><strong>References:</strong></p>
 <ul>
   <li>CSS Speech Module [[CSS3-SPEECH]]</li>
   <li>Pronunciation Lexicon Specification (PLS) [[PRONUNCIATION-LEXICON]]</li>
+  <li>Speech Synthesis Markup Language (SSML) [[SSML]]</li>
 </ul>
 </section>
 
