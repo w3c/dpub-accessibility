@@ -632,7 +632,7 @@
 <h4>Deeply Nested Heading Levels Best Practices</h4>
 <p>Digital publishing use cases exist to support encyclopedias and similarly detailed reference works containing many levels of headings.</p>
 <p>It is not easy to determine what best practice is for deeply nested headings, headings that go beyond <code>&lt;h6&gt;</code>. Best Practices should be clearly established and easy to find. Use cases in books are more frequent than other circumstances. This is likeliest to occur if an <code>&lt;aside&gt;</code> begins with <code>&lt;h5&gt;</code> or <code>&lt;h6&gt;</code>.</p>
-<p><strong>The Gap: </strong>Current W3C WAI Specifications and Guidelines do not address what are considered implementation guidance to non-assistive technology users.</p>
+<p><strong>The Gap: </strong>Current W3C WAI Specifications and Guidelines do not address what are considered implementation guidance to non-assistive technology users. ARIA has heading guidance, but ARIA should be a fallback, only when HTML is inadquate. Furthermore, most content creators are unclear of what it announced to AT when there are nested levels of <code>&lt;h#&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;role="header"&gt;</code>, and <code>&lt;aria-level=#&gt;</code>. Clearer documentation of this interaction is necessary.</p>
 <p><strong>Potential solution for addressing the gap: </strong>Add specific guidance related to supporting deeply nested heading levels in reference works to W3C WAI Specifications, Guidelines, and Tutorials.</p>
 <p><strong>References:</strong></p>
 <ul>
