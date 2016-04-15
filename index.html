@@ -656,7 +656,7 @@
     &lt;li&gt;Xenon&lt;/li&gt;
     &lt;li&gt;Radon&lt;/li&gt;
 &lt;/ul&gt;</pre>
-<p>It is tempting to use HTML5 h1 – h6 elements but these elements may contain the ARIA <code>role="heading"</code> attribute, offering unwanted default navigation; a list heading should help a screen reader user identify the name of a list, not be part of general list navigation. This heading should specifically self-identify as lists to screen readers. A potentially useful option would be to include a role value as part of an element called <code>"listtitle"</code> (or something similar). The option to include a semantic title in a list requires support in visual as well as aural presentations; both screen reader and visual users need access to the list header..</p>
+<p>It is tempting to use HTML5 h1 – h6 elements or add role="heading", but in both cases the result is unwanted default navigation. This heading should specifically self-identify as lists to screen readers. A potentially useful option would be to include a role value as part of an element called <code>"listtitle"</code> (or something similar). The option to include a semantic title in a list requires support in visual as well as aural presentations; both screen reader and visual users need access to the list header..</p>
 </section>
 
 <!-- Main content section -->
