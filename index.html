@@ -618,11 +618,14 @@
   <li>The trade novel THE LIVES OF CHRISTOPHER CHANT by Diana Wynne Jones, in which there is a plot point that a character's name is spelled "Ralph" but pronounced "Rafe," can be correctly encoded using a local pronunciation dictionary.</li>
   <li>Reading systems support the pronunciation dictionary reference and expose the data to Accessibility APIs.</li>
 </ul>
-<p>Publishers need to be able to put in suggested pronunciation for proper nouns, acronyms, and field-specific jargon terms. The Pronunciation Lexicon (PLS) and Speech Synthesis Markup Language (SSML) lack widespread adoption, probably because of the lack of tools useful for large-scale publishing production as well as the lack of reading system support. The CSS3 Speech module [[CSS3-SPEECH]] doesn't currently address pronunciation. Additionally, the EPUB 3.1 revision working group agreed to deprecate the speech properties due to lack of adoption.</p>
+<p>Publishers need to be able to put in suggested pronunciation for proper nouns, acronyms, and field-specific jargon terms. The Pronunciation Lexicon (PLS) and Speech Synthesis Markup Language [[SSML]] lack widespread adoption, probably because of the lack of tools useful for large-scale publishing production as well as the lack of reading system support. 
+</p>
+    
+<p>The Speech Synthesis Markup Language [[SSML]] is another option for phonetic pronunciations, but it is currently not supported in HTML. EPUB attempted to address this shortcoming through the introduction of [[SSML]] attributes, but the attributes are unique to that format, limited to XHTML and not well supported within it. A solution that similarly simplifies SSML but brings support to all HTML user agents is needed.</p>
+    
 <p><strong>The Gap: </strong>Current W3C WAI Specifications and Guidelines have poor implementation, probably due to lack of authoring tools, reading system support, and implementation guidance.</p>
 <p><strong>References:</strong></p>
 <ul>
-  <li>CSS Speech Module [[CSS3-SPEECH]]</li>
   <li>Pronunciation Lexicon Specification (PLS) [[PRONUNCIATION-LEXICON]]</li>
   <li>Speech Synthesis Markup Language (SSML) [[SSML]]</li>
 </ul>
