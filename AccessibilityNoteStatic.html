@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" typeof="bibo:Document " prefix="bibo: http://purl.org/ontology/bibo/ w3p: http://www.w3.org/2001/02pd/rec54#">
-<head><meta lang="" property="dc:language" content="en">
+<head><meta property="dc:language" content="en" lang="">
     <title>Digital Publishing and Accessibility in W3C Documents</title>
     <meta charset="utf-8">
       
@@ -170,7 +170,7 @@ table.simple {
         display: none;
     }
 }
-</style><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-IG-NOTE"><!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]--><script id="initialUserConfig" type="application/json">{
+</style><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><link href="https://www.w3.org/StyleSheets/TR/2016/W3C-IG-NOTE" rel="stylesheet"><!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]--><script type="application/json" id="initialUserConfig">{
   "alternateFormats": [
     {
       "uri": "dpub-accessibility.epub",
@@ -557,7 +557,8 @@ table.simple {
       "href": "http://jchempaint.github.io/"
     }
   },
-  "specStatus": "ED",
+  "specStatus": "IG-NOTE",
+  "publishDate": "2016-05-03",
   "shortName": "dpub-accessibility",
   "editors": [
     {
@@ -607,15 +608,15 @@ table.simple {
   "copyrightStart": 2014,
   "wgPatentURI": "http://www.w3.org/2004/01/pp-impl/64149/status"
 }</script></head>
-<body class="h-entry" role="document" id="respecDocument"><div class="head" role="contentinfo" id="respecHeader">
+<body id="respecDocument" role="document" class="h-entry"><div id="respecHeader" role="contentinfo" class="head">
   <p>
-            <a class="logo" href="http://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
+            <a class="logo" href="http://www.w3.org/"><img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C" height="48" width="72"></a>
   </p>
   <h1 class="title p-name" id="title" property="dcterms:title">Digital Publishing and Accessibility in <abbr title="World Wide Web Consortium">W3C</abbr> Documents</h1>
-  <h2 id="w3c-interest-group-note-28-april-2016"><abbr title="World Wide Web Consortium">W3C</abbr> Interest Group Note <time property="dcterms:issued" class="dt-published" datetime="2016-04-28">28 April 2016</time></h2>
+  <h2 id="w3c-interest-group-note-03-may-2016"><abbr title="World Wide Web Consortium">W3C</abbr> Interest Group Note <time property="dcterms:issued" class="dt-published" datetime="2016-05-03">03 May 2016</time></h2>
   <dl>
       <dt>This version:</dt>
-      <dd><a class="u-url" href="http://www.w3.org/TR/2016/NOTE-dpub-accessibility-20160428/">http://www.w3.org/TR/2016/NOTE-dpub-accessibility-20160428/</a></dd>
+      <dd><a class="u-url" href="http://www.w3.org/TR/2016/NOTE-dpub-accessibility-20160503/">http://www.w3.org/TR/2016/NOTE-dpub-accessibility-20160503/</a></dd>
       <dt>Latest published version:</dt>
       <dd><a href="http://www.w3.org/TR/dpub-accessibility/">http://www.w3.org/TR/dpub-accessibility/</a></dd>
       <dt>Latest editor's draft:</dt>
@@ -662,10 +663,10 @@ table.simple {
 </div>
 
  <hr>
-  <section id="abstract" class="introductory" property="dc:abstract"><h2 id="h-abstract" resource="#h-abstract"><span property="xhv:role" resource="xhv:heading">Abstract</span></h2>
+  <section property="dc:abstract" class="introductory" id="abstract"><h2 resource="#h-abstract" id="h-abstract"><span property="xhv:role" resource="xhv:heading">Abstract</span></h2>
       <p>
-        This document, “Digital Publishing and Accessibility in <abbr title="World Wide Web Consortium">W3C</abbr> Documents” describes how <abbr title="World Wide Web Consortium">W3C</abbr> guidelines (including but not limited to [<cite><a class="bibref" href="#bib-WCAG20">WCAG20</a></cite>], [<cite><a class="bibref" href="#bib-ATAG20">ATAG20</a></cite>], [<cite><a class="bibref" href="#bib-UAAG20">UAAG20</a></cite>], and [<cite><a class="bibref" href="#bib-WAI-ARIA">WAI-ARIA</a></cite>]) and their principles, guidelines, and success criteria can be applied to the needs of Digital Publishing. It provides informative guidance, but does not set requirements.</p>
-    </section><section id="sotd" class="introductory"><h2 id="h-sotd" resource="#h-sotd"><span property="xhv:role" resource="xhv:heading">Status of This Document</span></h2>
+        This document, “Digital Publishing and Accessibility in <abbr title="World Wide Web Consortium">W3C</abbr> Documents” describes how <abbr title="World Wide Web Consortium">W3C</abbr> guidelines (including but not limited to [<cite><a href="#bib-WCAG20" class="bibref">WCAG20</a></cite>], [<cite><a href="#bib-ATAG20" class="bibref">ATAG20</a></cite>], [<cite><a href="#bib-UAAG20" class="bibref">UAAG20</a></cite>], and [<cite><a href="#bib-WAI-ARIA" class="bibref">WAI-ARIA</a></cite>]) and their principles, guidelines, and success criteria can be applied to the needs of Digital Publishing. It provides informative guidance, but does not set requirements.</p>
+    </section><section id="sotd" class="introductory"><h2 resource="#h-sotd" id="h-sotd"><span property="xhv:role" resource="xhv:heading">Status of This Document</span></h2>
         <p>
           <em>This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current <abbr title="World Wide Web Consortium">W3C</abbr> publications and the latest revision of this technical report can be found in the <a href="http://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at http://www.w3.org/TR/.</em>
         </p>
@@ -696,16 +697,16 @@ table.simple {
             <p>This document is governed by the <a id="w3c_process_revision" href="http://www.w3.org/2015/Process-20150901/">1 September 2015 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
             </p>
           
-</section><nav id="toc"><h2 class="introductory" id="table-of-contents" resource="#table-of-contents"><span property="xhv:role" resource="xhv:heading">Table of Contents</span></h2><ul class="toc" role="directory"><li class="tocline"><a href="#audience" class="tocxref"><span class="secno">1. </span>Audience</a></li><li class="tocline"><a href="#the-gap-between-digital-publishing-issues-and-w3c-standards" class="tocxref"><span class="secno">2. </span>The Gap Between Digital Publishing Issues and <abbr title="World Wide Web Consortium">W3C</abbr> Standards</a><ul class="toc"><li class="tocline"><a href="#navigating-within-multiple-documents-or-packaged-documents" class="tocxref"><span class="secno">2.1 </span>Navigating Within Multiple Documents or Packaged Documents</a></li><li class="tocline"><a href="#discoverability" class="tocxref"><span class="secno">2.2 </span>Discoverability</a></li><li class="tocline"><a href="#optimized-publications" class="tocxref"><span class="secno">2.3 </span>Optimized publications</a></li><li class="tocline"><a href="#skippability" class="tocxref"><span class="secno">2.4 </span>Skippability</a></li><li class="tocline"><a href="#escapability" class="tocxref"><span class="secno">2.5 </span>Escapability</a></li><li class="tocline"><a href="#page-markers-pagination" class="tocxref"><span class="secno">2.6 </span>Page Markers / Pagination</a></li><li class="tocline"><a href="#phonetic-spellings-of-proper-nouns-and-jargon-terms" class="tocxref"><span class="secno">2.7 </span>Phonetic spellings of proper nouns and jargon terms</a></li><li class="tocline"><a href="#deeply-nested-heading-levels-best-practices" class="tocxref"><span class="secno">2.8 </span>Deeply Nested Heading Levels Best Practices</a></li><li class="tocline"><a href="#semantic-list-head" class="tocxref"><span class="secno">2.9 </span>Semantic List-Head</a></li></ul></li><li class="tocline"><a href="#future-work" class="tocxref"><span class="secno">A. </span>Future work</a><ul class="toc"><li class="tocline"><a href="#layout-s-influence-on-comprehension" class="tocxref"><span class="secno">A.1 </span>Layout's Influence On Comprehension</a></li><li class="tocline"><a href="#annotations" class="tocxref"><span class="secno">A.2 </span>Annotations</a></li><li class="tocline"><a href="#notes-footnotes-asides-author-notes-etc.x" class="tocxref"><span class="secno">A.3 </span>Notes (Footnotes, Asides, Author Notes, etc.)</a></li><li class="tocline"><a href="#positional-location-of-text-to-indicate-different-speakers" class="tocxref"><span class="secno">A.4 </span>Positional location of text to indicate different speakers</a></li><li class="tocline"><a href="#assessments" class="tocxref"><span class="secno">A.5 </span>Assessments</a></li><li class="tocline"><a href="#mathematics" class="tocxref"><span class="secno">A.6 </span>Mathematics</a></li></ul></li><li class="tocline"><a href="#gap-analysis" class="tocxref"><span class="secno">B. </span>Gap Analysis</a></li><li class="tocline"><a href="#relevant-work-in-development-outside-the-w3c" class="tocxref"><span class="secno">C. </span>Relevant Work in Development Outside the <abbr title="World Wide Web Consortium">W3C</abbr></a><ul class="toc"><li class="tocline"><a href="#epub" class="tocxref"><span class="secno">C.1 </span>EPUB</a><ul class="toc"><li class="tocline"><a href="#epub-s-relevance-to-the-w3c-and-accessible-digital-publishing" class="tocxref"><span class="secno">C.1.1 </span>EPUB's relevance to the <abbr title="World Wide Web Consortium">W3C</abbr> and accessible digital publishing</a></li></ul></li><li class="tocline"><a href="#diagrammar" class="tocxref"><span class="secno">C.2 </span>Diagrammar</a></li><li class="tocline"><a href="#pdf" class="tocxref"><span class="secno">C.3 </span>PDF</a></li></ul></li><li class="tocline"><a href="#acknowledgments" class="tocxref"><span class="secno">D. </span>Acknowledgments</a></li><li class="tocline"><a href="#references" class="tocxref"><span class="secno">E. </span>References</a><ul class="toc"><li class="tocline"><a href="#informative-references" class="tocxref"><span class="secno">E.1 </span>Informative references</a></li></ul></li></ul></nav>
+</section><nav id="toc"><h2 resource="#table-of-contents" id="table-of-contents" class="introductory"><span property="xhv:role" resource="xhv:heading">Table of Contents</span></h2><ul role="directory" class="toc"><li class="tocline"><a class="tocxref" href="#audience"><span class="secno">1. </span>Audience</a></li><li class="tocline"><a class="tocxref" href="#the-gap-between-digital-publishing-issues-and-w3c-standards"><span class="secno">2. </span>The Gap Between Digital Publishing Issues and <abbr title="World Wide Web Consortium">W3C</abbr> Standards</a><ul class="toc"><li class="tocline"><a class="tocxref" href="#navigating-within-multiple-documents-or-packaged-documents"><span class="secno">2.1 </span>Navigating Within Multiple Documents or Packaged Documents</a></li><li class="tocline"><a class="tocxref" href="#discoverability"><span class="secno">2.2 </span>Discoverability</a></li><li class="tocline"><a class="tocxref" href="#optimized-publications"><span class="secno">2.3 </span>Optimized publications</a></li><li class="tocline"><a class="tocxref" href="#skippability"><span class="secno">2.4 </span>Skippability</a></li><li class="tocline"><a class="tocxref" href="#escapability"><span class="secno">2.5 </span>Escapability</a></li><li class="tocline"><a class="tocxref" href="#page-markers-pagination"><span class="secno">2.6 </span>Page Markers / Pagination</a></li><li class="tocline"><a class="tocxref" href="#phonetic-spellings-of-proper-nouns-and-jargon-terms"><span class="secno">2.7 </span>Phonetic spellings of proper nouns and jargon terms</a></li><li class="tocline"><a class="tocxref" href="#deeply-nested-heading-levels-best-practices"><span class="secno">2.8 </span>Deeply Nested Heading Levels Best Practices</a></li><li class="tocline"><a class="tocxref" href="#semantic-list-head"><span class="secno">2.9 </span>Semantic List-Head</a></li></ul></li><li class="tocline"><a class="tocxref" href="#future-work"><span class="secno">A. </span>Future work</a><ul class="toc"><li class="tocline"><a class="tocxref" href="#layout-s-influence-on-comprehension"><span class="secno">A.1 </span>Layout's Influence On Comprehension</a></li><li class="tocline"><a class="tocxref" href="#annotations"><span class="secno">A.2 </span>Annotations</a></li><li class="tocline"><a class="tocxref" href="#notes-footnotes-asides-author-notes-etc.x"><span class="secno">A.3 </span>Notes (Footnotes, Asides, Author Notes, etc.)</a></li><li class="tocline"><a class="tocxref" href="#positional-location-of-text-to-indicate-different-speakers"><span class="secno">A.4 </span>Positional location of text to indicate different speakers</a></li><li class="tocline"><a class="tocxref" href="#assessments"><span class="secno">A.5 </span>Assessments</a></li><li class="tocline"><a class="tocxref" href="#mathematics"><span class="secno">A.6 </span>Mathematics</a></li></ul></li><li class="tocline"><a class="tocxref" href="#gap-analysis"><span class="secno">B. </span>Gap Analysis</a></li><li class="tocline"><a class="tocxref" href="#relevant-work-in-development-outside-the-w3c"><span class="secno">C. </span>Relevant Work in Development Outside the <abbr title="World Wide Web Consortium">W3C</abbr></a><ul class="toc"><li class="tocline"><a class="tocxref" href="#epub"><span class="secno">C.1 </span>EPUB</a><ul class="toc"><li class="tocline"><a class="tocxref" href="#epub-s-relevance-to-the-w3c-and-accessible-digital-publishing"><span class="secno">C.1.1 </span>EPUB's relevance to the <abbr title="World Wide Web Consortium">W3C</abbr> and accessible digital publishing</a></li></ul></li><li class="tocline"><a class="tocxref" href="#diagrammar"><span class="secno">C.2 </span>Diagrammar</a></li><li class="tocline"><a class="tocxref" href="#pdf"><span class="secno">C.3 </span>PDF</a></li></ul></li><li class="tocline"><a class="tocxref" href="#acknowledgments"><span class="secno">D. </span>Acknowledgments</a></li><li class="tocline"><a class="tocxref" href="#references"><span class="secno">E. </span>References</a><ul class="toc"><li class="tocline"><a class="tocxref" href="#informative-references"><span class="secno">E.1 </span>Informative references</a></li></ul></li></ul></nav>
   
-    <section class="introductory" typeof="bibo:Chapter" resource="#intro" property="bibo:hasPart">
-      <h2 id="intro" resource="#intro"><span property="xhv:role" resource="xhv:heading">Introduction</span></h2>
-      <p>This document provides a gap analysis concerning Digital Publishing needs in the context of existing WAI <abbr title="World Wide Web Consortium">W3C</abbr> guidelines including (but not limited to) [<cite><a class="bibref" href="#bib-WCAG20">WCAG20</a></cite>], [<cite><a class="bibref" href="#bib-ATAG20">ATAG20</a></cite>], [<cite><a class="bibref" href="#bib-UAAG20">UAAG20</a></cite>], and [<cite><a class="bibref" href="#bib-WAI-ARIA">WAI-ARIA</a></cite>]. Where appropriate, this document is also informed by other ongoing <abbr title="World Wide Web Consortium">W3C</abbr> projects including, but not limited to, Portable Web Publications [PWP] and the Web Annotation Working Group.</p>
+    <section property="bibo:hasPart" resource="#intro" typeof="bibo:Chapter" class="introductory">
+      <h2 resource="#intro" id="intro"><span property="xhv:role" resource="xhv:heading">Introduction</span></h2>
+      <p>This document provides a gap analysis concerning Digital Publishing needs in the context of existing WAI <abbr title="World Wide Web Consortium">W3C</abbr> guidelines including (but not limited to) [<cite><a href="#bib-WCAG20" class="bibref">WCAG20</a></cite>], [<cite><a href="#bib-ATAG20" class="bibref">ATAG20</a></cite>], [<cite><a href="#bib-UAAG20" class="bibref">UAAG20</a></cite>], and [<cite><a href="#bib-WAI-ARIA" class="bibref">WAI-ARIA</a></cite>]. Where appropriate, this document is also informed by other ongoing <abbr title="World Wide Web Consortium">W3C</abbr> projects including, but not limited to, Portable Web Publications [PWP] and the Web Annotation Working Group.</p>
       <p>The World Wide Web Consortium (<abbr title="World Wide Web Consortium">W3C</abbr>)'s <abbr title="World Wide Web Consortium">W3C</abbr> Web Accessibility Initiative (WAI) is primarily concerned with web technologies; however, its guidance is also relevant to technologies which are not exclusively web technologies. The digital publishing industry, which creates composite web and non-web publications using web-based technology tools and standards, is reliant on the standards set by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
       <p>The current document is focused on the accessibility of digital publishing to people with disabilities and is not intended to supplant any other <abbr title="World Wide Web Consortium">W3C</abbr> work. </p>
 	</section>
-<section class="introductory" typeof="bibo:Chapter" resource="#the-w3c-and-digital-publishing" property="bibo:hasPart">
-      <h3 id="the-w3c-and-digital-publishing" resource="#the-w3c-and-digital-publishing"><span property="xhv:role" resource="xhv:heading">The <abbr title="World Wide Web Consortium">W3C</abbr> and Digital Publishing</span></h3>
+<section property="bibo:hasPart" resource="#the-w3c-and-digital-publishing" typeof="bibo:Chapter" class="introductory">
+      <h3 resource="#the-w3c-and-digital-publishing" id="the-w3c-and-digital-publishing"><span property="xhv:role" resource="xhv:heading">The <abbr title="World Wide Web Consortium">W3C</abbr> and Digital Publishing</span></h3>
       <p><em>Digital Publishing</em> is a generic term for the broad ecosystem of electronic journals, magazines, news, or book publishing (authors, creators, publishers, news organizations, booksellers, accessibility and internationalization specialists, etc.). Formats used by eBook readers and tablets for electronic books, magazines, journals, and educational resources are <abbr title="World Wide Web Consortium">W3C</abbr> Technology-based. (X)HTML, CSS, SVG, SMIL, MathML, and various Web APIs are all part of modern digital publishing workflows. Commercial publishers also rely on <abbr title="World Wide Web Consortium">W3C</abbr> technologies in their back-end production workflows all the way from authoring through to delivering printed or electronic product and beyond. In general, one can say that the Publishing Industry is one of the largest communities relying heavily on <abbr title="World Wide Web Consortium">W3C</abbr> specifications and technologies.</p>
       <p> However, a gap currently exists between the alignment of Publishing Industry needs and the various <abbr title="World Wide Web Consortium">W3C</abbr> recommendations. Features necessary for the success of digital publishing may be missing in <abbr title="World Wide Web Consortium">W3C</abbr> documents, or may be in draft only; as a result, for example, EPUB 3, the standard for electronic books, introduced extensions to support publishing-specific requirements.</p>
 </section>
@@ -731,18 +732,18 @@ table.simple {
 </section>
 -->
 
-<section id="audience" typeof="bibo:Chapter" resource="#audience" property="bibo:hasPart">
-<!--OddPage--><h2 id="h-audience" resource="#h-audience"><span property="xhv:role" resource="xhv:heading"><span class="secno">1. </span>Audience</span></h2>
+<section property="bibo:hasPart" resource="#audience" typeof="bibo:Chapter" id="audience">
+<!--OddPage--><h2 resource="#h-audience" id="h-audience"><span property="xhv:role" resource="xhv:heading"><span class="secno">1. </span>Audience</span></h2>
 
 <p>The audience of this document includes involved people creating and modifying existing <abbr title="World Wide Web Consortium">W3C</abbr> specifications, especially those oriented around accessibility.</p>
 </section>
 
 
-<section id="the-gap-between-digital-publishing-issues-and-w3c-standards" typeof="bibo:Chapter" resource="#the-gap-between-digital-publishing-issues-and-w3c-standards" property="bibo:hasPart">
-<!--OddPage--><h2 id="h-the-gap-between-digital-publishing-issues-and-w3c-standards" resource="#h-the-gap-between-digital-publishing-issues-and-w3c-standards"><span property="xhv:role" resource="xhv:heading"><span class="secno">2. </span>The Gap Between Digital Publishing Issues and <abbr title="World Wide Web Consortium">W3C</abbr> Standards</span></h2>
+<section property="bibo:hasPart" resource="#the-gap-between-digital-publishing-issues-and-w3c-standards" typeof="bibo:Chapter" id="the-gap-between-digital-publishing-issues-and-w3c-standards">
+<!--OddPage--><h2 resource="#h-the-gap-between-digital-publishing-issues-and-w3c-standards" id="h-the-gap-between-digital-publishing-issues-and-w3c-standards"><span property="xhv:role" resource="xhv:heading"><span class="secno">2. </span>The Gap Between Digital Publishing Issues and <abbr title="World Wide Web Consortium">W3C</abbr> Standards</span></h2>
 <p>A gap exists between specific digital publishing industry requirements and <abbr title="World Wide Web Consortium">W3C</abbr> standards Working Group efforts to date. Requirements that WAI efforts may address in the future are listed here in order of priority. Additional publishing industry requirements exist, but cannot sufficiently be addressed without further research documented Appendix A. Some suggestions request changes or additions to <abbr title="World Wide Web Consortium">W3C</abbr> WAI Specifications and Guidelines. Additional proposals seek changes to existing <abbr title="World Wide Web Consortium">W3C</abbr> technique documentation and offer suggestions for further outreach. Where possible, we indicated which of the existing <abbr title="World Wide Web Consortium">W3C</abbr> guidelines might be best positioned to address the change.</p>
-<section id="navigating-within-multiple-documents-or-packaged-documents" typeof="bibo:Chapter" resource="#navigating-within-multiple-documents-or-packaged-documents" property="bibo:hasPart">
-<h3 id="h-navigating-within-multiple-documents-or-packaged-documents" resource="#h-navigating-within-multiple-documents-or-packaged-documents"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.1 </span>Navigating Within Multiple Documents or Packaged Documents</span></h3>
+<section property="bibo:hasPart" resource="#navigating-within-multiple-documents-or-packaged-documents" typeof="bibo:Chapter" id="navigating-within-multiple-documents-or-packaged-documents">
+<h3 resource="#h-navigating-within-multiple-documents-or-packaged-documents" id="h-navigating-within-multiple-documents-or-packaged-documents"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.1 </span>Navigating Within Multiple Documents or Packaged Documents</span></h3>
 <p>Digital publishing use cases exist to allow users to navigate among multiple documents or collections of documents that make up a publication's whole. For example:</p>
 <ul>
   <li>Bidirectional linking: A user follows a hyperlink from a publication index to a paragraph in middle of chapter 23 and subsequently realizes that the second index entry may have been a better choice. The user must now return to the publication index (very likely a separate HTML document) to access the link to the second index entry.</li>
@@ -758,29 +759,29 @@ table.simple {
 </ol>
 </section>
 
-<section id="discoverability" typeof="bibo:Chapter" resource="#discoverability" property="bibo:hasPart">
-<h3 id="h-discoverability" resource="#h-discoverability"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.2 </span>Discoverability</span></h3>
+<section property="bibo:hasPart" resource="#discoverability" typeof="bibo:Chapter" id="discoverability">
+<h3 resource="#h-discoverability" id="h-discoverability"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.2 </span>Discoverability</span></h3>
 <p>Digital publications are often distributed through various channels, for instance in online bookstores. These channels are typically aggregators that have almost no control over publications' content and quality. Besides, a single intellectual work can be distributed as several digital editions, with varying quality and accessibility features.</p>
 <p>When users want to acquire digital publications, they need to know if the content will be accessible to them. Therefore, it is crucial that accessibility properties of a digital publication exist as metadata, and that such metadata can be made available to any interested party. For instance, an online bookstore would access such metadata to convey the information to users so that they can discover which digital distribution of a title contains the accessible features specific to their needs.</p>
 <p><strong>The Gap: </strong>There is no current recommended standard or specification for recording digital publishing metadata stating that a title is accessible and enumerating the properties of the publication that are AT-compatible.</p>
 <p><strong>Potential solution for addressing the gap: </strong>Work with <abbr title="World Wide Web Consortium">W3C</abbr> WAI community to identify and recommend a mechanism to enable the declaration and discoverability of metadata on a digital publication, notably to describe its accessibility properties.</p>
 <p>References:</p>
   <ul>
-    <li>[<cite><a class="bibref" href="#bib-SCHEMA-ORG">SCHEMA-ORG</a></cite>]</li>
-    <li>[<cite><a class="bibref" href="#bib-WEB-SCHEMAS">WEB-SCHEMAS</a></cite>]</li>
-    <li>[<cite><a class="bibref" href="#bib-ONIX-EPUBLICATION">ONIX-EPUBLICATION</a></cite>]</li>
+    <li>[<cite><a href="#bib-SCHEMA-ORG" class="bibref">SCHEMA-ORG</a></cite>]</li>
+    <li>[<cite><a href="#bib-WEB-SCHEMAS" class="bibref">WEB-SCHEMAS</a></cite>]</li>
+    <li>[<cite><a href="#bib-ONIX-EPUBLICATION" class="bibref">ONIX-EPUBLICATION</a></cite>]</li>
   </ul>
 </section>
 
-<section id="optimized-publications" typeof="bibo:Chapter" resource="#optimized-publications" property="bibo:hasPart">
-<h3 id="h-optimized-publications" resource="#h-optimized-publications"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.3 </span>Optimized publications</span></h3>
+<section property="bibo:hasPart" resource="#optimized-publications" typeof="bibo:Chapter" id="optimized-publications">
+<h3 resource="#h-optimized-publications" id="h-optimized-publications"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.3 </span>Optimized publications</span></h3>
 <p>Unlike general Web content, some digital publications are legitimately designed and optimized for specific user groups; this is the case of audio or braille books made for persons with print disabilities. These publications target specific reading modalities. By design, they cannot meet the universal accessibility principles identified in WCAG, despite the fact that they are accessible to their intended audience.</p>
 <p><strong>The Gap: </strong> Guidelines to author and evaluate optimized, accessible digital publications do not exist.</p>
 <p><strong>Potential solution for addressing the gap: </strong>Work with the <abbr title="World Wide Web Consortium">W3C</abbr> WAI community and WCAG WG outreach committee to provide guidelines to author and evaluate optimized digital publications, and to convey their nature to users.</p>
 </section>
 
-<section id="skippability" typeof="bibo:Chapter" resource="#skippability" property="bibo:hasPart">
-<h3 id="h-skippability" resource="#h-skippability"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.4 </span>Skippability</span></h3>
+<section property="bibo:hasPart" resource="#skippability" typeof="bibo:Chapter" id="skippability">
+<h3 resource="#h-skippability" id="h-skippability"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.4 </span>Skippability</span></h3>
   <p>A digital publishing use case exists to allow users to "skip" through components as they read. For example, a screen reader user does not want to read page numbers or headers by default. The user does want to read the footnotes when they encounter a footnote callout within the text. Alternately, a mobility-impaired user, reading a textbook on a mobile device, knows that the textbook chapter contains multiple long tables which are difficult to scroll past. The user wants to be able to designate tables as elements which can be skipped or displayed in some minimal form.</p>
   <p>Skippability is a common user preference in assistive technology (AT) tools allowing the user to personalize the content read aloud to a very precise specification. Assistive technology users expect to be able to customize which content components get read aloud or displayed to the user. Non-assistive technology users also need access to the capability.
   </p><ul><li>Users expect to be able to navigate or go back to skipped elements at a later time.</li>
@@ -789,11 +790,11 @@ table.simple {
   </ul>
   <p><strong>The Gap: </strong>Current <abbr title="World Wide Web Consortium">W3C</abbr> WAI accessibility Specifications and Guidelines do not address what would be considered implementation guidance to provide this functionality either to assistive technology users or to non-assistive technology users.  We are not aware of any well known implementations within the publishing community.</p>
   <p><strong>Potential options for addressing the gap: </strong>Add language to the <abbr title="World Wide Web Consortium">W3C</abbr> WAI specifications discussing the need for User agents to implement skippability.</p>
-  <p><strong>Reference: </strong> DAISY Skippable Structures Recommendation [<cite><a class="bibref" href="#bib-DAISY">DAISY</a></cite>]</p>
+  <p><strong>Reference: </strong> DAISY Skippable Structures Recommendation [<cite><a href="#bib-DAISY" class="bibref">DAISY</a></cite>]</p>
 </section>
 
-<section id="escapability" typeof="bibo:Chapter" resource="#escapability" property="bibo:hasPart">
-<h3 id="h-escapability" resource="#h-escapability"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.5 </span>Escapability</span></h3>
+<section property="bibo:hasPart" resource="#escapability" typeof="bibo:Chapter" id="escapability">
+<h3 resource="#h-escapability" id="h-escapability"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.5 </span>Escapability</span></h3>
 <p>Multiple digital publishing use cases exist allowing readers to move immediately to the next non-contained block element. Moving quickly within text is a particular problem for readers who browse the web and read at high magnification or mobility impaired readers, regardless of device platform. Escapeability require support in visual as well as aural presentation; both screenreader and visual users need access to escapeable structures.</p>
 <p>More specifically, a user in the middle of an element of length needs to be able to move to the next sibling or parent with a simple command. Similarly, the user may need to escape back to the previous text block. Examples include:</p>
 <ul>
@@ -805,8 +806,8 @@ table.simple {
 <p><strong>Potential options for addressing the gap: </strong>Add language to the <abbr title="World Wide Web Consortium">W3C</abbr> WAI Specifications and Guidelines discussing the need for User agents to implement escapability.</p>
 </section>
 
-<section id="page-markers-pagination" typeof="bibo:Chapter" resource="#page-markers-pagination" property="bibo:hasPart">
-<h3 id="h-page-markers-pagination" resource="#h-page-markers-pagination"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.6 </span>Page Markers / Pagination</span></h3>
+<section property="bibo:hasPart" resource="#page-markers-pagination" typeof="bibo:Chapter" id="page-markers-pagination">
+<h3 resource="#h-page-markers-pagination" id="h-page-markers-pagination"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.6 </span>Page Markers / Pagination</span></h3>
 <p>Multiple digital publishing use cases exist for allowing users to work with and manipulate paged content that does not necessarily flow vertically similar to the content of most web pages. Many electronic publications have intentional correspondence to printed publications. Some electronic publications may have the equivalent of page markers for coordinating specific points in text across multiple editions. Therefore, the concept of page markers/locators is not a throw-back to print publishing.</p>
 <p>Specific examples of page marker/pagination use cases include:</p>
 <ul>
@@ -816,52 +817,52 @@ table.simple {
   </li>
 </ul>
 <p><strong>The Gap: </strong> Current <abbr title="World Wide Web Consortium">W3C</abbr> WAI Specifications and Guidelines do not contain discussion of the user need to identify and navigate content based on markers (also called locators) that may or may not correspond to printed publication page numbers. Readers need a means of quickly and accurately navigating digital publications by locators corresponding to printed page markers, regardless of whether or not the user has set their preferences to resize or reflow text. Further, the mechanism to support navigating text by locators and page markers should not disrupt continuous reading for students using Aural AT solutions.</p>
-<p><strong>Potential options for addressing the gap: </strong>The CSS Paged Media Module Level 3 [<cite><a class="bibref" href="#bib-CSS3-PAGE">CSS3-PAGE</a></cite>] describes a method for providing page numbers in the context of a scenario where the text is paginated when sent to a printer from a web page. User agents could implement a similar solution facilitating access to accurate page numbers and pagination.</p>
+<p><strong>Potential options for addressing the gap: </strong>The CSS Paged Media Module Level 3 [<cite><a href="#bib-CSS3-PAGE" class="bibref">CSS3-PAGE</a></cite>] describes a method for providing page numbers in the context of a scenario where the text is paginated when sent to a printer from a web page. User agents could implement a similar solution facilitating access to accurate page numbers and pagination.</p>
 <p>The <abbr title="World Wide Web Consortium">W3C</abbr> WCAG and DPub groups should engage with the Pagination Task Force of the CSS Working Group to determine whether an acceptable, accessible solution for addressing page numbers and pagination already exists.</p>
 <p><strong>Potential interim options for addressing the gap: </strong></p>
 <ol>
   <li>Add language to <abbr title="World Wide Web Consortium">W3C</abbr> WAI Specifications and Guidelines implementing a concept corresponding to the EPUB 3 specifications to create print pagination corresponding locators using  <code>page-list</code> and <code>pagebreak</code> concepts.</li>
   <li>Provide implementation guidance to User Agents instructing the need to enable, where relevant, both distinct concepts of pages (described below), including allowing users to jump to page numbers in either model or view specific pages in either model.</li>
 </ol>
-<p><strong>Reference: </strong>[<cite><a class="bibref" href="#bib-CSS-Paged-Media">CSS-Paged-Media</a></cite>] Module Level 3 Page-Margin Boxes</p>
+<p><strong>Reference: </strong>[<cite><a href="#bib-CSS-Paged-Media" class="bibref">CSS-Paged-Media</a></cite>] Module Level 3 Page-Margin Boxes</p>
 </section>
 
-<section id="phonetic-spellings-of-proper-nouns-and-jargon-terms" typeof="bibo:Chapter" resource="#phonetic-spellings-of-proper-nouns-and-jargon-terms" property="bibo:hasPart">
-<h3 id="h-phonetic-spellings-of-proper-nouns-and-jargon-terms" resource="#h-phonetic-spellings-of-proper-nouns-and-jargon-terms"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.7 </span>Phonetic spellings of proper nouns and jargon terms</span></h3>
+<section property="bibo:hasPart" resource="#phonetic-spellings-of-proper-nouns-and-jargon-terms" typeof="bibo:Chapter" id="phonetic-spellings-of-proper-nouns-and-jargon-terms">
+<h3 resource="#h-phonetic-spellings-of-proper-nouns-and-jargon-terms" id="h-phonetic-spellings-of-proper-nouns-and-jargon-terms"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.7 </span>Phonetic spellings of proper nouns and jargon terms</span></h3>
 <p>Multiple digital publishing use cases exist to enable AT solutions to support phonetic spelling of proper nouns and jargon. For example:</p>
 <ul>
   <li>A chemistry book needs to use the accepted pronunciations of chemistry terms to maximize clarity. It references a pre-existing pronunciation dictionary made available by the American Chemical Society that uses community-agreed-upon standards.</li>
   <li>The trade novel THE LIVES OF CHRISTOPHER CHANT by Diana Wynne Jones, in which there is a plot point that a character's name is spelled "Ralph" but pronounced "Rafe," can be correctly encoded using a local pronunciation dictionary.</li>
   <li>Reading systems support the pronunciation dictionary reference and expose the data to Accessibility APIs.</li>
 </ul>
-<p>Publishers need to be able to put in suggested pronunciation for proper nouns, acronyms, and field-specific jargon terms. The Pronunciation Lexicon (PLS) and Speech Synthesis Markup Language [<cite><a class="bibref" href="#bib-SSML">SSML</a></cite>] lack widespread adoption, probably because of the lack of tools useful for large-scale publishing production as well as the lack of reading system support. 
+<p>Publishers need to be able to put in suggested pronunciation for proper nouns, acronyms, and field-specific jargon terms. The Pronunciation Lexicon (PLS) and Speech Synthesis Markup Language [<cite><a href="#bib-SSML" class="bibref">SSML</a></cite>] lack widespread adoption, probably because of the lack of tools useful for large-scale publishing production as well as the lack of reading system support.
 </p>
-    
-<p>The Speech Synthesis Markup Language [<cite><a class="bibref" href="#bib-SSML">SSML</a></cite>] is another option for phonetic pronunciations, but it is currently not supported in HTML. EPUB attempted to address this shortcoming through the introduction of [<cite><a class="bibref" href="#bib-SSML">SSML</a></cite>] attributes, but the attributes are unique to that format, limited to XHTML and not well supported within it. A solution that similarly simplifies SSML but brings support to all HTML user agents is needed.</p>
-    
+
+<p>The Speech Synthesis Markup Language [<cite><a href="#bib-SSML" class="bibref">SSML</a></cite>] is another option for phonetic pronunciations, but it is currently not supported in HTML. EPUB attempted to address this shortcoming through the introduction of [<cite><a href="#bib-SSML" class="bibref">SSML</a></cite>] attributes, but the attributes are unique to that format, limited to XHTML and not well supported within it. A solution that similarly simplifies SSML but brings support to all HTML user agents is needed.</p>
+
 <p><strong>The Gap: </strong>Current <abbr title="World Wide Web Consortium">W3C</abbr> WAI Specifications and Guidelines have poor implementation with regards to phonetic spelling, probably due to lack of authoring tools, reading system support, and implementation guidance.</p>
 <p><strong>References:</strong></p>
 <ul>
-  <li>Pronunciation Lexicon Specification (PLS) [<cite><a class="bibref" href="#bib-PRONUNCIATION-LEXICON">PRONUNCIATION-LEXICON</a></cite>]</li>
-  <li>Speech Synthesis Markup Language (SSML) [<cite><a class="bibref" href="#bib-SSML">SSML</a></cite>]</li>
+  <li>Pronunciation Lexicon Specification (PLS) [<cite><a href="#bib-PRONUNCIATION-LEXICON" class="bibref">PRONUNCIATION-LEXICON</a></cite>]</li>
+  <li>Speech Synthesis Markup Language (SSML) [<cite><a href="#bib-SSML" class="bibref">SSML</a></cite>]</li>
 </ul>
 </section>
 
-<section id="deeply-nested-heading-levels-best-practices" typeof="bibo:Chapter" resource="#deeply-nested-heading-levels-best-practices" property="bibo:hasPart">
-<h3 id="h-deeply-nested-heading-levels-best-practices" resource="#h-deeply-nested-heading-levels-best-practices"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.8 </span>Deeply Nested Heading Levels Best Practices</span></h3>
+<section property="bibo:hasPart" resource="#deeply-nested-heading-levels-best-practices" typeof="bibo:Chapter" id="deeply-nested-heading-levels-best-practices">
+<h3 resource="#h-deeply-nested-heading-levels-best-practices" id="h-deeply-nested-heading-levels-best-practices"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.8 </span>Deeply Nested Heading Levels Best Practices</span></h3>
 <p>Digital publishing use cases exist to support encyclopedias and similarly detailed reference works containing many levels of headings.</p>
 <p>It is not easy to determine what best practice is for deeply nested headings, headings that go beyond <code>&lt;h6&gt;</code>. Best Practices should be clearly established and easy to find. Use cases in books are more frequent than other circumstances. This is likeliest to occur if an <code>&lt;aside&gt;</code> begins with <code>&lt;h5&gt;</code> or <code>&lt;h6&gt;</code>.</p>
 <p><strong>The Gap: </strong>Current <abbr title="World Wide Web Consortium">W3C</abbr> WAI Specifications and Guidelines do not address what are considered implementation guidance to non-assistive technology users. ARIA has heading guidance, but ARIA should be a fallback, only when HTML is inadequate. Furthermore, most content creators are unclear of what it announced to AT when there are nested levels of <code>&lt;h#&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;role="header"&gt;</code>, and <code>&lt;aria-level=#&gt;</code>. Clearer documentation of this interaction is necessary.</p>
 <p><strong>Potential solution for addressing the gap: </strong>Add specific guidance related to supporting deeply nested heading levels in reference works to <abbr title="World Wide Web Consortium">W3C</abbr> WAI Specifications, Guidelines, and Tutorials.</p>
 <p><strong>References:</strong></p>
 <ul>
-  <li>Item #3: 15 May 2015 DPub Minutes [<cite><a class="bibref" href="#bib-DPub-Minutes-3">DPub-Minutes-3</a></cite>]</li>
-  <li>Using role="heading" to identify headings [<cite><a class="bibref" href="#bib-WAI-Wiki">WAI-Wiki</a></cite>] April-June 2015 [][WAI-IG-Minutes]]</li>
+  <li>Item #3: 15 May 2015 DPub Minutes [<cite><a href="#bib-DPub-Minutes-3" class="bibref">DPub-Minutes-3</a></cite>]</li>
+  <li>Using role="heading" to identify headings [<cite><a href="#bib-WAI-Wiki" class="bibref">WAI-Wiki</a></cite>] April-June 2015 [][WAI-IG-Minutes]]</li>
 </ul>
 </section>
 
-<section id="semantic-list-head" typeof="bibo:Chapter" resource="#semantic-list-head" property="bibo:hasPart">
-<h3 id="h-semantic-list-head" resource="#h-semantic-list-head"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.9 </span>Semantic List-Head</span></h3>
+<section property="bibo:hasPart" resource="#semantic-list-head" typeof="bibo:Chapter" id="semantic-list-head">
+<h3 resource="#h-semantic-list-head" id="h-semantic-list-head"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.9 </span>Semantic List-Head</span></h3>
 <p>A digital publishing use case exists to support a semantic title or head within a list.</p>
 <p><strong>The Gap: </strong>Currently, no clear method of associating a title with a list exists in any <abbr title="World Wide Web Consortium">W3C</abbr> specification.</p>
 <p>Creating the visual effect of a list containing a semantic title or head can be accomplished using markup wrappers such as <code>&lt;div&gt;</code>, but list elements (<code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>) should include titles.</p>
@@ -882,16 +883,16 @@ table.simple {
 </section>
 
 <!-- Appendices -->
-<section class="appendix" id="future-work" typeof="bibo:Chapter" resource="#future-work" property="bibo:hasPart">
-    <!--OddPage--><h2 id="h-future-work" resource="#h-future-work"><span property="xhv:role" resource="xhv:heading"><span class="secno">A. </span>Future work</span></h2>
+<section property="bibo:hasPart" resource="#future-work" typeof="bibo:Chapter" id="future-work" class="appendix">
+    <!--OddPage--><h2 resource="#h-future-work" id="h-future-work"><span property="xhv:role" resource="xhv:heading"><span class="secno">A. </span>Future work</span></h2>
 
     <p>The Digital Publishing Interest Group is not making any recommendations on the following items at this time. They are included to increase awareness of the work we believe still needs to be done for accessibility in the digital publishing space. Existing <abbr title="World Wide Web Consortium">W3C</abbr> Working Groups are already addressing some of these points. Others will be investigated by the DPub IG Accessibility TF shortly.</p>
-    <section id="layout-s-influence-on-comprehension" typeof="bibo:Chapter" resource="#layout-s-influence-on-comprehension" property="bibo:hasPart">
-        <h3 id="h-layout-s-influence-on-comprehension" resource="#h-layout-s-influence-on-comprehension"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.1 </span>Layout's Influence On Comprehension</span></h3>
+    <section property="bibo:hasPart" resource="#layout-s-influence-on-comprehension" typeof="bibo:Chapter" id="layout-s-influence-on-comprehension">
+        <h3 resource="#h-layout-s-influence-on-comprehension" id="h-layout-s-influence-on-comprehension"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.1 </span>Layout's Influence On Comprehension</span></h3>
         <p><strong>Use cases:</strong></p>
         <ul>
-          <li>Use Case: Concrete poetry, such as "The Mouse's Tail" [<cite><a class="bibref" href="#bib-MOUSE">MOUSE</a></cite>] by Lewis Carroll, "Soweto" [<cite><a class="bibref" href="#bib-SOWETO">SOWETO</a></cite>] by Kamau Braithwaite, or "Women" [<cite><a class="bibref" href="#bib-WOMEN">WOMEN</a></cite>] by May Swenson.</li>
-          <li>Use Case: Puzzles, such as "Headshots" [<cite><a class="bibref" href="#bib-HEADSHOTS">HEADSHOTS</a></cite>], a puzzle which relies on exact location on the page to produce a solution.</li>
+          <li>Use Case: Concrete poetry, such as "The Mouse's Tail" [<cite><a href="#bib-MOUSE" class="bibref">MOUSE</a></cite>] by Lewis Carroll, "Soweto" [<cite><a href="#bib-SOWETO" class="bibref">SOWETO</a></cite>] by Kamau Braithwaite, or "Women" [<cite><a href="#bib-WOMEN" class="bibref">WOMEN</a></cite>] by May Swenson.</li>
+          <li>Use Case: Puzzles, such as "Headshots" [<cite><a href="#bib-HEADSHOTS" class="bibref">HEADSHOTS</a></cite>], a puzzle which relies on exact location on the page to produce a solution.</li>
         </ul>
         <p>Comments: There is currently no reasonable, scalable, generalizable and sustainable method to provide information about the layout of text on a page to screen readers and braille displays.</p>
         <p>Certain literary styles such as poetry may use the placement of text to convey extra meaning. There is no consistent method for content creators to make this additional information available to a non-visual display such as a screen reader. We have no suggested approaches at this time. More research and investigation is warranted.</p>
@@ -904,37 +905,37 @@ table.simple {
 
         <p>References:</p>
         <ul>
-             <li>[<cite><a class="bibref" href="#bib-IDPF-Guide-Logical-Reading-Order">IDPF-Guide-Logical-Reading-Order</a></cite>]</li>
+             <li>[<cite><a href="#bib-IDPF-Guide-Logical-Reading-Order" class="bibref">IDPF-Guide-Logical-Reading-Order</a></cite>]</li>
         </ul>
     </section>
 
-    <section id="annotations" typeof="bibo:Chapter" resource="#annotations" property="bibo:hasPart">
-        <h3 id="h-annotations" resource="#h-annotations"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.2 </span>Annotations</span></h3>
+    <section property="bibo:hasPart" resource="#annotations" typeof="bibo:Chapter" id="annotations">
+        <h3 resource="#h-annotations" id="h-annotations"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.2 </span>Annotations</span></h3>
 
         <p>Annotations are a general web requirement, but they are a vital need in the digital publishing industry. These annotations (including: highlights and adding personal notes to a document) must be accessible for creation, editing, and access. The <abbr title="World Wide Web Consortium">W3C</abbr> Annotations WG is aware of the requirements of accessibility both in UAs as well as the format.</p>
         <p>Because of the importance of annotations in the industry, the DPub Accessibility TF will continue to stay in communication with the <abbr title="World Wide Web Consortium">W3C</abbr> Annotation WG and its descendants to address the open issues in this area.</p>
         <p><strong>Suggestion:</strong> Communicate regularly with the <abbr title="World Wide Web Consortium">W3C</abbr> Annotations WG.</p>
 	   	<p>Reference:</p>
 	    <ul>
-             <li>[<cite><a class="bibref" href="#bib-ANNOTATIONS-WG">ANNOTATIONS-WG</a></cite>]</li>
+             <li>[<cite><a href="#bib-ANNOTATIONS-WG" class="bibref">ANNOTATIONS-WG</a></cite>]</li>
 	    </ul>
     </section>
 
-    <section id="notes-footnotes-asides-author-notes-etc.x" typeof="bibo:Chapter" resource="#notes-footnotes-asides-author-notes-etc.x" property="bibo:hasPart">
-        <h3 id="h-notes-footnotes-asides-author-notes-etc.x" resource="#h-notes-footnotes-asides-author-notes-etc.x"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.3 </span>Notes (Footnotes, Asides, Author Notes, etc.)</span></h3>
-        <p>The <abbr title="World Wide Web Consortium">W3C</abbr> recently completed the necessary component of this work, with the new DPub-ARIA 1.0 module. DPub-ARIA 1.0 includes [<cite><a class="bibref" href="#bib-DPub-ARIA-FootNote">DPub-ARIA-FootNote</a></cite>] and [<cite><a class="bibref" href="#bib-DPub-ARIA-FootNotes">DPub-ARIA-FootNotes</a></cite>]. These roles convey that information is ancillary without conveying information about positioning, allowing authors and user agents to achieve positioning using CSS or scripting while maintaining the flow and navigability of the content.</p>
+    <section property="bibo:hasPart" resource="#notes-footnotes-asides-author-notes-etc.x" typeof="bibo:Chapter" id="notes-footnotes-asides-author-notes-etc.x">
+        <h3 resource="#h-notes-footnotes-asides-author-notes-etc.x" id="h-notes-footnotes-asides-author-notes-etc.x"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.3 </span>Notes (Footnotes, Asides, Author Notes, etc.)</span></h3>
+        <p>The <abbr title="World Wide Web Consortium">W3C</abbr> recently completed the necessary component of this work, with the new DPub-ARIA 1.0 module. DPub-ARIA 1.0 includes [<cite><a href="#bib-DPub-ARIA-FootNote" class="bibref">DPub-ARIA-FootNote</a></cite>] and [<cite><a href="#bib-DPub-ARIA-FootNotes" class="bibref">DPub-ARIA-FootNotes</a></cite>]. These roles convey that information is ancillary without conveying information about positioning, allowing authors and user agents to achieve positioning using CSS or scripting while maintaining the flow and navigability of the content.</p>
 
         <p>The Accessibility TF will consider what steps might be taken to publicize the new roles within the digital publishing community.</p>
 
 	   	<p>Contacts:</p>
 	    <ul>
-            <li>[<cite><a class="bibref" href="#bib-DPub-IG">DPub-IG</a></cite>]</li>
-            <li>[<cite><a class="bibref" href="#bib-ARIA-WG">ARIA-WG</a></cite>]</li>
+            <li>[<cite><a href="#bib-DPub-IG" class="bibref">DPub-IG</a></cite>]</li>
+            <li>[<cite><a href="#bib-ARIA-WG" class="bibref">ARIA-WG</a></cite>]</li>
 	    </ul>
 
     </section>
-    <section id="positional-location-of-text-to-indicate-different-speakers" typeof="bibo:Chapter" resource="#positional-location-of-text-to-indicate-different-speakers" property="bibo:hasPart">
-        <h3 id="h-positional-location-of-text-to-indicate-different-speakers" resource="#h-positional-location-of-text-to-indicate-different-speakers"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.4 </span>Positional location of text to indicate different speakers</span></h3>
+    <section property="bibo:hasPart" resource="#positional-location-of-text-to-indicate-different-speakers" typeof="bibo:Chapter" id="positional-location-of-text-to-indicate-different-speakers">
+        <h3 resource="#h-positional-location-of-text-to-indicate-different-speakers" id="h-positional-location-of-text-to-indicate-different-speakers"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.4 </span>Positional location of text to indicate different speakers</span></h3>
         <p>Use cases:</p>
          <ul>
              <li>Use Case: comic strips have different speakers on different sides of the page. </li>
@@ -945,65 +946,65 @@ table.simple {
 
 	   	<p>Contact:</p>
 	    <ul>
-		   	<li>[<cite><a class="bibref" href="#bib-READIUM">READIUM</a></cite>]</li>
+		   	<li>[<cite><a href="#bib-READIUM" class="bibref">READIUM</a></cite>]</li>
 	    </ul>
         <p>References:</p>
         <ul>
-             <li>CSS Speech Module[<cite><a class="bibref" href="#bib-CSS3-SPEECH">CSS3-SPEECH</a></cite>]</li>
+             <li>CSS Speech Module[<cite><a href="#bib-CSS3-SPEECH" class="bibref">CSS3-SPEECH</a></cite>]</li>
         </ul>
     </section>
 
-    <section id="assessments" typeof="bibo:Chapter" resource="#assessments" property="bibo:hasPart">
-        <h3 id="h-assessments" resource="#h-assessments"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.5 </span>Assessments</span></h3>
+    <section property="bibo:hasPart" resource="#assessments" typeof="bibo:Chapter" id="assessments">
+        <h3 resource="#h-assessments" id="h-assessments"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.5 </span>Assessments</span></h3>
         <p>Use cases:</p>
            <ul>
                <li>Adjustable timings needed for accessibility conflict with a proctor's need to control time limits.</li>
                <li>Extended descriptions of visual elements must be controlled to provide the test taker with the appropriate level of information, possibly customized by the test taker's individualized accommodations (such as an IEP in the United States).</li>
            </ul>
-        <p>[<cite><a class="bibref" href="#bib-ETS">ETS</a></cite>] and members of the IMS Accessibility Task Force are leading the effort to harmonize the IMS QTI/APIP accessibility model with HTML5/ARIA and WCAG. A gap analysis is underway at [<cite><a class="bibref" href="#bib-ETS">ETS</a></cite>] and recommendations for enhancements to both guidelines (including techniques and best practices) and standards, such as the addition of new ARIA attributes. The bulk of these recommendations will come from their group; we will coordinate with them as they request. We've done initial outreach.</p>
+        <p>[<cite><a href="#bib-ETS" class="bibref">ETS</a></cite>] and members of the IMS Accessibility Task Force are leading the effort to harmonize the IMS QTI/APIP accessibility model with HTML5/ARIA and WCAG. A gap analysis is underway at [<cite><a href="#bib-ETS" class="bibref">ETS</a></cite>] and recommendations for enhancements to both guidelines (including techniques and best practices) and standards, such as the addition of new ARIA attributes. The bulk of these recommendations will come from their group; we will coordinate with them as they request. We've done initial outreach.</p>
         <p><strong>Suggestion:</strong> The DPub Accessibility Task Force will coordinate with the IMS Assessment Accessibility Task Force</p>
 
         <p>Contacts:</p>
         <ul>
-            <li>[<cite><a class="bibref" href="#bib-ETS">ETS</a></cite>]</li>
-            <li>[<cite><a class="bibref" href="#bib-IMS-Global">IMS-Global</a></cite>]</li>
+            <li>[<cite><a href="#bib-ETS" class="bibref">ETS</a></cite>]</li>
+            <li>[<cite><a href="#bib-IMS-Global" class="bibref">IMS-Global</a></cite>]</li>
         </ul>
 
         <p>References:</p>
         <ul>
-            <li>[<cite><a class="bibref" href="#bib-IMS-Global-QTI">IMS-Global-QTI</a></cite>]</li>
-            <li>[<cite><a class="bibref" href="#bib-IMS-Global-APIP">IMS-Global-APIP</a></cite>]</li>
-            <li>[<cite><a class="bibref" href="#bib-ACCESSIBLE-ONLINE-LEARNING">ACCESSIBLE-ONLINE-LEARNING</a></cite>]</li>
+            <li>[<cite><a href="#bib-IMS-Global-QTI" class="bibref">IMS-Global-QTI</a></cite>]</li>
+            <li>[<cite><a href="#bib-IMS-Global-APIP" class="bibref">IMS-Global-APIP</a></cite>]</li>
+            <li>[<cite><a href="#bib-ACCESSIBLE-ONLINE-LEARNING" class="bibref">ACCESSIBLE-ONLINE-LEARNING</a></cite>]</li>
         </ul>
     </section>
 
-    <section id="mathematics" typeof="bibo:Chapter" resource="#mathematics" property="bibo:hasPart">
-        <h3 id="h-mathematics" resource="#h-mathematics"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.6 </span>Mathematics</span></h3>
+    <section property="bibo:hasPart" resource="#mathematics" typeof="bibo:Chapter" id="mathematics">
+        <h3 resource="#h-mathematics" id="h-mathematics"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.6 </span>Mathematics</span></h3>
         <p>Use cases:</p>
         <ul>
-          <li>Mathematics. Tools such as MathJax [<cite><a class="bibref" href="#bib-MATHJAX">MATHJAX</a></cite>], MathQuill [<cite><a class="bibref" href="#bib-MATHQUILL">MATHQUILL</a></cite>], [<cite><a class="bibref" href="#bib-MATHEMATICAL">MATHEMATICAL</a></cite>] and many other tools provide HTML and SVG rendering of mathematical content.</li>
-          <li>Chemistry. ProgressiveAccess [<cite><a class="bibref" href="#bib-PROGRESSIVE">PROGRESSIVE</a></cite>], Avogadro [<cite><a class="bibref" href="#bib-AVOGADRO">AVOGADRO</a></cite>], jchempaint [<cite><a class="bibref" href="#bib-JCHEMPAINT">JCHEMPAINT</a></cite>] and many other tools render chemical information as SVG.</li>
+          <li>Mathematics. Tools such as MathJax [<cite><a href="#bib-MATHJAX" class="bibref">MATHJAX</a></cite>], MathQuill [<cite><a href="#bib-MATHQUILL" class="bibref">MATHQUILL</a></cite>], [<cite><a href="#bib-MATHEMATICAL" class="bibref">MATHEMATICAL</a></cite>] and many other tools provide HTML and SVG rendering of mathematical content.</li>
+          <li>Chemistry. ProgressiveAccess [<cite><a href="#bib-PROGRESSIVE" class="bibref">PROGRESSIVE</a></cite>], Avogadro [<cite><a href="#bib-AVOGADRO" class="bibref">AVOGADRO</a></cite>], jchempaint [<cite><a href="#bib-JCHEMPAINT" class="bibref">JCHEMPAINT</a></cite>] and many other tools render chemical information as SVG.</li>
         </ul>
         <p>There is currently no reasonable, scalable, generalizable and sustainable method to provide information about mathematical rendering using HTML with CSS or SVG to screen readers and braille displays.</p>
 
         <p>While MathML is part of HTML5, virtually all mathematical and scientific content on the web is rendered using HTML (with CSS) and SVG. While these standards are sufficient for visual rendering, there is no consistent method for content creators to make mathematical and scientific information available to a non-visual display such as a screen reader.</p>
 
-        <p>The newly created [<cite><a class="bibref" href="#bib-Math-on-Webpages-CG">Math-on-Webpages-CG</a></cite>] Community Group plans to address rendering issues as well as accessibility related issues, focusing on a bottom-up approach of improving the web platform overall to help improve current and future technologies.</p>
+        <p>The newly created [<cite><a href="#bib-Math-on-Webpages-CG" class="bibref">Math-on-Webpages-CG</a></cite>] Community Group plans to address rendering issues as well as accessibility related issues, focusing on a bottom-up approach of improving the web platform overall to help improve current and future technologies.</p>
 
         <p><strong>Suggestion: </strong>The DPub IG could follow and support the efforts of the math-on-webpages Community Group and encourage a joint Task Force between the Community Group and the <abbr title="World Wide Web Consortium">W3C</abbr>'s ARIA WG to investigate potential solutions such as a mathematics/STEM-related ARIA module.</p>
 
     	<p>Contact:</p>
         <ul>
-          <li>[<cite><a class="bibref" href="#bib-Math-on-Webpages-CG">Math-on-Webpages-CG</a></cite>]</li>
+          <li>[<cite><a href="#bib-Math-on-Webpages-CG" class="bibref">Math-on-Webpages-CG</a></cite>]</li>
         </ul>
     </section>
 </section> <!-- end future work -->
 
-<section class="appendix" id="gap-analysis" typeof="bibo:Chapter" resource="#gap-analysis" property="bibo:hasPart">
-    <!--OddPage--><h2 id="h-gap-analysis" resource="#h-gap-analysis"><span property="xhv:role" resource="xhv:heading"><span class="secno">B. </span>Gap Analysis</span></h2>
+<section property="bibo:hasPart" resource="#gap-analysis" typeof="bibo:Chapter" id="gap-analysis" class="appendix">
+    <!--OddPage--><h2 resource="#h-gap-analysis" id="h-gap-analysis"><span property="xhv:role" resource="xhv:heading"><span class="secno">B. </span>Gap Analysis</span></h2>
 
     <p>The Accessibility Task Force of the Digital Publishing Interest Group performed a gap analysis identifying the needs of the digital publishing industry and WCAG. We did not perform a gap analysis for any other <abbr title="World Wide Web Consortium">W3C</abbr> standards. The meaningful results of the gap analysis have been broken out into this Note. However, the full gap analysis of the various techniques are refenced here which link out to the respective wiki tables. Here the team investigated each technique, whether or not it is a requisite for digital publishing, and indicated in initial comments what should be the jumping off point for discussion in the group.</p>
-    
+
     <a href="https://github.com/w3c/dpub-accessibility/wiki/DPUB-Specific-WCAG-General-Techniques">DPUB Specific WCAG General Techniques</a>
     <p><a href="https://github.com/w3c/dpub-accessibility/wiki/DPUB-Specific-WCAG-HTML-Techniques">DPUB Specific WCAG HTML Techniques</a></p>
     <p><a href="https://github.com/w3c/dpub-accessibility/wiki/DPUB-Specific-WCAG-CSS-Techniques">DPUB Specific WCAG CSS Techniques</a></p>
@@ -1018,88 +1019,88 @@ table.simple {
     <p><a href="https://github.com/w3c/dpub-accessibility/wiki/DPUB-Specific-Common-Failures">DPUB Specific Common Failures</a></p>
     <p><a href="https://github.com/w3c/dpub-accessibility/wiki/DPUB-Specific-Techniques">DPUB Specific Techniques</a></p>
 
-    <p><strong>Reference: </strong>[<cite><a class="bibref" href="#bib-DPub-Accessibility-Wiki">DPub-Accessibility-Wiki</a></cite>]</p>
+    <p><strong>Reference: </strong>[<cite><a href="#bib-DPub-Accessibility-Wiki" class="bibref">DPub-Accessibility-Wiki</a></cite>]</p>
 
 </section> <!-- end gap analysis -->
 
-<section class="appendix" id="relevant-work-in-development-outside-the-w3c" typeof="bibo:Chapter" resource="#relevant-work-in-development-outside-the-w3c" property="bibo:hasPart">
-    <!--OddPage--><h2 id="h-relevant-work-in-development-outside-the-w3c" resource="#h-relevant-work-in-development-outside-the-w3c"><span property="xhv:role" resource="xhv:heading"><span class="secno">C. </span>Relevant Work in Development Outside the <abbr title="World Wide Web Consortium">W3C</abbr></span></h2>
+<section property="bibo:hasPart" resource="#relevant-work-in-development-outside-the-w3c" typeof="bibo:Chapter" id="relevant-work-in-development-outside-the-w3c" class="appendix">
+    <!--OddPage--><h2 resource="#h-relevant-work-in-development-outside-the-w3c" id="h-relevant-work-in-development-outside-the-w3c"><span property="xhv:role" resource="xhv:heading"><span class="secno">C. </span>Relevant Work in Development Outside the <abbr title="World Wide Web Consortium">W3C</abbr></span></h2>
 
     <p>Some open specifications under development or maintained outside the <abbr title="World Wide Web Consortium">W3C</abbr> have great relevance to the accessibility in the digital publishing sector. Members of the <abbr title="World Wide Web Consortium">W3C</abbr> involved in accessibility within digital publishing need to be aware of work happening in these spaces. Here we describe some key projects that are relevant to our work.</p>
 
     <ol>
-     <li><a href="#epub" class="sec-ref"><span class="secno">C.1</span> <span class="sec-title">EPUB</span></a></li>
-     <li><a href="#diagrammar" class="sec-ref"><span class="secno">C.2</span> <span class="sec-title">Diagrammar</span></a></li>
-     <li><a href="#pdf" class="sec-ref"><span class="secno">C.3</span> <span class="sec-title">PDF</span></a></li>
+     <li><a class="sec-ref" href="#epub"><span class="secno">C.1</span> <span class="sec-title">EPUB</span></a></li>
+     <li><a class="sec-ref" href="#diagrammar"><span class="secno">C.2</span> <span class="sec-title">Diagrammar</span></a></li>
+     <li><a class="sec-ref" href="#pdf"><span class="secno">C.3</span> <span class="sec-title">PDF</span></a></li>
     </ol>
-    <section id="epub" typeof="bibo:Chapter" resource="#epub" property="bibo:hasPart">
-        <h3 id="h-epub" resource="#h-epub"><span property="xhv:role" resource="xhv:heading"><span class="secno">C.1 </span>EPUB</span></h3>
+    <section property="bibo:hasPart" resource="#epub" typeof="bibo:Chapter" id="epub">
+        <h3 resource="#h-epub" id="h-epub"><span property="xhv:role" resource="xhv:heading"><span class="secno">C.1 </span>EPUB</span></h3>
 
-        <section id="epub-s-relevance-to-the-w3c-and-accessible-digital-publishing" typeof="bibo:Chapter" resource="#epub-s-relevance-to-the-w3c-and-accessible-digital-publishing" property="bibo:hasPart">
-        <h4 id="h-epub-s-relevance-to-the-w3c-and-accessible-digital-publishing" resource="#h-epub-s-relevance-to-the-w3c-and-accessible-digital-publishing"><span property="xhv:role" resource="xhv:heading"><span class="secno">C.1.1 </span>EPUB's relevance to the <abbr title="World Wide Web Consortium">W3C</abbr> and accessible digital publishing</span></h4>
+        <section property="bibo:hasPart" resource="#epub-s-relevance-to-the-w3c-and-accessible-digital-publishing" typeof="bibo:Chapter" id="epub-s-relevance-to-the-w3c-and-accessible-digital-publishing">
+        <h4 resource="#h-epub-s-relevance-to-the-w3c-and-accessible-digital-publishing" id="h-epub-s-relevance-to-the-w3c-and-accessible-digital-publishing"><span property="xhv:role" resource="xhv:heading"><span class="secno">C.1.1 </span>EPUB's relevance to the <abbr title="World Wide Web Consortium">W3C</abbr> and accessible digital publishing</span></h4>
 
             <p>EPUB is quickly becoming one of the de facto standards in digital publishing and is gaining global traction. Some existing reading systems read EPUB books. This standard is actively being updated and improved. EPUB is based on HTML5 and adheres to the WCAG accessibility standards.</p>
 
             <h4 id="maintainers-of-the-specification">Maintainers of the specification</h4>
 
-            <p>[<cite><a class="bibref" href="#bib-IDPF">IDPF</a></cite>] (International Digital Publishing Forum) created and maintains the EPUB® standard.</p>
+            <p>[<cite><a href="#bib-IDPF" class="bibref">IDPF</a></cite>] (International Digital Publishing Forum) created and maintains the EPUB® standard.</p>
 
             <p>Contact:</p>
             <ul>
-                <li>[<cite><a class="bibref" href="#bib-IDPF-CONTACT">IDPF-CONTACT</a></cite>]</li>
+                <li>[<cite><a href="#bib-IDPF-CONTACT" class="bibref">IDPF-CONTACT</a></cite>]</li>
             </ul>
 
             <h2 id="historical-context">Historical Context</h2>
 
-            <p>Beginning with EPUB 3.0, the primary accessible publishing standard, DAISY DTBook and the primary commercial publishing format merged. DAISY’s Digital Talking Book [<cite><a class="bibref" href="#bib-DAISY-DTD">DAISY-DTD</a></cite>] is an XML-based file format and puts an emphasis on structural encoding to enable reading for the visually impaired audience. EPUB 2 allowed DTBook as an alternate syntax. The EPUB 3 specification merged DAISY and EPUB, making accessibility considerations a concern for all publishers, authors, and readers. The EPUB 3.0.1 specification is available at [<cite><a class="bibref" href="#bib-EPUB3">EPUB3</a></cite>]. One of the features of this relationship is the [<cite><a class="bibref" href="#bib-IDPF-EPUB-Structure-Semantics-Vocabulary">IDPF-EPUB-Structure-Semantics-Vocabulary</a></cite>], a namespaced vocabulary that enables semantic inflection of HTML elements. In 2015, several of these terms have been transformed into prefixed ARIA roles in [<cite><a class="bibref" href="#bib-DPub-ARIA-1.0">DPub-ARIA-1.0</a></cite>].</p>
+            <p>Beginning with EPUB 3.0, the primary accessible publishing standard, DAISY DTBook and the primary commercial publishing format merged. DAISY’s Digital Talking Book [<cite><a href="#bib-DAISY-DTD" class="bibref">DAISY-DTD</a></cite>] is an XML-based file format and puts an emphasis on structural encoding to enable reading for the visually impaired audience. EPUB 2 allowed DTBook as an alternate syntax. The EPUB 3 specification merged DAISY and EPUB, making accessibility considerations a concern for all publishers, authors, and readers. The EPUB 3.0.1 specification is available at [<cite><a href="#bib-EPUB3" class="bibref">EPUB3</a></cite>]. One of the features of this relationship is the [<cite><a href="#bib-IDPF-EPUB-Structure-Semantics-Vocabulary" class="bibref">IDPF-EPUB-Structure-Semantics-Vocabulary</a></cite>], a namespaced vocabulary that enables semantic inflection of HTML elements. In 2015, several of these terms have been transformed into prefixed ARIA roles in [<cite><a href="#bib-DPub-ARIA-1.0" class="bibref">DPub-ARIA-1.0</a></cite>].</p>
 
             <p>The IDPF and <abbr title="World Wide Web Consortium">W3C</abbr> Digital Publishing Interest Group work closely together on many issues, including broadening the definition of Web Accessibility to include long-form content. The Digital Publishing Interest Group’s Charter includes advancing EPUB 3 as one of the goals. Among the success criteria are providing advice to the IDPF EPUB 3.1 Working Group and advancing what is now called Portable Web Publications [PWP], a vision for the convergence of future of digital documents and the Web. Integrating the accessibility functionality that is native to the Web with the additions that DAISY and the IDPF have created is part of that vision.</p>
 
             <h2 id="references-1">References:</h2>
                 <ul>
-                    <li>[<cite><a class="bibref" href="#bib-DAISY-DTD">DAISY-DTD</a></cite>]</li>
-                    <li>EPUB 3.0.1 Specification [<cite><a class="bibref" href="#bib-EPUB3">EPUB3</a></cite>]</li>
-                    <li>EPUB 3.1 Work Plan [<cite><a class="bibref" href="#bib-EPUB3.1">EPUB3.1</a></cite>]</li>
-                    <li>Digital Publishing WAI-ARIA Module 1.0 [<cite><a class="bibref" href="#bib-DPub-ARIA-1.0">DPub-ARIA-1.0</a></cite>]</li>
-                    <li>IDPF's GitHub Repository [<cite><a class="bibref" href="#bib-IDPF-GITHUB">IDPF-GITHUB</a></cite>]</li>
+                    <li>[<cite><a href="#bib-DAISY-DTD" class="bibref">DAISY-DTD</a></cite>]</li>
+                    <li>EPUB 3.0.1 Specification [<cite><a href="#bib-EPUB3" class="bibref">EPUB3</a></cite>]</li>
+                    <li>EPUB 3.1 Work Plan [<cite><a href="#bib-EPUB3.1" class="bibref">EPUB3.1</a></cite>]</li>
+                    <li>Digital Publishing WAI-ARIA Module 1.0 [<cite><a href="#bib-DPub-ARIA-1.0" class="bibref">DPub-ARIA-1.0</a></cite>]</li>
+                    <li>IDPF's GitHub Repository [<cite><a href="#bib-IDPF-GITHUB" class="bibref">IDPF-GITHUB</a></cite>]</li>
                 </ul>
 
         </section> <!-- end epub relevance-->
 </section> <!-- end epub -->
-<section class="appendix" id="diagrammar" typeof="bibo:Chapter" resource="#diagrammar" property="bibo:hasPart">
-    <h3 id="h-diagrammar" resource="#h-diagrammar"><span property="xhv:role" resource="xhv:heading"><span class="secno">C.2 </span>Diagrammar</span></h3>
+<section property="bibo:hasPart" resource="#diagrammar" typeof="bibo:Chapter" class="appendix" id="diagrammar">
+    <h3 resource="#h-diagrammar" id="h-diagrammar"><span property="xhv:role" resource="xhv:heading"><span class="secno">C.2 </span>Diagrammar</span></h3>
 
     <h3 id="diagrammar-s-relevance-to-the-w3c-and-accessible-digital-publishing">Diagrammar's relevance to the <abbr title="World Wide Web Consortium">W3C</abbr> and accessible digital publishing</h3>
 
-    <p>The <abbr title="World Wide Web Consortium">W3C</abbr> standards bodies have developed multiple ways of creating extended descriptions for certain page elements, available for accessibility purposes. WAI-ARIA 1.1 draft proposes using ARIA-DETAILS and ARIA-LINKTYPE, and HTML5 has longdesc [<cite><a class="bibref" href="#bib-HTML-LONGDESC">HTML-LONGDESC</a></cite>]. Although the proposed ARIA changes address most of digital publishing's use cases, there is still need to have these extended descriptions accessible to those who may not be using assistive technology. [<cite><a class="bibref" href="#bib-DIAGRAMMAR">DIAGRAMMAR</a></cite>] is being developed to address this set of use cases.</p>
+    <p>The <abbr title="World Wide Web Consortium">W3C</abbr> standards bodies have developed multiple ways of creating extended descriptions for certain page elements, available for accessibility purposes. WAI-ARIA 1.1 draft proposes using ARIA-DETAILS and ARIA-LINKTYPE, and HTML5 has longdesc [<cite><a href="#bib-HTML-LONGDESC" class="bibref">HTML-LONGDESC</a></cite>]. Although the proposed ARIA changes address most of digital publishing's use cases, there is still need to have these extended descriptions accessible to those who may not be using assistive technology. [<cite><a href="#bib-DIAGRAMMAR" class="bibref">DIAGRAMMAR</a></cite>] is being developed to address this set of use cases.</p>
 
-    <p>The Diagrammar team intends to support a [<cite><a class="bibref" href="#bib-DIAGRAMMAR">DIAGRAMMAR</a></cite>] XML data to HTML transformation for presentation. Therefore, it will be useful for ongoing communication to continue.</p>
+    <p>The Diagrammar team intends to support a [<cite><a href="#bib-DIAGRAMMAR" class="bibref">DIAGRAMMAR</a></cite>] XML data to HTML transformation for presentation. Therefore, it will be useful for ongoing communication to continue.</p>
 
     <h3 id="specification-maintainance">Specification Maintainance</h3>
 
-    <p>[<cite><a class="bibref" href="#bib-DIAGRAM-Center">DIAGRAM-Center</a></cite>], a [<cite><a class="bibref" href="#bib-BENETECH">BENETECH</a></cite>] initiative, in partnership with the WGBH National Center for Accessible Media and the US Fund for [<cite><a class="bibref" href="#bib-DAISY">DAISY</a></cite>], develops [<cite><a class="bibref" href="#bib-DIAGRAMMAR">DIAGRAMMAR</a></cite>].</p>
+    <p>[<cite><a href="#bib-DIAGRAM-Center" class="bibref">DIAGRAM-Center</a></cite>], a [<cite><a href="#bib-BENETECH" class="bibref">BENETECH</a></cite>] initiative, in partnership with the WGBH National Center for Accessible Media and the US Fund for [<cite><a href="#bib-DAISY" class="bibref">DAISY</a></cite>], develops [<cite><a href="#bib-DIAGRAMMAR" class="bibref">DIAGRAMMAR</a></cite>].</p>
 
     <p>Contacts:</p>
     <ul>
-        <li>[<cite><a class="bibref" href="#bib-DIAGRAM-Center">DIAGRAM-Center</a></cite>]</li>
+        <li>[<cite><a href="#bib-DIAGRAM-Center" class="bibref">DIAGRAM-Center</a></cite>]</li>
     </ul>
 
     <h2 id="historical-context-1">Historical Context</h2>
 
 
-    <p>In the early days of the web, there was recognition that images  were an obstacle to persons who are blind and others who could not process the visual information. Today, we find that there are much more types of information objects that are not perceivable to persons with disabilities.  Furthermore, publishers and other content creators recognize that alternative mechanisms for conveying information can benefit everybody. These extended descriptions not only pertain to images but any web element that is visually complex, requiring a description in more detail; the DIAGRAM Center hosts [<cite><a class="bibref" href="#bib-DIAGRAMMAR">DIAGRAMMAR</a></cite>] use cases for extended description information in multiple formats.  Alternative representations may be required, and we need a way to link a specific web element to multiple representations be it an extended description, simplified description, or a tactile or auditory representation of the element.</p>
+    <p>In the early days of the web, there was recognition that images  were an obstacle to persons who are blind and others who could not process the visual information. Today, we find that there are much more types of information objects that are not perceivable to persons with disabilities.  Furthermore, publishers and other content creators recognize that alternative mechanisms for conveying information can benefit everybody. These extended descriptions not only pertain to images but any web element that is visually complex, requiring a description in more detail; the DIAGRAM Center hosts [<cite><a href="#bib-DIAGRAMMAR" class="bibref">DIAGRAMMAR</a></cite>] use cases for extended description information in multiple formats.  Alternative representations may be required, and we need a way to link a specific web element to multiple representations be it an extended description, simplified description, or a tactile or auditory representation of the element.</p>
 
-    <p>[<cite><a class="bibref" href="#bib-DIAGRAMMAR">DIAGRAMMAR</a></cite>] is an XML framework to hold multiple extended description types, to make a wide range of content types accessible: images, tables, charts, animations, 3D animations, etc.  [<cite><a class="bibref" href="#bib-DIAGRAMMAR">DIAGRAMMAR</a></cite>] defines a data model for extended descriptions and associated metadata.  It provides a structured, standard way for modeling extended descriptions data, including different modality types for extended descriptions.</p>
+    <p>[<cite><a href="#bib-DIAGRAMMAR" class="bibref">DIAGRAMMAR</a></cite>] is an XML framework to hold multiple extended description types, to make a wide range of content types accessible: images, tables, charts, animations, 3D animations, etc.  [<cite><a href="#bib-DIAGRAMMAR" class="bibref">DIAGRAMMAR</a></cite>] defines a data model for extended descriptions and associated metadata.  It provides a structured, standard way for modeling extended descriptions data, including different modality types for extended descriptions.</p>
 
     <h2 id="references-2">References:</h2>
     <ul>
-        <li>[<cite><a class="bibref" href="#bib-DIAGRAM-Center">DIAGRAM-Center</a></cite>]</li>
-        <li>[<cite><a class="bibref" href="#bib-DIAGRAMMAR">DIAGRAMMAR</a></cite>]</li>
-        <li>[<cite><a class="bibref" href="#bib-ANSI-NISO-Z39.98-2012">ANSI-NISO-Z39.98-2012</a></cite>] "Authoring and Interchange Framework for Adaptive XML Publishing Specification."</li>
+        <li>[<cite><a href="#bib-DIAGRAM-Center" class="bibref">DIAGRAM-Center</a></cite>]</li>
+        <li>[<cite><a href="#bib-DIAGRAMMAR" class="bibref">DIAGRAMMAR</a></cite>]</li>
+        <li>[<cite><a href="#bib-ANSI-NISO-Z39.98-2012" class="bibref">ANSI-NISO-Z39.98-2012</a></cite>] "Authoring and Interchange Framework for Adaptive XML Publishing Specification."</li>
     </ul>
 </section> <!-- end DIAGRAMMAR -->
-<section class="appendix" id="pdf" typeof="bibo:Chapter" resource="#pdf" property="bibo:hasPart">
-    <h3 id="h-pdf" resource="#h-pdf"><span property="xhv:role" resource="xhv:heading"><span class="secno">C.3 </span>PDF</span></h3>
+<section property="bibo:hasPart" resource="#pdf" typeof="bibo:Chapter" class="appendix" id="pdf">
+    <h3 resource="#h-pdf" id="h-pdf"><span property="xhv:role" resource="xhv:heading"><span class="secno">C.3 </span>PDF</span></h3>
         <p>Any current discussion of digital publishing and accessibility should reference PDF and the accessibility efforts surrounding that technology.</p>
         <h3 id="historical-perspective">Historical perspective</h3>
             <p>PDF was released in 1992 and through the 1990’s quickly became the defacto standard  as a replacement for "camera ready copy." PDF eliminated the problems associated with differences between computers and printers. One could finally take a single PDF file, print it anywhere and it would look identical. Publishers would take high resolution PDF pages and provide them to their printing houses for printing and binding; in fact, this remains the primary mechanism used today.</p>
@@ -1107,22 +1108,22 @@ table.simple {
             <p>This ability to be able to digitally represent both born-digital and paper-based content and distribute it through either formal or ad-hoc means is considered by some to be a form of digital publishing.</p>
         <h3 id="accessibility-in-pdf">Accessibility in PDF</h3>
             <p>Unfortunately, PDF was not designed with accessibility in mind. While a PDF could be presented on a computer screen, Assistive Technology (AT) could not dependably read the PDF. In short, PDF was inaccessible to persons who are blind.</p>
-            <p>Over the years, PDF has added many features to enable greater accessibility (starting with PDF 1.3) in the form of Tagged PDF.  This work was done in collaboration with the <abbr title="World Wide Web Consortium">W3C</abbr> and the WCAG working group and led to the publication of “[<cite><a class="bibref" href="#bib-PDF-Techniques-for-WCAG-2.0">PDF-Techniques-for-WCAG-2.0</a></cite>]”</p>
+            <p>Over the years, PDF has added many features to enable greater accessibility (starting with PDF 1.3) in the form of Tagged PDF.  This work was done in collaboration with the <abbr title="World Wide Web Consortium">W3C</abbr> and the WCAG working group and led to the publication of “[<cite><a href="#bib-PDF-Techniques-for-WCAG-2.0" class="bibref">PDF-Techniques-for-WCAG-2.0</a></cite>]”</p>
         <h2 id="pdf-ua">PDF/UA</h2>
             <p>PDF/Universal Accessibility, commonly called PDF/UA  is the informal name for ISO 14289, the International Standard for accessible  PDF technology. PDF/UA became an ISO Standard  on 15 July 2012. The latest release, PDF/UA Part 1, was approved as an ISO Standard on 18 December 2014. This standard specifies how to create accessible PDF files, create compliant PDF readers and also AT devices.   The combination of the three providing a rich ecosystem for accessible PDF.</p>
             <p>The adoption of PDF/UA has been slow, probably because of the lack of authoring tools, reading system interactions with AT, and general lack of training needed to add the additional tagging necessary to meet PDF/UA.</p>
         <h2 id="references-3">References:</h2>
             <ul>
-                <li>[<cite><a class="bibref" href="#bib-PDF-Techniques-for-WCAG-2.0">PDF-Techniques-for-WCAG-2.0</a></cite>]</li>
-                <li>[<cite><a class="bibref" href="#bib-PDF-UA">PDF-UA</a></cite>]</li>
+                <li>[<cite><a href="#bib-PDF-Techniques-for-WCAG-2.0" class="bibref">PDF-Techniques-for-WCAG-2.0</a></cite>]</li>
+                <li>[<cite><a href="#bib-PDF-UA" class="bibref">PDF-UA</a></cite>]</li>
             </ul>
 
 </section> <!-- end DIAGRAMMAR -->
-        
+
 </section> <!-- end outside standards -->
 
-<section class="acknowledgments" id="acknowledgments" typeof="bibo:Chapter" resource="#acknowledgments" property="bibo:hasPart">
-    <!--OddPage--><h2 id="h-acknowledgments" resource="#h-acknowledgments"><span property="xhv:role" resource="xhv:heading"><span class="secno">D. </span>Acknowledgments</span></h2>
+<section property="bibo:hasPart" resource="#acknowledgments" typeof="bibo:Chapter" id="acknowledgments" class="acknowledgments">
+    <!--OddPage--><h2 resource="#h-acknowledgments" id="h-acknowledgments"><span property="xhv:role" resource="xhv:heading"><span class="secno">D. </span>Acknowledgments</span></h2>
     <dl>
         <dt>Contributors:</dt>
         <dd>Kathy Alley</dd>
@@ -1151,58 +1152,58 @@ table.simple {
 
   
 
-<section id="references" class="appendix" typeof="bibo:Chapter" resource="#references" property="bibo:hasPart"><!--OddPage--><h2 id="h-references" resource="#h-references"><span property="xhv:role" resource="xhv:heading"><span class="secno">E. </span>References</span></h2><section id="informative-references" typeof="bibo:Chapter" resource="#informative-references" property="bibo:hasPart"><h3 id="h-informative-references" resource="#h-informative-references"><span property="xhv:role" resource="xhv:heading"><span class="secno">E.1 </span>Informative references</span></h3><dl class="bibliography" resource=""><dt id="bib-ACCESSIBLE-ONLINE-LEARNING">[ACCESSIBLE-ONLINE-LEARNING]</dt><dd>W3C. <a href="https://www.w3.org/community/accesslearn/" property="dc:references"><cite>Accessible Online Learning Community Group</cite></a>. URL: <a href="https://www.w3.org/community/accesslearn/" property="dc:references">https://www.w3.org/community/accesslearn/</a>
-</dd><dt id="bib-ANNOTATIONS-WG">[ANNOTATIONS-WG]</dt><dd>Annotations Working Group. W3C. <a href="https://www.w3.org/annotation/" property="dc:references"><cite>Web Annotation Working Group</cite></a>. URL: <a href="https://www.w3.org/annotation/" property="dc:references">https://www.w3.org/annotation/</a>
-</dd><dt id="bib-ANSI-NISO-Z39.98-2012">[ANSI-NISO-Z39.98-2012]</dt><dd>DAISY Consortium. DAISY Consortium. <a href="http://www.daisy.org/z3998/2012/z3998-2012.html" property="dc:references"><cite>Authoring and Interchange Framework for Adaptive XML Publishing Specification</cite></a>. URL: <a href="http://www.daisy.org/z3998/2012/z3998-2012.html" property="dc:references">http://www.daisy.org/z3998/2012/z3998-2012.html</a>
-</dd><dt id="bib-ARIA-WG">[ARIA-WG]</dt><dd>Accessible Rich Internet Applications (WAI-ARIA) WG. W3C. <a href="https://github.com/w3c/aria" property="dc:references"><cite>Accessible Rich Internet Applications (WAI-ARIA)</cite></a>. URL: <a href="https://github.com/w3c/aria" property="dc:references">https://github.com/w3c/aria</a>
-</dd><dt id="bib-ATAG20">[ATAG20]</dt><dd>Jan Richards; Jeanne F Spellman; Jutta Treviranus. W3C. <a href="http://www.w3.org/TR/ATAG20/" property="dc:references"><cite>Authoring Tool Accessibility Guidelines (ATAG) 2.0</cite></a>. 24 September 2015. W3C Recommendation. URL: <a href="http://www.w3.org/TR/ATAG20/" property="dc:references">http://www.w3.org/TR/ATAG20/</a>
-</dd><dt id="bib-AVOGADRO">[AVOGADRO]</dt><dd>Marcus D Hanwell; Donald E Curtis; David C Lonie; Tim Vandermeersch; Eva Zurek; Geoffrey R Hutchison. <a href="http://avogadro.cc/wiki/Main_Page" property="dc:references"><cite>Avogadro</cite></a>. URL: <a href="http://avogadro.cc/wiki/Main_Page" property="dc:references">http://avogadro.cc/wiki/Main_Page</a>
-</dd><dt id="bib-BENETECH">[BENETECH]</dt><dd>Benetech. <a href="https://www.benetech.org/" property="dc:references"><cite>Benetech</cite></a>. URL: <a href="https://www.benetech.org/" property="dc:references">https://www.benetech.org/</a>
-</dd><dt id="bib-CSS-Paged-Media">[CSS-Paged-Media]</dt><dd>Melinda Grant; Elika J. Etemad; Håkon Wium Lie; Simon Sapin. W3C. <a href="http://www.w3.org/TR/css3-page/#margin-boxes" property="dc:references"><cite>Page-Margin Boxes</cite></a>. URL: <a href="http://www.w3.org/TR/css3-page/#margin-boxes" property="dc:references">http://www.w3.org/TR/css3-page/#margin-boxes</a>
-</dd><dt id="bib-CSS3-PAGE">[CSS3-PAGE]</dt><dd>Melinda Grant; Elika Etemad; Håkon Wium Lie; Simon Sapin. W3C. <a href="http://www.w3.org/TR/css3-page/" property="dc:references"><cite>CSS Paged Media Module Level 3</cite></a>. 14 March 2013. W3C Working Draft. URL: <a href="http://www.w3.org/TR/css3-page/" property="dc:references">http://www.w3.org/TR/css3-page/</a>
-</dd><dt id="bib-CSS3-SPEECH">[CSS3-SPEECH]</dt><dd>Daniel Weck. W3C. <a href="http://www.w3.org/TR/css3-speech/" property="dc:references"><cite>CSS Speech Module</cite></a>. 20 March 2012. W3C Candidate Recommendation. URL: <a href="http://www.w3.org/TR/css3-speech/" property="dc:references">http://www.w3.org/TR/css3-speech/</a>
-</dd><dt id="bib-DAISY">[DAISY]</dt><dd>DAISY Consortium. DAISY Consortium. <a href="http://www.daisy.org/z3986/specifications/d202skiprec/d202_skippability_rec.html" property="dc:references"><cite>Daisy 2.02 Skippable Structures Recommendation</cite></a>. URL: <a href="http://www.daisy.org/z3986/specifications/d202skiprec/d202_skippability_rec.html" property="dc:references">http://www.daisy.org/z3986/specifications/d202skiprec/d202_skippability_rec.html</a>
-</dd><dt id="bib-DAISY-DTD">[DAISY-DTD]</dt><dd>DAISY Consortium. DAISY Consortium. <a href="http://www.daisy.org/daisyniso-standard-dtd-and-css-files" property="dc:references"><cite>DAISY Digital Talking Book [Z3986-2005]</cite></a>. URL: <a href="http://www.daisy.org/daisyniso-standard-dtd-and-css-files" property="dc:references">http://www.daisy.org/daisyniso-standard-dtd-and-css-files</a>
-</dd><dt id="bib-DIAGRAM-Center">[DIAGRAM-Center]</dt><dd>DIAGRAM Center. DIAGRAM Center. <a href="http://diagramcenter.org/" property="dc:references"><cite>Digital Image and Graphic Resources for Accessible Materials</cite></a>. URL: <a href="http://diagramcenter.org/" property="dc:references">http://diagramcenter.org/</a>
-</dd><dt id="bib-DIAGRAMMAR">[DIAGRAMMAR]</dt><dd>DIAGRAM Center. DIAGRAM Center. <a href="http://diagramcenter.org/standards-and-practices/content-model.html" property="dc:references"><cite>Diagrammar: A Framework for Making Images and Graphics Accessible</cite></a>. URL: <a href="http://diagramcenter.org/standards-and-practices/content-model.html" property="dc:references">http://diagramcenter.org/standards-and-practices/content-model.html</a>
-</dd><dt id="bib-DPub-ARIA-1.0">[DPub-ARIA-1.0]</dt><dd>Matt Garrish; Tzviya Siegman; Markus Gylling; Shane McCarron. W3C. <a href="http://www.w3.org/TR/dpub-aria-1.0/" property="dc:references"><cite>Digital Publishing WAI-ARIA Module 1.0</cite></a>. 17 March 2016. W3C Working Draft. URL: <a href="http://www.w3.org/TR/dpub-aria-1.0/" property="dc:references">http://www.w3.org/TR/dpub-aria-1.0/</a>
-</dd><dt id="bib-DPub-ARIA-FootNote">[DPub-ARIA-FootNote]</dt><dd>Digital Publishing Interest Group. W3C. <a href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnote" property="dc:references"><cite>Digital Publishing Interest Group discussion about nested headings</cite></a>. URL: <a href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnote" property="dc:references">http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnote</a>
-</dd><dt id="bib-DPub-ARIA-FootNotes">[DPub-ARIA-FootNotes]</dt><dd>Digital Publishing Interest Group. W3C. <a href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnotes" property="dc:references"><cite>Digital Publishing Interest Group discussion about nested headings</cite></a>. URL: <a href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnotes" property="dc:references">http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnotes</a>
-</dd><dt id="bib-DPub-Accessibility-Wiki">[DPub-Accessibility-Wiki]</dt><dd>Digital Publishing Accessibility Task Force. DPub W3C. <a href="https://github.com/w3c/dpub-accessibility/wiki/A11Y-DPub-Techniques-based-on-WCAG" property="dc:references"><cite>A11Y DPub Techniques based on WCAG 2.0</cite></a>. URL: <a href="https://github.com/w3c/dpub-accessibility/wiki/A11Y-DPub-Techniques-based-on-WCAG" property="dc:references">https://github.com/w3c/dpub-accessibility/wiki/A11Y-DPub-Techniques-based-on-WCAG</a>
-</dd><dt id="bib-DPub-IG">[DPub-IG]</dt><dd>Digital Publishing Interest Group. W3C. <a href="https://www.w3.org/dpub/IG/wiki/Main_Page" property="dc:references"><cite>Digital Publishing Interest Group</cite></a>. URL: <a href="https://www.w3.org/dpub/IG/wiki/Main_Page" property="dc:references">https://www.w3.org/dpub/IG/wiki/Main_Page</a>
-</dd><dt id="bib-DPub-Minutes-3">[DPub-Minutes-3]</dt><dd>Digital Publishing Interest Group. W3C. <a href="http://www.w3.org/2015/05/15-dpub-minutes.html#item03" property="dc:references"><cite>Digital Publishing Interest Group discussion about nested headings</cite></a>. URL: <a href="http://www.w3.org/2015/05/15-dpub-minutes.html#item03" property="dc:references">http://www.w3.org/2015/05/15-dpub-minutes.html#item03</a>
-</dd><dt id="bib-EPUB3">[EPUB3]</dt><dd>Garth Conboy; Matt Garrish; Markus Gylling; William McCoy; Murata Makoto; Daniel Weck. IDPF. <a href="http://www.idpf.org/epub/301/spec/epub-overview-20140626.html" property="dc:references"><cite>EPUB 3 Overview</cite></a>. Recommended Specification. URL: <a href="http://www.idpf.org/epub/301/spec/epub-overview-20140626.html" property="dc:references">http://www.idpf.org/epub/301/spec/epub-overview-20140626.html</a>
-</dd><dt id="bib-EPUB3.1">[EPUB3.1]</dt><dd>Garth Conboy; Matt Garrish; Markus Gylling; William McCoy; Murata Makoto; Daniel Weck. IDPF. <a href="http://www.idpf.org/workplans/2015/epub/" property="dc:references"><cite>EPUB 3.1 Work Plan</cite></a>. Working Editor Draft Specification. URL: <a href="http://www.idpf.org/workplans/2015/epub/" property="dc:references">http://www.idpf.org/workplans/2015/epub/</a>
-</dd><dt id="bib-ETS">[ETS]</dt><dd>Educational Testing Service. <a href="https://www.ets.org/contact" property="dc:references"><cite>Educational Testing Service</cite></a>. URL: <a href="https://www.ets.org/contact" property="dc:references">https://www.ets.org/contact</a>
-</dd><dt id="bib-HEADSHOTS">[HEADSHOTS]</dt><dd>Ceres Lee. Ceres Lee. <a href="http://web.mit.edu/puzzle/www/2015/puzzle/headshots/" property="dc:references"><cite>Headshots</cite></a>. URL: <a href="http://web.mit.edu/puzzle/www/2015/puzzle/headshots/" property="dc:references">http://web.mit.edu/puzzle/www/2015/puzzle/headshots/</a>
-</dd><dt id="bib-HTML-LONGDESC">[HTML-LONGDESC]</dt><dd>Charles McCathieNevile; Mark Sadecki. W3C. <a href="http://www.w3.org/TR/html-longdesc/" property="dc:references"><cite>HTML5 Image Description Extension (longdesc)</cite></a>. 26 February 2015. W3C Recommendation. URL: <a href="http://www.w3.org/TR/html-longdesc/" property="dc:references">http://www.w3.org/TR/html-longdesc/</a>
-</dd><dt id="bib-IDPF">[IDPF]</dt><dd>IDPF. <a href="http://idpf.org/" property="dc:references"><cite>International Digital Publishing Forum</cite></a>. URL: <a href="http://idpf.org/" property="dc:references">http://idpf.org/</a>
-</dd><dt id="bib-IDPF-CONTACT">[IDPF-CONTACT]</dt><dd>IDPF. <a href="http://idpf.org/contact-us" property="dc:references"><cite>IDPF Contact Page</cite></a>. URL: <a href="http://idpf.org/contact-us" property="dc:references">http://idpf.org/contact-us</a>
-</dd><dt id="bib-IDPF-EPUB-Structure-Semantics-Vocabulary">[IDPF-EPUB-Structure-Semantics-Vocabulary]</dt><dd>IDPF. <a href="http://www.idpf.org/epub/vocab/structure/" property="dc:references"><cite>EPUB 3 Structural Semantics Vocabulary</cite></a>. URL: <a href="http://www.idpf.org/epub/vocab/structure/" property="dc:references">http://www.idpf.org/epub/vocab/structure/</a>
-</dd><dt id="bib-IDPF-GITHUB">[IDPF-GITHUB]</dt><dd>Matt Garrish; Nachiket Patel; Peter Krautzberger; Romain Deltour; Ron Severdia; Tobias Fischer. IDPF. <a href="https://github.com/IDPF" property="dc:references"><cite>IDPF's Github repository</cite></a>. URL: <a href="https://github.com/IDPF" property="dc:references">https://github.com/IDPF</a>
-</dd><dt id="bib-IDPF-Guide-Logical-Reading-Order">[IDPF-Guide-Logical-Reading-Order]</dt><dd>IDPF. <a href="http://www.idpf.org/accessibility/guidelines/content/semantics/order.php" property="dc:references"><cite>EPUB 3 Accessibility Guidelines: Logical Reading Order</cite></a>. URL: <a href="http://www.idpf.org/accessibility/guidelines/content/semantics/order.php" property="dc:references">http://www.idpf.org/accessibility/guidelines/content/semantics/order.php</a>
-</dd><dt id="bib-IMS-Global">[IMS-Global]</dt><dd>IMS Global Learning Consortium. <a href="https://www.imsglobal.org/contactus.cfm" property="dc:references"><cite>IMS Global Learning Consortium: Contact Us</cite></a>. URL: <a href="https://www.imsglobal.org/contactus.cfm" property="dc:references">https://www.imsglobal.org/contactus.cfm</a>
-</dd><dt id="bib-IMS-Global-APIP">[IMS-Global-APIP]</dt><dd>IMS Global Learning Consortium. <a href="https://www.imsglobal.org/apip/index.html" property="dc:references"><cite>Accessible Portable Item Protocol® (APIP®)</cite></a>. URL: <a href="https://www.imsglobal.org/apip/index.html" property="dc:references">https://www.imsglobal.org/apip/index.html</a>
-</dd><dt id="bib-IMS-Global-QTI">[IMS-Global-QTI]</dt><dd>IMS Global Learning Consortium. <a href="https://www.imsglobal.org/question/index.html" property="dc:references"><cite>IMS Question &amp; Test Interoperability® Specification</cite></a>. URL: <a href="https://www.imsglobal.org/question/index.html" property="dc:references">https://www.imsglobal.org/question/index.html</a>
-</dd><dt id="bib-JCHEMPAINT">[JCHEMPAINT]</dt><dd>Ralf Stephan; John May. <a href="http://jchempaint.github.io/" property="dc:references"><cite>JChemPaint</cite></a>. URL: <a href="http://jchempaint.github.io/" property="dc:references">http://jchempaint.github.io/</a>
-</dd><dt id="bib-MATHEMATICAL">[MATHEMATICAL]</dt><dd>Garen Torikian. <a href="https://github.com/gjtorikian/mathematical" property="dc:references"><cite>mathematical</cite></a>. URL: <a href="https://github.com/gjtorikian/mathematical" property="dc:references">https://github.com/gjtorikian/mathematical</a>
-</dd><dt id="bib-MATHJAX">[MATHJAX]</dt><dd>MathJax Consortium. <a href="https://www.mathjax.org" property="dc:references"><cite>MathJax</cite></a>. URL: <a href="https://www.mathjax.org" property="dc:references">https://www.mathjax.org</a>
-</dd><dt id="bib-MATHQUILL">[MATHQUILL]</dt><dd>Han Seoul-Oh; Jeanine Adkisson; Mary Stufflebeam. <a href="http://mathquill.com/" property="dc:references"><cite>MathQuill</cite></a>. URL: <a href="http://mathquill.com/" property="dc:references">http://mathquill.com/</a>
-</dd><dt id="bib-MOUSE">[MOUSE]</dt><dd>Lewis Carroll. Lewis Carroll. <a href="http://bootless.net/mouse.html" property="dc:references"><cite>The Mouse's Tail</cite></a>. URL: <a href="http://bootless.net/mouse.html" property="dc:references">http://bootless.net/mouse.html</a>
-</dd><dt id="bib-Math-on-Webpages-CG">[Math-on-Webpages-CG]</dt><dd>W3C. <a href="https://www.w3.org/community/mathonwebpages/" property="dc:references"><cite>Getting Math Onto Web Pages Community Group</cite></a>. URL: <a href="https://www.w3.org/community/mathonwebpages/" property="dc:references">https://www.w3.org/community/mathonwebpages/</a>
-</dd><dt id="bib-ONIX-EPUBLICATION">[ONIX-EPUBLICATION]</dt><dd>Editeur. <a href="http://www.editeur.org/files/ONIX%20for%20books%20-%20code%20lists/ONIX_BookProduct_Codelists_Issue_32.html#codelist196" property="dc:references"><cite>ONIX E-publication Accessibility Details (List 196)</cite></a>. URL: <a href="http://www.editeur.org/files/ONIX%20for%20books%20-%20code%20lists/ONIX_BookProduct_Codelists_Issue_32.html#codelist196" property="dc:references">http://www.editeur.org/files/ONIX%20for%20books%20-%20code%20lists/ONIX_BookProduct_Codelists_Issue_32.html#codelist196</a>
-</dd><dt id="bib-PDF-Techniques-for-WCAG-2.0">[PDF-Techniques-for-WCAG-2.0]</dt><dd>W3C. <a href="https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/pdf.html" property="dc:references"><cite>PDF Techniques for WCAG 2.0</cite></a>. URL: <a href="https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/pdf.html" property="dc:references">https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/pdf.html</a>
-</dd><dt id="bib-PDF-UA">[PDF-UA]</dt><dd>WIKIPEDIA. <a href="https://en.wikipedia.org/wiki/PDF/UA" property="dc:references"><cite>PDF/UA</cite></a>. URL: <a href="https://en.wikipedia.org/wiki/PDF/UA" property="dc:references">https://en.wikipedia.org/wiki/PDF/UA</a>
-</dd><dt id="bib-PROGRESSIVE">[PROGRESSIVE]</dt><dd>Volker Sorge. <a href="http://www.progressiveaccess.com/chemistry/index.php" property="dc:references"><cite>ProgressiveAccess</cite></a>. URL: <a href="http://www.progressiveaccess.com/chemistry/index.php" property="dc:references">http://www.progressiveaccess.com/chemistry/index.php</a>
-</dd><dt id="bib-PRONUNCIATION-LEXICON">[PRONUNCIATION-LEXICON]</dt><dd>Paolo Baggia. W3C. <a href="http://www.w3.org/TR/pronunciation-lexicon/" property="dc:references"><cite>Pronunciation Lexicon Specification (PLS) Version 1.0</cite></a>. 14 October 2008. W3C Recommendation. URL: <a href="http://www.w3.org/TR/pronunciation-lexicon/" property="dc:references">http://www.w3.org/TR/pronunciation-lexicon/</a>
-</dd><dt id="bib-READIUM">[READIUM]</dt><dd>Readium Foundation. Readium Foundation. <a href="http://readium.org/participate/contributing" property="dc:references"><cite>Readium Foundation</cite></a>. URL: <a href="http://readium.org/participate/contributing" property="dc:references">http://readium.org/participate/contributing</a>
-</dd><dt id="bib-SCHEMA-ORG">[SCHEMA-ORG]</dt><dd>Schema.org. <a href="https://schema.org/" property="dc:references"><cite>Schema.org</cite></a>. URL: <a href="https://schema.org/" property="dc:references">https://schema.org/</a>
-</dd><dt id="bib-SOWETO">[SOWETO]</dt><dd>Kamau Brathwaite. Kamau Brathwaite. <a href="http://www.poetryfoundation.org/poem/177297" property="dc:references"><cite>Soweto</cite></a>. URL: <a href="http://www.poetryfoundation.org/poem/177297" property="dc:references">http://www.poetryfoundation.org/poem/177297</a>
-</dd><dt id="bib-SSML">[SSML]</dt><dd>Daniel Burnett; Zhi Wei Shuang. W3C. <a href="http://www.w3.org/TR/speech-synthesis11/" property="dc:references"><cite>Speech Synthesis Markup Language (SSML) Version 1.1</cite></a>. 7 September 2010. W3C Recommendation. URL: <a href="http://www.w3.org/TR/speech-synthesis11/" property="dc:references">http://www.w3.org/TR/speech-synthesis11/</a>
-</dd><dt id="bib-UAAG20">[UAAG20]</dt><dd>James Allan; Greg Lowney; Kimberly Patch; Jeanne F Spellman. W3C. <a href="http://www.w3.org/TR/UAAG20/" property="dc:references"><cite>User Agent Accessibility Guidelines (UAAG) 2.0</cite></a>. 15 December 2015. W3C Note. URL: <a href="http://www.w3.org/TR/UAAG20/" property="dc:references">http://www.w3.org/TR/UAAG20/</a>
-</dd><dt id="bib-WAI-ARIA">[WAI-ARIA]</dt><dd>James Craig; Michael Cooper et al. W3C. <a href="http://www.w3.org/TR/wai-aria/" property="dc:references"><cite>Accessible Rich Internet Applications (WAI-ARIA) 1.0</cite></a>. 20 March 2014. W3C Recommendation. URL: <a href="http://www.w3.org/TR/wai-aria/" property="dc:references">http://www.w3.org/TR/wai-aria/</a>
-</dd><dt id="bib-WAI-Wiki">[WAI-Wiki]</dt><dd>WAI Members. <a href="https://www.w3.org/WAI/GL/wiki/Using_role%3Dheading" property="dc:references"><cite>Using role=“heading” to identify headings</cite></a>. URL: <a href="https://www.w3.org/WAI/GL/wiki/Using_role%3Dheading" property="dc:references">https://www.w3.org/WAI/GL/wiki/Using_role%3Dheading</a>
-</dd><dt id="bib-WCAG20">[WCAG20]</dt><dd>Ben Caldwell; Michael Cooper; Loretta Guarino Reid; Gregg Vanderheiden et al. W3C. <a href="http://www.w3.org/TR/WCAG20/" property="dc:references"><cite>Web Content Accessibility Guidelines (WCAG) 2.0</cite></a>. 11 December 2008. W3C Recommendation. URL: <a href="http://www.w3.org/TR/WCAG20/" property="dc:references">http://www.w3.org/TR/WCAG20/</a>
-</dd><dt id="bib-WEB-SCHEMAS">[WEB-SCHEMAS]</dt><dd>W3C. <a href="https://www.w3.org/wiki/WebSchemas/Accessibility" property="dc:references"><cite>WebSchemas Accessibility wiki page</cite></a>. URL: <a href="https://www.w3.org/wiki/WebSchemas/Accessibility" property="dc:references">https://www.w3.org/wiki/WebSchemas/Accessibility</a>
-</dd><dt id="bib-WOMEN">[WOMEN]</dt><dd>May Swenson. May Swenson. <a href="http://www.poetryfoundation.org/poem/178001" property="dc:references"><cite>Women</cite></a>. URL: <a href="http://www.poetryfoundation.org/poem/178001" property="dc:references">http://www.poetryfoundation.org/poem/178001</a>
-</dd></dl></section></section><p role="navigation" id="back-to-top"><a href="#toc"><abbr title="Back to Top">↑</abbr></a></p><script async="" defer="" src="https://www.w3.org/scripts/TR/2016/fixup.js"></script></body></html>
+<section property="bibo:hasPart" resource="#references" typeof="bibo:Chapter" id="references" class="appendix"><!--OddPage--><h2 resource="#h-references" id="h-references"><span property="xhv:role" resource="xhv:heading"><span class="secno">E. </span>References</span></h2><section property="bibo:hasPart" resource="#informative-references" typeof="bibo:Chapter" id="informative-references"><h3 resource="#h-informative-references" id="h-informative-references"><span property="xhv:role" resource="xhv:heading"><span class="secno">E.1 </span>Informative references</span></h3><dl resource="" class="bibliography"><dt id="bib-ACCESSIBLE-ONLINE-LEARNING">[ACCESSIBLE-ONLINE-LEARNING]</dt><dd>W3C. <a property="dc:references" href="https://www.w3.org/community/accesslearn/"><cite>Accessible Online Learning Community Group</cite></a>. URL: <a property="dc:references" href="https://www.w3.org/community/accesslearn/">https://www.w3.org/community/accesslearn/</a>
+</dd><dt id="bib-ANNOTATIONS-WG">[ANNOTATIONS-WG]</dt><dd>Annotations Working Group. W3C. <a property="dc:references" href="https://www.w3.org/annotation/"><cite>Web Annotation Working Group</cite></a>. URL: <a property="dc:references" href="https://www.w3.org/annotation/">https://www.w3.org/annotation/</a>
+</dd><dt id="bib-ANSI-NISO-Z39.98-2012">[ANSI-NISO-Z39.98-2012]</dt><dd>DAISY Consortium. DAISY Consortium. <a property="dc:references" href="http://www.daisy.org/z3998/2012/z3998-2012.html"><cite>Authoring and Interchange Framework for Adaptive XML Publishing Specification</cite></a>. URL: <a property="dc:references" href="http://www.daisy.org/z3998/2012/z3998-2012.html">http://www.daisy.org/z3998/2012/z3998-2012.html</a>
+</dd><dt id="bib-ARIA-WG">[ARIA-WG]</dt><dd>Accessible Rich Internet Applications (WAI-ARIA) WG. W3C. <a property="dc:references" href="https://github.com/w3c/aria"><cite>Accessible Rich Internet Applications (WAI-ARIA)</cite></a>. URL: <a property="dc:references" href="https://github.com/w3c/aria">https://github.com/w3c/aria</a>
+</dd><dt id="bib-ATAG20">[ATAG20]</dt><dd>Jan Richards; Jeanne F Spellman; Jutta Treviranus. W3C. <a property="dc:references" href="http://www.w3.org/TR/ATAG20/"><cite>Authoring Tool Accessibility Guidelines (ATAG) 2.0</cite></a>. 24 September 2015. W3C Recommendation. URL: <a property="dc:references" href="http://www.w3.org/TR/ATAG20/">http://www.w3.org/TR/ATAG20/</a>
+</dd><dt id="bib-AVOGADRO">[AVOGADRO]</dt><dd>Marcus D Hanwell; Donald E Curtis; David C Lonie; Tim Vandermeersch; Eva Zurek; Geoffrey R Hutchison. <a property="dc:references" href="http://avogadro.cc/wiki/Main_Page"><cite>Avogadro</cite></a>. URL: <a property="dc:references" href="http://avogadro.cc/wiki/Main_Page">http://avogadro.cc/wiki/Main_Page</a>
+</dd><dt id="bib-BENETECH">[BENETECH]</dt><dd>Benetech. <a property="dc:references" href="https://www.benetech.org/"><cite>Benetech</cite></a>. URL: <a property="dc:references" href="https://www.benetech.org/">https://www.benetech.org/</a>
+</dd><dt id="bib-CSS-Paged-Media">[CSS-Paged-Media]</dt><dd>Melinda Grant; Elika J. Etemad; Håkon Wium Lie; Simon Sapin. W3C. <a property="dc:references" href="http://www.w3.org/TR/css3-page/#margin-boxes"><cite>Page-Margin Boxes</cite></a>. URL: <a property="dc:references" href="http://www.w3.org/TR/css3-page/#margin-boxes">http://www.w3.org/TR/css3-page/#margin-boxes</a>
+</dd><dt id="bib-CSS3-PAGE">[CSS3-PAGE]</dt><dd>Melinda Grant; Elika Etemad; Håkon Wium Lie; Simon Sapin. W3C. <a property="dc:references" href="http://www.w3.org/TR/css3-page/"><cite>CSS Paged Media Module Level 3</cite></a>. 14 March 2013. W3C Working Draft. URL: <a property="dc:references" href="http://www.w3.org/TR/css3-page/">http://www.w3.org/TR/css3-page/</a>
+</dd><dt id="bib-CSS3-SPEECH">[CSS3-SPEECH]</dt><dd>Daniel Weck. W3C. <a property="dc:references" href="http://www.w3.org/TR/css3-speech/"><cite>CSS Speech Module</cite></a>. 20 March 2012. W3C Candidate Recommendation. URL: <a property="dc:references" href="http://www.w3.org/TR/css3-speech/">http://www.w3.org/TR/css3-speech/</a>
+</dd><dt id="bib-DAISY">[DAISY]</dt><dd>DAISY Consortium. DAISY Consortium. <a property="dc:references" href="http://www.daisy.org/z3986/specifications/d202skiprec/d202_skippability_rec.html"><cite>Daisy 2.02 Skippable Structures Recommendation</cite></a>. URL: <a property="dc:references" href="http://www.daisy.org/z3986/specifications/d202skiprec/d202_skippability_rec.html">http://www.daisy.org/z3986/specifications/d202skiprec/d202_skippability_rec.html</a>
+</dd><dt id="bib-DAISY-DTD">[DAISY-DTD]</dt><dd>DAISY Consortium. DAISY Consortium. <a property="dc:references" href="http://www.daisy.org/daisyniso-standard-dtd-and-css-files"><cite>DAISY Digital Talking Book [Z3986-2005]</cite></a>. URL: <a property="dc:references" href="http://www.daisy.org/daisyniso-standard-dtd-and-css-files">http://www.daisy.org/daisyniso-standard-dtd-and-css-files</a>
+</dd><dt id="bib-DIAGRAM-Center">[DIAGRAM-Center]</dt><dd>DIAGRAM Center. DIAGRAM Center. <a property="dc:references" href="http://diagramcenter.org/"><cite>Digital Image and Graphic Resources for Accessible Materials</cite></a>. URL: <a property="dc:references" href="http://diagramcenter.org/">http://diagramcenter.org/</a>
+</dd><dt id="bib-DIAGRAMMAR">[DIAGRAMMAR]</dt><dd>DIAGRAM Center. DIAGRAM Center. <a property="dc:references" href="http://diagramcenter.org/standards-and-practices/content-model.html"><cite>Diagrammar: A Framework for Making Images and Graphics Accessible</cite></a>. URL: <a property="dc:references" href="http://diagramcenter.org/standards-and-practices/content-model.html">http://diagramcenter.org/standards-and-practices/content-model.html</a>
+</dd><dt id="bib-DPub-ARIA-1.0">[DPub-ARIA-1.0]</dt><dd>Matt Garrish; Tzviya Siegman; Markus Gylling; Shane McCarron. W3C. <a property="dc:references" href="http://www.w3.org/TR/dpub-aria-1.0/"><cite>Digital Publishing WAI-ARIA Module 1.0</cite></a>. 17 March 2016. W3C Working Draft. URL: <a property="dc:references" href="http://www.w3.org/TR/dpub-aria-1.0/">http://www.w3.org/TR/dpub-aria-1.0/</a>
+</dd><dt id="bib-DPub-ARIA-FootNote">[DPub-ARIA-FootNote]</dt><dd>Digital Publishing Interest Group. W3C. <a property="dc:references" href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnote"><cite>Digital Publishing Interest Group discussion about nested headings</cite></a>. URL: <a property="dc:references" href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnote">http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnote</a>
+</dd><dt id="bib-DPub-ARIA-FootNotes">[DPub-ARIA-FootNotes]</dt><dd>Digital Publishing Interest Group. W3C. <a property="dc:references" href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnotes"><cite>Digital Publishing Interest Group discussion about nested headings</cite></a>. URL: <a property="dc:references" href="http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnotes">http://www.w3.org/TR/2015/WD-dpub-aria-1.0-20150707/#dpub-footnotes</a>
+</dd><dt id="bib-DPub-Accessibility-Wiki">[DPub-Accessibility-Wiki]</dt><dd>Digital Publishing Accessibility Task Force. DPub W3C. <a property="dc:references" href="https://github.com/w3c/dpub-accessibility/wiki/A11Y-DPub-Techniques-based-on-WCAG"><cite>A11Y DPub Techniques based on WCAG 2.0</cite></a>. URL: <a property="dc:references" href="https://github.com/w3c/dpub-accessibility/wiki/A11Y-DPub-Techniques-based-on-WCAG">https://github.com/w3c/dpub-accessibility/wiki/A11Y-DPub-Techniques-based-on-WCAG</a>
+</dd><dt id="bib-DPub-IG">[DPub-IG]</dt><dd>Digital Publishing Interest Group. W3C. <a property="dc:references" href="https://www.w3.org/dpub/IG/wiki/Main_Page"><cite>Digital Publishing Interest Group</cite></a>. URL: <a property="dc:references" href="https://www.w3.org/dpub/IG/wiki/Main_Page">https://www.w3.org/dpub/IG/wiki/Main_Page</a>
+</dd><dt id="bib-DPub-Minutes-3">[DPub-Minutes-3]</dt><dd>Digital Publishing Interest Group. W3C. <a property="dc:references" href="http://www.w3.org/2015/05/15-dpub-minutes.html#item03"><cite>Digital Publishing Interest Group discussion about nested headings</cite></a>. URL: <a property="dc:references" href="http://www.w3.org/2015/05/15-dpub-minutes.html#item03">http://www.w3.org/2015/05/15-dpub-minutes.html#item03</a>
+</dd><dt id="bib-EPUB3">[EPUB3]</dt><dd>Garth Conboy; Matt Garrish; Markus Gylling; William McCoy; Murata Makoto; Daniel Weck. IDPF. <a property="dc:references" href="http://www.idpf.org/epub/301/spec/epub-overview-20140626.html"><cite>EPUB 3 Overview</cite></a>. Recommended Specification. URL: <a property="dc:references" href="http://www.idpf.org/epub/301/spec/epub-overview-20140626.html">http://www.idpf.org/epub/301/spec/epub-overview-20140626.html</a>
+</dd><dt id="bib-EPUB3.1">[EPUB3.1]</dt><dd>Garth Conboy; Matt Garrish; Markus Gylling; William McCoy; Murata Makoto; Daniel Weck. IDPF. <a property="dc:references" href="http://www.idpf.org/workplans/2015/epub/"><cite>EPUB 3.1 Work Plan</cite></a>. Working Editor Draft Specification. URL: <a property="dc:references" href="http://www.idpf.org/workplans/2015/epub/">http://www.idpf.org/workplans/2015/epub/</a>
+</dd><dt id="bib-ETS">[ETS]</dt><dd>Educational Testing Service. <a property="dc:references" href="https://www.ets.org/contact"><cite>Educational Testing Service</cite></a>. URL: <a property="dc:references" href="https://www.ets.org/contact">https://www.ets.org/contact</a>
+</dd><dt id="bib-HEADSHOTS">[HEADSHOTS]</dt><dd>Ceres Lee. Ceres Lee. <a property="dc:references" href="http://web.mit.edu/puzzle/www/2015/puzzle/headshots/"><cite>Headshots</cite></a>. URL: <a property="dc:references" href="http://web.mit.edu/puzzle/www/2015/puzzle/headshots/">http://web.mit.edu/puzzle/www/2015/puzzle/headshots/</a>
+</dd><dt id="bib-HTML-LONGDESC">[HTML-LONGDESC]</dt><dd>Charles McCathieNevile; Mark Sadecki. W3C. <a property="dc:references" href="http://www.w3.org/TR/html-longdesc/"><cite>HTML5 Image Description Extension (longdesc)</cite></a>. 26 February 2015. W3C Recommendation. URL: <a property="dc:references" href="http://www.w3.org/TR/html-longdesc/">http://www.w3.org/TR/html-longdesc/</a>
+</dd><dt id="bib-IDPF">[IDPF]</dt><dd>IDPF. <a property="dc:references" href="http://idpf.org/"><cite>International Digital Publishing Forum</cite></a>. URL: <a property="dc:references" href="http://idpf.org/">http://idpf.org/</a>
+</dd><dt id="bib-IDPF-CONTACT">[IDPF-CONTACT]</dt><dd>IDPF. <a property="dc:references" href="http://idpf.org/contact-us"><cite>IDPF Contact Page</cite></a>. URL: <a property="dc:references" href="http://idpf.org/contact-us">http://idpf.org/contact-us</a>
+</dd><dt id="bib-IDPF-EPUB-Structure-Semantics-Vocabulary">[IDPF-EPUB-Structure-Semantics-Vocabulary]</dt><dd>IDPF. <a property="dc:references" href="http://www.idpf.org/epub/vocab/structure/"><cite>EPUB 3 Structural Semantics Vocabulary</cite></a>. URL: <a property="dc:references" href="http://www.idpf.org/epub/vocab/structure/">http://www.idpf.org/epub/vocab/structure/</a>
+</dd><dt id="bib-IDPF-GITHUB">[IDPF-GITHUB]</dt><dd>Matt Garrish; Nachiket Patel; Peter Krautzberger; Romain Deltour; Ron Severdia; Tobias Fischer. IDPF. <a property="dc:references" href="https://github.com/IDPF"><cite>IDPF's Github repository</cite></a>. URL: <a property="dc:references" href="https://github.com/IDPF">https://github.com/IDPF</a>
+</dd><dt id="bib-IDPF-Guide-Logical-Reading-Order">[IDPF-Guide-Logical-Reading-Order]</dt><dd>IDPF. <a property="dc:references" href="http://www.idpf.org/accessibility/guidelines/content/semantics/order.php"><cite>EPUB 3 Accessibility Guidelines: Logical Reading Order</cite></a>. URL: <a property="dc:references" href="http://www.idpf.org/accessibility/guidelines/content/semantics/order.php">http://www.idpf.org/accessibility/guidelines/content/semantics/order.php</a>
+</dd><dt id="bib-IMS-Global">[IMS-Global]</dt><dd>IMS Global Learning Consortium. <a property="dc:references" href="https://www.imsglobal.org/contactus.cfm"><cite>IMS Global Learning Consortium: Contact Us</cite></a>. URL: <a property="dc:references" href="https://www.imsglobal.org/contactus.cfm">https://www.imsglobal.org/contactus.cfm</a>
+</dd><dt id="bib-IMS-Global-APIP">[IMS-Global-APIP]</dt><dd>IMS Global Learning Consortium. <a property="dc:references" href="https://www.imsglobal.org/apip/index.html"><cite>Accessible Portable Item Protocol® (APIP®)</cite></a>. URL: <a property="dc:references" href="https://www.imsglobal.org/apip/index.html">https://www.imsglobal.org/apip/index.html</a>
+</dd><dt id="bib-IMS-Global-QTI">[IMS-Global-QTI]</dt><dd>IMS Global Learning Consortium. <a property="dc:references" href="https://www.imsglobal.org/question/index.html"><cite>IMS Question &amp; Test Interoperability® Specification</cite></a>. URL: <a property="dc:references" href="https://www.imsglobal.org/question/index.html">https://www.imsglobal.org/question/index.html</a>
+</dd><dt id="bib-JCHEMPAINT">[JCHEMPAINT]</dt><dd>Ralf Stephan; John May. <a property="dc:references" href="http://jchempaint.github.io/"><cite>JChemPaint</cite></a>. URL: <a property="dc:references" href="http://jchempaint.github.io/">http://jchempaint.github.io/</a>
+</dd><dt id="bib-MATHEMATICAL">[MATHEMATICAL]</dt><dd>Garen Torikian. <a property="dc:references" href="https://github.com/gjtorikian/mathematical"><cite>mathematical</cite></a>. URL: <a property="dc:references" href="https://github.com/gjtorikian/mathematical">https://github.com/gjtorikian/mathematical</a>
+</dd><dt id="bib-MATHJAX">[MATHJAX]</dt><dd>MathJax Consortium. <a property="dc:references" href="https://www.mathjax.org"><cite>MathJax</cite></a>. URL: <a property="dc:references" href="https://www.mathjax.org">https://www.mathjax.org</a>
+</dd><dt id="bib-MATHQUILL">[MATHQUILL]</dt><dd>Han Seoul-Oh; Jeanine Adkisson; Mary Stufflebeam. <a property="dc:references" href="http://mathquill.com/"><cite>MathQuill</cite></a>. URL: <a property="dc:references" href="http://mathquill.com/">http://mathquill.com/</a>
+</dd><dt id="bib-MOUSE">[MOUSE]</dt><dd>Lewis Carroll. Lewis Carroll. <a property="dc:references" href="http://bootless.net/mouse.html"><cite>The Mouse's Tail</cite></a>. URL: <a property="dc:references" href="http://bootless.net/mouse.html">http://bootless.net/mouse.html</a>
+</dd><dt id="bib-Math-on-Webpages-CG">[Math-on-Webpages-CG]</dt><dd>W3C. <a property="dc:references" href="https://www.w3.org/community/mathonwebpages/"><cite>Getting Math Onto Web Pages Community Group</cite></a>. URL: <a property="dc:references" href="https://www.w3.org/community/mathonwebpages/">https://www.w3.org/community/mathonwebpages/</a>
+</dd><dt id="bib-ONIX-EPUBLICATION">[ONIX-EPUBLICATION]</dt><dd>Editeur. <a property="dc:references" href="http://www.editeur.org/files/ONIX%20for%20books%20-%20code%20lists/ONIX_BookProduct_Codelists_Issue_32.html#codelist196"><cite>ONIX E-publication Accessibility Details (List 196)</cite></a>. URL: <a property="dc:references" href="http://www.editeur.org/files/ONIX%20for%20books%20-%20code%20lists/ONIX_BookProduct_Codelists_Issue_32.html#codelist196">http://www.editeur.org/files/ONIX%20for%20books%20-%20code%20lists/ONIX_BookProduct_Codelists_Issue_32.html#codelist196</a>
+</dd><dt id="bib-PDF-Techniques-for-WCAG-2.0">[PDF-Techniques-for-WCAG-2.0]</dt><dd>W3C. <a property="dc:references" href="https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/pdf.html"><cite>PDF Techniques for WCAG 2.0</cite></a>. URL: <a property="dc:references" href="https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/pdf.html">https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/pdf.html</a>
+</dd><dt id="bib-PDF-UA">[PDF-UA]</dt><dd>WIKIPEDIA. <a property="dc:references" href="https://en.wikipedia.org/wiki/PDF/UA"><cite>PDF/UA</cite></a>. URL: <a property="dc:references" href="https://en.wikipedia.org/wiki/PDF/UA">https://en.wikipedia.org/wiki/PDF/UA</a>
+</dd><dt id="bib-PROGRESSIVE">[PROGRESSIVE]</dt><dd>Volker Sorge. <a property="dc:references" href="http://www.progressiveaccess.com/chemistry/index.php"><cite>ProgressiveAccess</cite></a>. URL: <a property="dc:references" href="http://www.progressiveaccess.com/chemistry/index.php">http://www.progressiveaccess.com/chemistry/index.php</a>
+</dd><dt id="bib-PRONUNCIATION-LEXICON">[PRONUNCIATION-LEXICON]</dt><dd>Paolo Baggia. W3C. <a property="dc:references" href="http://www.w3.org/TR/pronunciation-lexicon/"><cite>Pronunciation Lexicon Specification (PLS) Version 1.0</cite></a>. 14 October 2008. W3C Recommendation. URL: <a property="dc:references" href="http://www.w3.org/TR/pronunciation-lexicon/">http://www.w3.org/TR/pronunciation-lexicon/</a>
+</dd><dt id="bib-READIUM">[READIUM]</dt><dd>Readium Foundation. Readium Foundation. <a property="dc:references" href="http://readium.org/participate/contributing"><cite>Readium Foundation</cite></a>. URL: <a property="dc:references" href="http://readium.org/participate/contributing">http://readium.org/participate/contributing</a>
+</dd><dt id="bib-SCHEMA-ORG">[SCHEMA-ORG]</dt><dd>Schema.org. <a property="dc:references" href="https://schema.org/"><cite>Schema.org</cite></a>. URL: <a property="dc:references" href="https://schema.org/">https://schema.org/</a>
+</dd><dt id="bib-SOWETO">[SOWETO]</dt><dd>Kamau Brathwaite. Kamau Brathwaite. <a property="dc:references" href="http://www.poetryfoundation.org/poem/177297"><cite>Soweto</cite></a>. URL: <a property="dc:references" href="http://www.poetryfoundation.org/poem/177297">http://www.poetryfoundation.org/poem/177297</a>
+</dd><dt id="bib-SSML">[SSML]</dt><dd>Daniel Burnett; Zhi Wei Shuang. W3C. <a property="dc:references" href="http://www.w3.org/TR/speech-synthesis11/"><cite>Speech Synthesis Markup Language (SSML) Version 1.1</cite></a>. 7 September 2010. W3C Recommendation. URL: <a property="dc:references" href="http://www.w3.org/TR/speech-synthesis11/">http://www.w3.org/TR/speech-synthesis11/</a>
+</dd><dt id="bib-UAAG20">[UAAG20]</dt><dd>James Allan; Greg Lowney; Kimberly Patch; Jeanne F Spellman. W3C. <a property="dc:references" href="http://www.w3.org/TR/UAAG20/"><cite>User Agent Accessibility Guidelines (UAAG) 2.0</cite></a>. 15 December 2015. W3C Note. URL: <a property="dc:references" href="http://www.w3.org/TR/UAAG20/">http://www.w3.org/TR/UAAG20/</a>
+</dd><dt id="bib-WAI-ARIA">[WAI-ARIA]</dt><dd>James Craig; Michael Cooper et al. W3C. <a property="dc:references" href="http://www.w3.org/TR/wai-aria/"><cite>Accessible Rich Internet Applications (WAI-ARIA) 1.0</cite></a>. 20 March 2014. W3C Recommendation. URL: <a property="dc:references" href="http://www.w3.org/TR/wai-aria/">http://www.w3.org/TR/wai-aria/</a>
+</dd><dt id="bib-WAI-Wiki">[WAI-Wiki]</dt><dd>WAI Members. <a property="dc:references" href="https://www.w3.org/WAI/GL/wiki/Using_role%3Dheading"><cite>Using role=“heading” to identify headings</cite></a>. URL: <a property="dc:references" href="https://www.w3.org/WAI/GL/wiki/Using_role%3Dheading">https://www.w3.org/WAI/GL/wiki/Using_role%3Dheading</a>
+</dd><dt id="bib-WCAG20">[WCAG20]</dt><dd>Ben Caldwell; Michael Cooper; Loretta Guarino Reid; Gregg Vanderheiden et al. W3C. <a property="dc:references" href="http://www.w3.org/TR/WCAG20/"><cite>Web Content Accessibility Guidelines (WCAG) 2.0</cite></a>. 11 December 2008. W3C Recommendation. URL: <a property="dc:references" href="http://www.w3.org/TR/WCAG20/">http://www.w3.org/TR/WCAG20/</a>
+</dd><dt id="bib-WEB-SCHEMAS">[WEB-SCHEMAS]</dt><dd>W3C. <a property="dc:references" href="https://www.w3.org/wiki/WebSchemas/Accessibility"><cite>WebSchemas Accessibility wiki page</cite></a>. URL: <a property="dc:references" href="https://www.w3.org/wiki/WebSchemas/Accessibility">https://www.w3.org/wiki/WebSchemas/Accessibility</a>
+</dd><dt id="bib-WOMEN">[WOMEN]</dt><dd>May Swenson. May Swenson. <a property="dc:references" href="http://www.poetryfoundation.org/poem/178001"><cite>Women</cite></a>. URL: <a property="dc:references" href="http://www.poetryfoundation.org/poem/178001">http://www.poetryfoundation.org/poem/178001</a>
+</dd></dl></section></section><p role="navigation" id="back-to-top"><a href="#toc"><abbr title="Back to Top">↑</abbr></a></p><script src="https://www.w3.org/scripts/TR/2016/fixup.js" defer="" async=""></script></body></html>
